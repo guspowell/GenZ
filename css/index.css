@@ -1,5 +1,4 @@
 .navbar {
-    font-weight: 100;
     background: black;
     margin: 0;
     border: 0;
@@ -10,7 +9,32 @@
   font-size: 25px;
 }
 
-#title-container {
-  height: 200px;
-  background-color: blue;
+#blank-container {
+  height: 500px;
+  background-color: pink;
+}
+
+#introduction-container {
+  padding: 50px;
+  background-color: #FAC421;
+}
+
+#introduction-container h3 {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#introduction-container p {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 30px;
+  margin: 50px 0 50px 0;
+}
+
+#card1 {
+  height: 500px;
+  background: url("../images/01-generation-entrepreneur.jpg") no-repeat center;
+  background-size: auto 100%;
 }
