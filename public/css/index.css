@@ -1,5 +1,5 @@
 /***** Navigation ****/
-
+/** padding of 50px has been given to body in normalize.css to account for fixed navbar **/
 .navbar {
   background: black;
   margin: 0;
