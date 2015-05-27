@@ -180,13 +180,13 @@
 
 
 #image-container.card1 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/01-generation-entrepreneur.jpg") center; /* Chrome,Safari4+ */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* FF3.6+ */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") center; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
 
