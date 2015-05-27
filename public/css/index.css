@@ -127,7 +127,7 @@
   float: left;
 }
 
-#image-container .quote {
+#image-container .statement {
   font-size: 15px;
   width: 80%;
 }
@@ -164,4 +164,12 @@
   background-image: url("../images/02_shifting_gender_norms.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
+}
+
+#image-container.card3 {
+  background-color: #46A9AD;
+  background-image: url("../images/intertwined-worlds-image.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  color: black;
 }
