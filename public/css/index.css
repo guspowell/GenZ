@@ -57,8 +57,23 @@
 
 #yellow-container {
   padding: 40px;
-  background-color: #FAC421;
+  background-color: #fac421;
   text-align: center;
+}
+
+#yellow-container btn.read-report {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: black;
+  font-size: 15px;
+  background: #fac421;
+  padding: 8px 30px 8px 30px;
+  outline: solid black 2px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0 50px 0;
 }
 
 #yellow-container h3 {
