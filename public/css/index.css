@@ -137,11 +137,6 @@
   width: 50%;
 }
 
-#image-container.card1 {
-  background: url("../images/01-generation-entrepreneur.jpg") no-repeat center;
-  background-size: auto 100%;
-}
-
 #card-description {
  padding: 40px;
  text-align: center;
@@ -159,17 +154,67 @@
   line-height: 28px;
 }
 
-#image-container.card2 {
-  background-color: #46A9AD;
-  background-image: url("../images/02_shifting_gender_norms.png");
+#image-container {
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
 
-#image-container.card3 {
-  background-color: #46A9AD;
-  background-image: url("../images/intertwined-worlds-image.png");
-  background-repeat: no-repeat;
+#image-container.card1 {
+  background: url("../images/01-generation-entrepreneur.jpg") center;
   background-size: auto 100%;
+}
+
+#image-container.card2 {
+  background-color: #46A9AD;
+  background-image: url("../images/02_shifting_gender_norms.png");
+}
+
+#image-container.card3 {
+  background-color: #BCE3EE;
+  background-image: url("../images/03_Intertwined_Wolrds.png");
   color: black;
+}
+
+#image-container.card4 {
+  background-image: url("../images/04-embracing-extremes.jpg");
+}
+
+#image-container.card5 {
+  background-color: #03A989;
+  background-image: url("../images/05-pro-activly-empathetic.png");
+}
+
+#image-container.card6 {
+  background-image: url("../images/06-hold-on-to-the-physical.jpg");
+}
+
+#image-container.card7 {
+  background-color: #E6AC94;
+  background-image: url("../images/07-empowered-healthcare.png");
+  color: black;
+}
+
+#image-container.card8 {
+  background-image: url("../images/08-privacy-tightrope.jpg");
+  color: black;
+}
+
+#image-container.card9 {
+  background-color: #FAC421;
+  background-image: url("../images/09-creative-communicators.png");
+  color: black;
+}
+
+#image-container.card10 {
+  background-image: url("../images/10-marketing-with-etiquette.jpg");
+}
+
+#image-container.card11 {
+  background-color: #D32650;
+  background-image: url("../images/11-open-ended-technology.png");
+  background-position: right;
+}
+
+#image-container.card12 {
+  background-image: url("../images/12-superpower-tech.jpg");
 }
