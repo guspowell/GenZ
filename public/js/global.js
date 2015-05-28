@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
   $('#image-container #content').each(function() {
-      $(this).css('margin-top', $(this).parent().height()-$(this).height())
+      $(this).css('margin-top', $(this).parent().height()-$(this).height());
   });
+
+  $('#image-container.card6 #content').css('margin-top', 0);
 
 });
