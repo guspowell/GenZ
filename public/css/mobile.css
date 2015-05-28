@@ -34,6 +34,13 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 }
 
+@media (min-width: 768px) {
+  #title-container {
+    height: 650px;
+    background-size: cover;
+  }
+}
+
 #title-container .container {
   margin-top: 110px;
 }
@@ -74,12 +81,6 @@
   text-align: center;
 }
 
-@media (min-width: 800px) {
-  #yellow-container {
-  background-color: blue;
-}
-}
-
 #yellow-container btn.read-report {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -108,6 +109,12 @@
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  #download-box {
+    display: none
+  }
+}
+
 .down-arrow {
   width: 140px;
   margin: 20px 20px 0 20px;
@@ -115,46 +122,23 @@
 
 /***** Cards: Image ****/
 
- #image-container {
+#image-container {
   height: 320px;
   padding: 40px;
   color: white;
+  background-size: cover;
 }
-
-#image-container #textbox-right {
-  position: absolute;
-    bottom: 20px;
-    right: 40px;
-  padding: 0;
-}
-
-#image-container #textbox-left {
-  position: absolute;
-    bottom: 20px;
-    left: 40px;
-  padding: 0;
-}
-
-#image-container #textbox-right div {
-  text-align: right;
-  margin-top: 10px;
-  float: right;
-}
-
-#image-container #textbox-left div {
-  text-align: left;
-  margin-top: 10px;
-  float: left;
+@media (min-width: 768px) {
+  #image-container {
+    height: 475px;
+  }
 }
 
 #image-container .statement {
   font-size: 15px;
-  width: 80%;
 }
-
 #image-container .source {
   font-size: 11px;
-  width: 50%;
 }
 
 /***** Cards: Description ****/
@@ -178,11 +162,6 @@
 
 /***** Loading Images into Cards ****/
 
-#image-container {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-}
-
 #image-container.card1 {
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* FF3.6+ */
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* Chrome,Safari4+ */
@@ -192,7 +171,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
   text-align: right;
-  color: red;
+  color: white;
+}
+@media (min-width: 768px) {
+  #image-container.card1 {
+    background-size: cover;
+  }
+  #image-container .statement {
+    font-size: 25px;
+  }
+  #image-container .source {
+    font-size: 17px;
+  }
 }
 
 #image-container.card2 {
@@ -206,6 +196,11 @@
   background-size: auto 100%;
   background-color: #46A9AD;
 }
+@media (min-width: 768px) {
+  #image-container.card2 {
+    background-position: right;
+  }
+}
 
 #image-container.card3 {
   background-color: #BCE3EE;
@@ -213,10 +208,20 @@
   color: black;
   text-align: right;
 }
+@media (min-width: 768px) {
+  #image-container.card3 {
+    background-position: left;
+  }
+}
 
 #image-container.card4 {
   background: url("../images/04-embracing-extremes.jpg") no-repeat center;
   background-size: auto 100%;
+}
+@media (min-width: 768px) {
+  #image-container.card4 {
+    background-size: cover;
+  }
 }
 
 #image-container.card5 {
@@ -235,6 +240,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
+@media (min-width: 768px) {
+  #image-container.card6 {
+    background-size: cover;
+  }
+}
 
 #image-container.card7 {
   background-color: #E6AC94;
@@ -252,6 +262,11 @@
   background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
+}
+@media (min-width: 768px) {
+  #image-container.card8 {
+    background-size: cover;
+  }
 }
 
 #image-container.card9 {
@@ -272,6 +287,11 @@
   background-size: auto 100%;
   text-align: right;
 }
+@media (min-width: 768px) {
+  #image-container.card10 {
+    background-size: cover;
+  }
+}
 
 #image-container.card11 {
   background-color: #D32650;
@@ -288,4 +308,9 @@
   background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8a000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
+}
+@media (min-width: 768px) {
+  #image-container.card12 {
+    background-size: cover;
+  }
 }
