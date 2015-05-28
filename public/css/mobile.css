@@ -260,6 +260,7 @@
 @media (min-width: 768px) {
   #image-container.card1 {
     background-size: cover;
+    background: url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
   }
   #image-container .statement {
     font-size: 25px;
@@ -282,6 +283,8 @@
 }
 @media (min-width: 768px) {
   #image-container.card2 {
+    background: url("../images/02_shifting_gender_norms.png") no-repeat right;
+    background-color: #46A9AD;
     background-position: right;
   }
 }
