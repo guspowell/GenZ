@@ -401,3 +401,8 @@
     background-size: cover;
   }
 }
+
+#footer.container {
+  height: 200px;
+  background-color: black;
+}
