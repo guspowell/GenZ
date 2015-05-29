@@ -8,4 +8,8 @@ $(document).ready(function(){
     $('#image-container.card6 #content').css('margin-top', 0);
   }
 
+  if ($(window).width() < 768) {
+    $('#image-container.card9').css('color', 'white');
+  }
+
 });
