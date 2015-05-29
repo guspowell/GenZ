@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   setTitleContainerHeight();
 
-  skrollr.init();
+  // skrollr.init();
 
 });
 
