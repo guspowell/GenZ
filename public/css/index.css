@@ -62,7 +62,7 @@
   font-size: 15px;
   background: white;
   padding: 8px 30px 8px 30px;
-  border: 2px solid red;
+  border: 2px solid black;
   outline: solid white 2px;
   text-decoration: none;
 }
@@ -123,22 +123,25 @@
 #yellow-container p {
   font-size: 18px;
   line-height: 32px;
-  margin: 50px 0 50px 0;
   text-align: left;
 }
 
-
+#yellow-container #download-box {
+  text-align: left;
+}
 
 #yellow-container #author {
-  padding-top: 50px;
-  text-align: left;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+#yellow-container img.social-media {
+  height: 40px;
 }
 
 #yellow-container btn.download {
   display: inline-block;
-  float: left;
-  margin-left: 0;
   width: 193px;
   height: 48px;
   -webkit-border-radius: 0;
@@ -151,13 +154,7 @@
   padding: 12px 30px 8px 30px;
   outline: solid black 3px;
   text-decoration: none;
-  margin: 20px 0 0 0;
-}
-
-#download-box img.social-media {
-  display: block;
-  height: 35px;
-  margin: 30px 30px 30px 0;
+  margin-top: 40px;
 }
 
 .down-arrow {
@@ -173,7 +170,7 @@
 
 @media (min-width: 768px) {
   #yellow-container {
-    padding: 40px 80px 60px 80px;
+    padding: 40px 40px 60px 40px;
   }
   #yellow-container btn.read-report {
     font-size: 20px;
@@ -181,7 +178,7 @@
     outline: solid black 2px;
   }
   #yellow-container h3 {
-    margin: 40px 0 15px 0;
+    margin: 50px 0 50px 0;
     font-size: 30px;
     line-height: 70px;
   }
@@ -216,7 +213,7 @@
 @media (min-width: 768px) {
   #image-container {
     height: 550px;
-    padding: 60px 40px 30px 40px;
+    padding: 60px 40px 50px 40px;
   }
 }
 
@@ -271,8 +268,8 @@
 }
 @media (min-width: 768px) {
   #image-container.card1 {
-    background-size: cover;
     background: url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
+    background-size: cover;
   }
   #image-container .statement {
     font-size: 24px;
@@ -329,6 +326,7 @@
   background-image: url("../images/05-pro-activly-empathetic.png");
   text-align: right;
 }
+/********* image I have cuts the top off watering can ********/
 
 #image-container.card6 {
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* FF3.6+ */
@@ -366,6 +364,7 @@
 }
 @media (min-width: 768px) {
   #image-container.card8 {
+    background: url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
     background-size: cover;
   }
 }
@@ -376,6 +375,13 @@
   color: black;
   text-align: right;
 }
+@media (min-width: 768px) {
+  #image-container.card9 {
+    background-size: cover;
+    background-position: 0 -50px;
+  }
+}
+
 
 #image-container.card10 {
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* FF3.6+ */
@@ -390,7 +396,9 @@
 }
 @media (min-width: 768px) {
   #image-container.card10 {
+    background: url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* FF3.6+ */
     background-size: cover;
+    background-position: 0 -20px;
   }
 }
 
@@ -412,8 +420,36 @@
 }
 @media (min-width: 768px) {
   #image-container.card12 {
+    background: url("../images/12-superpower-tech.jpg") no-repeat center; /* FF3.6+ */
     background-size: cover;
+    background-position: 0 0;
   }
+}
+
+#yellow-container.container.footer {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+#yellow-container.container.footer #author-column {
+  margin-right: 50px;
+}
+
+#yellow-container.container.footer #authors {
+  margin: 150px 0 0 0;
+  text-align: left;
+}
+
+#yellow-container.container.footer #authors img {
+  width: 86px;
+}
+
+#yellow-container.container.footer #author-details {
+  margin: 20px 0 20px 0;
+}
+
+#yellow-container.container.footer #author-bio {
+  line-height: 36px;
 }
 
 #footer.container {

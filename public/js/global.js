@@ -4,6 +4,8 @@ $(document).ready(function(){
       $(this).css('margin-top', $(this).parent().height()-$(this).height());
   });
 
-  $('#image-container.card6 #content').css('margin-top', 0);
+  if ($(window).width() > 768) {
+    $('#image-container.card6 #content').css('margin-top', 0);
+  }
 
 });
