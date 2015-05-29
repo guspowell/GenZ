@@ -24,12 +24,12 @@
   height: 420px;
   text-align: center;
   color: white;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url("../images/title-image.svg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.8))), url("../images/title-image.svg") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%), url("../images/title-image.svg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%), url("../images/title-image.svg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%), url("../images/title-image.svg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%), url("../images/title-image.svg") no-repeat center; /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))), url("../images/title-image.svg") no-repeat center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* W3C */
   background-size: auto 100%;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 }
@@ -69,7 +69,7 @@
 
 @media (min-width: 768px) {
   #title-container {
-    height: 650px;
+    height: 575px;
     background-size: cover;
   }
   #title-container #content.container {
@@ -87,7 +87,6 @@
   #title-container btn.watch-video {
     font-size: 20px;
     padding: 10px 40px 10px 40px;
-    border: solid black 3px;
   }
 }
 
@@ -159,7 +158,7 @@
 
 .down-arrow {
   width: 140px;
-  margin: 20px 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 
 @media (max-width: 768px) {
@@ -170,7 +169,7 @@
 
 @media (min-width: 768px) {
   #yellow-container {
-    padding: 40px 40px 60px 40px;
+    padding: 20px 40px 60px 40px;
   }
   #yellow-container btn.read-report {
     font-size: 20px;
@@ -184,13 +183,14 @@
   }
   #yellow-container h3.see-below {
     font-size: 36px;
+    margin-bottom: 30px;
   }
   #yellow-container p {
     font-size: 16px;
   }
   #yellow-container .down-arrow {
     width: 250px;
-    margin: 20px 20px 0 20px;
+    margin: 0 20px 0 20px;
   }
 }
 
@@ -452,7 +452,41 @@
   line-height: 36px;
 }
 
-#footer.container {
-  height: 200px;
-  background-color: black;
+/************* WHITE FOOTER CONTAINER ************/
+
+#white-footer { font-size: 16px; }
+
+#left-button {
+  text-align: left;
 }
+
+#right-button {
+  text-align: right;
+}
+
+#white-footer #left-button .col-md-2 {
+  background-color: red;
+  height: 100px;
+  padding: 0;
+}
+#white-footer #right-button .col-md-2 {
+  background-color: pink;
+  padding: 0;
+  height: 100px;
+}
+
+#white-footer #left-button img.left-arrow {
+  transform: rotate(90deg); /* IE10 and Mozilla */
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  height: 20px;
+  margin: 25px 0 0 0;
+}
+#white-footer #right-button img.right-arrow {
+  transform: rotate(270deg); /* IE10 and Mozilla */
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg);
+  height: 20px;
+  margin: 25px 0 0 0;
+}
+/************* WHITE FOOTER CONTAINER ************/
