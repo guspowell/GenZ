@@ -269,7 +269,7 @@
 @media (min-width: 768px) {
   #image-container.card1 {
     background: url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
-    /*background-size: cover;*/
+    background-size: cover;
   }
   #image-container .statement {
     font-size: 24px;
