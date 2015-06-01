@@ -294,7 +294,6 @@
   #image-container.card2 {
     background: url("../images/02_shifting_gender_norms.png") no-repeat right;
     background-color: #46A9AD;
-    background-position: right;
   }
 }
 
@@ -326,6 +325,12 @@
   background-image: url("../images/05-pro-activly-empathetic.png");
   text-align: right;
 }
+@media (min-width: 768px) {
+  #image-container.card5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 /********* image I have cuts the top off watering can ********/
 
 #image-container.card6 {
@@ -340,6 +345,7 @@
 }
 @media (min-width: 768px) {
   #image-container.card6 {
+    background: url("../images/06-hold-on-to-the-physical.jpg") no-repeat center;
     background-size: cover;
     background-position: 0 0;
   }
@@ -350,6 +356,13 @@
   background-image: url("../images/07-empowered-healthcare.png");
   color: black;
   text-align: right;
+}
+@media (min-width: 768px) {
+  #image-container.card7 {
+    background-image: url("../images/07-empowered-healthcare.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 #image-container.card8 {
