@@ -390,8 +390,9 @@
 }
 @media (min-width: 768px) {
   #image-container.card9 {
+    background-image: url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
     background-size: cover;
-    background-position: 0 -50px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -419,6 +420,7 @@
   background-color: #D32650;
   background-image: url("../images/11-open-ended-technology.png");
   background-position: right;
+  background-repeat: no-repeat;
 }
 
 #image-container.card12 {

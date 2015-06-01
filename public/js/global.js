@@ -14,7 +14,9 @@ $(document).ready(function(){
 
   setTitleContainerHeight();
 
-  skrollr.init();
+  if ($(window).width() > 768) {
+    skrollr.init();
+  };
 
 });
 
