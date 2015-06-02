@@ -12,11 +12,16 @@ $(document).ready(function(){
     $('#image-container.card9').css('color', 'white');
   };
 
-  setTitleContainerHeight();
+  if($(window).height() > 620 ) { setTitleContainerHeight(); }
 
   if ($(window).width() > 768) {
     skrollr.init();
   };
+
+  $(window).resize(function( event ) {
+    console.log($(window).height());
+    if($(window).height() > 620 ) { setTitleContainerHeight(); }
+  });
 
 });
 
