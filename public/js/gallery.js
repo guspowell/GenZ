@@ -37,10 +37,10 @@ function carouselHeight() {
 };
 
 function setArrowPosition() {
-  var height = carouselHeight();
-  var arrowHeight = 100;
-  var padding = (height - arrowHeight)/2;
-  $(".carousel-control").css("padding-top", padding);
+  var containerHeight = $(".carousel-control").height();
+  var arrowHeight = $('img.left-arrow').height();
+  var padding = (containerHeight/2) - (arrowHeight/2);
+  $('.carousel-control').css("padding-top", padding);
 };
 
 function fadeOutImages() {

@@ -14,3 +14,4 @@
 
 *How to adjust svg position in col div
 *What to do when you have 4 divs spacing wise
+*Help resizing arrows
