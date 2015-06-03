@@ -7,6 +7,11 @@
           box-sizing: border-box;
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 .navbar {
   background: black;
   margin: 0;
@@ -17,6 +22,17 @@
 
 .navbar-brand {
   font-size: 25px;
+}
+
+btn {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 30px 8px 30px;
+  text-decoration: none;
+  outline: solid black 2px;
+  color: black;
+  display: inline-block;
+  text-align: center;
 }
 
 /***** Title Container ****/
@@ -55,25 +71,17 @@
 }
 
 #title-container btn.watch-video {
-  font-family: Arial;
   color: white;
   font-size: 15px;
   background: transparent;
-  padding: 8px 30px 8px 30px;
   outline: solid white 2px;
-  text-decoration: none;
-  display: inline-block;
-}
-#title-container btn.watch-video:hover {
-  background: white;
-  color: black;
-  outline: solid black 2px;
 }
 
 @media (min-width: 768px) {
   #title-container {
     height: 600px;
     background-size: cover;
+    font-weight: 100;
   }
   #title-container #content.container {
     margin-top: 175px;
@@ -86,10 +94,16 @@
   }
   #title-container h1 {
     font-size: 70px;
+    font-weight: 100;
   }
   #title-container btn.watch-video {
     font-size: 20px;
     padding: 10px 40px 10px 40px;
+  }
+  #title-container btn.watch-video:hover {
+    background: white;
+    color: black;
+    outline: solid black 2px;
   }
 }
 
@@ -102,13 +116,8 @@
 }
 
 #yellow-container btn.read-report {
-  font-family: Arial;
   color: black;
-  font-size: 15px;
   background: #fac421;
-  padding: 8px 30px 8px 30px;
-  outline: solid black 2px;
-  text-decoration: none;
   display: inline-block;
 }
 
@@ -125,46 +134,32 @@
   text-align: left;
 }
 
-#yellow-container #download-box {
-  text-align: left;
-}
-
-#yellow-container #author {
-  font-size: 16px;
-  line-height: 36px;
-  margin-bottom: 30px;
-}
-
-#yellow-container img.social-media {
-  height: 40px;
-}
-
-#yellow-container btn.download {
-  display: inline-block;
-  width: 193px;
-  height: 48px;
-  font-family: Arial;
-  color: black;
-  font-size: 18px;
-  background: #fac421;
-  padding: 12px 30px 8px 30px;
-  outline: solid black 3px;
-  text-decoration: none;
-  margin-top: 40px;
-}
-
 .down-arrow {
   width: 140px;
   margin: 0 20px 0 20px;
 }
 
-@media (max-width: 768px) {
-  #download-box {
-    display: none
-  }
-}
-
 @media (min-width: 768px) {
+  #yellow-container #download-box {
+    text-align: left;
+  }
+  #yellow-container #author {
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  #yellow-container img.social-media {
+    height: 40px;
+  }
+  #yellow-container btn.download {
+    width: 193px;
+    height: 48px;
+    font-size: 18px;
+    background: #fac421;
+    padding: 12px 30px 8px 30px;
+    text-decoration: none;
+    margin-top: 40px;
+  }
   #yellow-container {
     padding: 20px 40px 60px 40px;
   }
@@ -172,6 +167,10 @@
     font-size: 20px;
     padding: 10px 40px 10px 40px;
     outline: solid black 2px;
+  }
+  #yellow-container btn.read-report:hover {
+    background: white;
+    color: black;
   }
   #yellow-container h3 {
     margin: 100px 0 100px 0;
@@ -241,12 +240,14 @@
     }
     #card-description h2 {
       font-size: 60px;
+      font-weight: 100;
       line-height: 90px;
     }
     #card-description p {
       padding-top: 40px;
       font-size: 30px;
       line-height: 60px;
+      /*font-weight: 300;*/
     }
 }
 
@@ -439,13 +440,15 @@
   }
 }
 
+/************* YELLOW FOOTER CONTAINER ************/
+
 #yellow-container.container.footer {
   padding-top: 150px;
   padding-bottom: 200px;
 }
 
 #yellow-container.container.footer #author-column {
-  /*margin-right: 50px;*/
+  padding: 0 50px 0 0;
 }
 
 #yellow-container.container.footer #authors {
@@ -468,6 +471,8 @@
 @media (max-width: 768px) {
   #authors { display: none; }
 }
+
+/************* YELLOW FOOTER CONTAINER ************/
 
 /************* WHITE FOOTER CONTAINER ************/
 
@@ -499,7 +504,7 @@
 
 #black-footer {
   margin: 0;
-  padding: 50px 0 50px 0;
+  padding: 50px;
   font-size: 16px;
   line-height: 32px;
   background-color: black;
