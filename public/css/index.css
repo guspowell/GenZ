@@ -13,7 +13,10 @@
 }
 
 .navbar {
-  background: black;
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: rgb(0, 0, 0);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 0;
   border: 0;
   border-radius: 0;
@@ -22,6 +25,12 @@
 
 .navbar-brand {
   font-size: 25px;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-weight: 100;
+  }
 }
 
 btn {
