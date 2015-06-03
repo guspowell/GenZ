@@ -28,8 +28,7 @@ $(document).ready(function() {
 		if (winWidth<380) column = 1;
 		else if(winWidth >=380 && winWidth<850)  column = 2;
 		else if(winWidth>=850 && winWidth<1400)  column = 3;
-		else if(winWidth>=1400  && winWidth<2000) column = 4;
-		else if(winWidth>=2100) column = 5;
+		else if(winWidth>=1400) column = 4;
 		return column;
 	}
 
