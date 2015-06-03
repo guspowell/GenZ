@@ -16,13 +16,6 @@ $(document).ready(function(){
   //   skrollr.init();
   // };
 
-  $(".read-report").click(function() {
-    var navbarHeight = 50;
-    $('html, body').animate({
-      scrollTop: $("#yellow-container").offset().top + navbarHeight
-    }, 1000);
-  });
-
   $(window).resize(function( event ) {
     if($(window).height() > 620 ) { setTitleContainerHeight(); }
     positionCardText();
