@@ -10,12 +10,19 @@
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
 
     <script src="//use.typekit.net/qtr4gez.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/responsiveImages.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="js/global.js"></script>
     <script src="js/skrollr.min.js"></script>
+
 
   </head>
 
@@ -88,8 +95,46 @@
       </div>
     </div>
 
-    <div class="container" id="blank-container">
+    <div class="container" id="image-gallery">
+      <div class="grid">
+        <div class="grid-item grid-item--width1" id="image1" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width2" id="image2" rel="shifting-gender-norms"></div>
+        <div class="grid-item grid-item--width2" id="image3" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width1" id="image4" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width2" id="image5" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width1" id="image6" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width2" id="image7" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width1" id="image8" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width1" id="image9" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width1" id="image10" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width2" id="image11" rel="generation-entrepreneur"></div>
+        <div class="grid-item grid-item--width2" id="image12" rel="generation-entrepreneur"></div>
+      </div>
 
+      <div class="container" id="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox"></div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" id="carousel-arrow" href="#myCarousel" role="button" data-slide="prev">
+            <img class="left-arrow" src="images/down_arrow.png">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" id="carousel-arrow" href="#myCarousel" role="button" data-slide="next">
+            <img class="right-arrow" src="images/down_arrow.png">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="container" id="yellow-container">

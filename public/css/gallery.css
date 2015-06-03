@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#image-gallery {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  max-width: 100%;
+  position: absolute;
+    top: 0;
+    left: 0;
+  z-index: 100;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  height: 270px;
+}
+
+#image1 {
+  background-image: url("../images/06-hold-on-to-the-physical.jpg");
+  background-size: cover;
+}
+#image2 {
+  background-image: url("../images/image8.png");
+  background-size: cover;
+}
+#image3 {
+  background-image: url("../images/12-superpower-tech.jpg");
+  background-size: cover;
+}
+#image4 {
+  background-image: url("../images/image12.png");
+  background-size: cover;
+}
+#image5 {
+  background-image: url("../images/image10.png");
+  background-size: cover;
+}
+#image6 {
+  background-image: url("../images/image2.png");
+  background-size: cover;
+}
+#image7 {
+  background-image: url("../images/image5.png");
+  background-size: cover;
+}
+#image8 {
+  background-image: url("../images/08-privacy-tightrope.jpg");
+  background-size: cover;
+}
+#image9 {
+  background-image: url("../images/10-marketing-with-etiquette.jpg");
+  background-size: cover;
+}
+#image10 {
+  background-image: url("../images/01-generation-entrepreneur.jpg");
+  background-size: cover;
+}
+#image11 {
+  background-image: url("../images/image11.png");
+  background-size: cover;
+}
+#image12 {
+  background-image: url("../images/image12.png");
+  background-size: cover;
+}
+
+/* ---- carousel ---- */
+
+#carousel.container {
+  width: 100%;
+  padding: 0;
+  position: absolute;
+    top: 0;
+    left: 0;
+  z-index: 0;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+.left-arrow {
+  transform: rotate(90deg); /* IE10 and Mozilla */
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  height: 100px;
+  margin-left: -150px;
+}
+.right-arrow {
+  transform: rotate(270deg); /* IE10 and Mozilla */
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg);
+  height: 100px;
+  margin-left: -75px;
+}

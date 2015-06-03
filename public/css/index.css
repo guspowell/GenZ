@@ -54,15 +54,12 @@
 }
 
 #title-container btn.watch-video {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
   font-family: Arial;
-  color: black;
+  color: white;
   font-size: 15px;
-  background: #fac421;
+  background: transparent;
   padding: 8px 30px 8px 30px;
-  outline: solid black 2px;
+  outline: solid white 2px;
   text-decoration: none;
   display: inline-block;
 }
@@ -70,6 +67,7 @@
   background: white;
   border: 2px solid black;
   outline: solid white 2px;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -104,9 +102,6 @@
 }
 
 #yellow-container btn.read-report {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
   font-family: Arial;
   color: black;
   font-size: 15px;
@@ -148,9 +143,6 @@
   display: inline-block;
   width: 193px;
   height: 48px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
   font-family: Arial;
   color: black;
   font-size: 18px;
