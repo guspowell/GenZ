@@ -17,8 +17,9 @@ $(document).ready(function(){
   // };
 
   $(".read-report").click(function() {
+    var navbarHeight = 50;
     $('html, body').animate({
-      scrollTop: $("#yellow-container h3").offset().top
+      scrollTop: $("#yellow-container").offset().top + navbarHeight
     }, 1000);
   });
 

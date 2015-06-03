@@ -66,9 +66,8 @@
 }
 #title-container btn.watch-video:hover {
   background: white;
-  border: 2px solid black;
-  outline: solid white 2px;
   color: black;
+  outline: solid black 2px;
 }
 
 @media (min-width: 768px) {
@@ -446,7 +445,7 @@
 }
 
 #yellow-container.container.footer #author-column {
-  margin-right: 50px;
+  /*margin-right: 50px;*/
 }
 
 #yellow-container.container.footer #authors {
@@ -468,6 +467,7 @@
 
 @media (max-width: 768px) {
   #authors { display: none; }
+}
 
 /************* WHITE FOOTER CONTAINER ************/
 
@@ -493,3 +493,17 @@
 }
 
 /************* WHITE FOOTER CONTAINER ************/
+
+
+/************* BLACK FOOTER CONTAINER ************/
+
+#black-footer {
+  margin: 0;
+  padding: 50px 0 50px 0;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: black;
+  color: white;
+}
+
+/************* BLACK FOOTER CONTAINER ************/
