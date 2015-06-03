@@ -1,11 +1,14 @@
 $(document).ready( function() {
 
-
   carouselHeight();
 
   fadeOutImages();
 
   setArrowPosition();
+
+  // $(window).resize(function( event ) {
+  //   if (isInSlideMode === false) { carouselHeight(); }
+  // });
 
 });
 
@@ -24,7 +27,6 @@ function loadCarouselImages(selector) {
     content += "<div class='item'>" +
               "<img src='images/" + image + "' alt='Chania' width='460' height='345'>" +
               "</div>";
-    console.log(content);
     $(".carousel-inner").html(content);
     $(".carousel-inner .item").first().attr('class', 'item active');
   };
@@ -37,7 +39,7 @@ function carouselHeight() {
 };
 
 function setArrowPosition() {
-  var containerHeight = $(".carousel-control").height();
+  var containerHeight = $(".carousel-inner").height();
   var arrowHeight = $('img.left-arrow').height();
   var padding = (containerHeight/2) - (arrowHeight/2);
   $('.carousel-control').css("padding-top", padding);

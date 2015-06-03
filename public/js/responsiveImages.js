@@ -11,13 +11,12 @@ $(document).ready(function() {
 			resizable : false,
 			transformsEnabled : true
 	});
-	
+
 	setBackgroundColor();
 
 	function setBackgroundColor() {
 		containerHeight = $("#image-gallery").height();
 		containerWidth = $("#image-gallery").width();
-		console.log(containerHeight);
 		$(".grid").css({"width": containerWidth, "height": containerHeight, "background-color": background});
 	};
 

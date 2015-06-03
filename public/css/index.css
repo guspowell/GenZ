@@ -1,6 +1,12 @@
 /***** Navigation ****/
 /** padding of 50px has been given to body in normalize.css to account for fixed navbar **/
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .navbar {
   background: black;
   margin: 0;
@@ -14,11 +20,6 @@
 }
 
 /***** Title Container ****/
-
-#blank-container {
-  height: 500px;
-  background-color: pink;
-}
 
 #title-container {
   height: 420px;
@@ -176,7 +177,7 @@
   #yellow-container h3 {
     margin: 100px 0 100px 0;
     font-size: 30px;
-    line-height: 70px;
+    line-height: 60px;
   }
   #yellow-container h3.see-below {
     font-size: 36px;
@@ -184,6 +185,7 @@
   }
   #yellow-container p {
     font-size: 16px;
+    line-height: 32px;
   }
   #yellow-container .down-arrow {
     width: 250px;
@@ -469,7 +471,7 @@
 
 /************* WHITE FOOTER CONTAINER ************/
 
-#white-footer { font-size: 16px; }
+#white-footer { font-size: 16px; background-color: blue;}
 
 #left-button {
   text-align: left;
@@ -490,18 +492,4 @@
   height: 100px;
 }
 
-#white-footer #left-button img.left-arrow {
-  transform: rotate(90deg); /* IE10 and Mozilla */
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  height: 20px;
-  margin: 25px 0 0 0;
-}
-#white-footer #right-button img.right-arrow {
-  transform: rotate(270deg); /* IE10 and Mozilla */
-  -ms-transform: rotate(270deg); /* IE 9 */
-  -webkit-transform: rotate(270deg);
-  height: 20px;
-  margin: 25px 0 0 0;
-}
 /************* WHITE FOOTER CONTAINER ************/
