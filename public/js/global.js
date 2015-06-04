@@ -26,8 +26,13 @@ $(document).ready(function(){
 function setTitleContainerHeight() {
   var windowHeight = window.innerHeight;
   var navbarHeight = 50;
-  var height = "height:" + (windowHeight - navbarHeight - 88) + "px;";
-  document.getElementById('title-container').setAttribute('style', height)
+  var paddingHeight = parseInt( $("#yellow-container").css('padding-top').replace("px", "") );
+  var buttonHeight = 40;
+  console.log(buttonHeight);
+  console.log(paddingHeight);
+
+  var setHeight = windowHeight - navbarHeight - paddingHeight*2 - buttonHeight;
+  $('#title-container').css("height", setHeight);
 };
 
 function positionCardText() {
