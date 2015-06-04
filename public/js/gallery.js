@@ -49,6 +49,7 @@ function fadeOutImages() {
   $(".grid-item").click(function() {
     loadCarouselImages($(this).attr('rel'));
     $(".grid").css({background:"transparent"});
+    $(".grid").css("pointer-events","none");
     var selected = this;
     $(function() {
       $('.grid div').sort(function(){

@@ -25,9 +25,7 @@ $(document).ready(function() {
 	function getNumColumns(){
 		var winWidth = $(window).width();
 		var column = 3;
-		if (winWidth<380) column = 1;
-		else if(winWidth >=380 && winWidth<850)  column = 2;
-		else if(winWidth>=850 && winWidth<1000)  column = 3;
+		if(winWidth>=850 && winWidth<1000)  column = 3;
 		else if(winWidth>=1000) column = 4;
 		return column;
 	}

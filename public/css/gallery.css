@@ -22,6 +22,11 @@
   float: left;
   height: 220px;
 }
+@media (max-width: 768px) {
+  .grid-item {
+    height: 100px;
+  }
+}
 
 #image1 {
   background-image: url("../images/06-hold-on-to-the-physical.jpg");
