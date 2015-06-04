@@ -51,7 +51,7 @@ function setArrowPosition() {
 
 function fadeOutImages() {
   $(".grid-item").click(function() {
-    if (calcWindowWidth() >= 768) {
+    if (calcWindowWidth() >= 650) {
       loadCarouselImages($(this).attr('rel'));
       $(".grid").css({background:"transparent"});
       $(".grid").css("pointer-events","none");

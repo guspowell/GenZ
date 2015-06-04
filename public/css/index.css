@@ -526,3 +526,24 @@ btn {
 }
 
 /************* BLACK FOOTER CONTAINER ************/
+
+
+/************* WIDE SCREENS ************/
+
+#black-footer {
+  margin: 0;
+  padding: 50px;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: black;
+  color: white;
+}
+
+/************* WIDE SCREENS ************/
+
+
+@media (min-width: 2000px) {
+  #image-container {
+    height: 680px;
+  }
+}
