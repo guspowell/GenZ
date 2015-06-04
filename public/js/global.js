@@ -27,7 +27,7 @@ function setTitleContainerHeight() {
   var windowHeight = window.innerHeight;
   var navbarHeight = 50;
   var paddingHeight = parseInt( $("#yellow-container").css('padding-top').replace("px", "") );
-  var buttonHeight = 40;
+  var buttonHeight = $("btn.read-report").outerHeight();
   console.log(buttonHeight);
   console.log(paddingHeight);
 
