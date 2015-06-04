@@ -6,11 +6,15 @@ $(document).ready( function() {
 
   setArrowPosition();
 
-  // $(window).resize(function( event ) {
-  //   if (isInSlideMode === false) { carouselHeight(); }
-  // });
+  $(window).resize(function( event ) {
+    calcWindowWidth();
+  });
 
 });
+
+function calcWindowWidth() {
+  return $(window).width();
+};
 
 function loadCarouselImages(selector) {
   var imagesJson = {
@@ -47,16 +51,18 @@ function setArrowPosition() {
 
 function fadeOutImages() {
   $(".grid-item").click(function() {
-    loadCarouselImages($(this).attr('rel'));
-    $(".grid").css({background:"transparent"});
-    $(".grid").css("pointer-events","none");
-    var selected = this;
-    $(function() {
-      $('.grid div').sort(function(){
-        return Math.random()*10 > 5 ? 1 : -1;
-      }).not(selected).each(function(i) {
-        $(this).delay((i++) * 100).fadeOut(200);
+    if (calcWindowWidth() >= 768) {
+      loadCarouselImages($(this).attr('rel'));
+      $(".grid").css({background:"transparent"});
+      $(".grid").css("pointer-events","none");
+      var selected = this;
+      $(function() {
+        $('.grid div').sort(function(){
+          return Math.random()*10 > 5 ? 1 : -1;
+          }).not(selected).each(function(i) {
+          $(this).delay((i++) * 100).fadeOut(200);
+        });
       });
-    });
+    };
   });
 };

@@ -35,11 +35,10 @@ btn {
   font-size: 15px;
   padding: 8px 30px 8px 30px;
   text-decoration: none;
-  outline: solid black 2px;
+  border: solid black 2px;
   color: black;
   display: inline-block;
   text-align: center;
-  color: black;
   background: #fac421;
 
 }
@@ -47,9 +46,9 @@ btn {
   btn {
     font-weight: 600;
     font-size: 18px;
-    padding: 10px 35px 10px 35px;
+    padding: 10px 30px 10px 30px;
     text-decoration: none;
-    outline: solid black 2px;
+    border: solid black 2px;
     color: black;
     display: inline-block;
     text-align: center;
@@ -99,7 +98,7 @@ btn {
 #title-container btn.watch-video {
   color: white;
   background: transparent;
-  outline: solid white 2px;
+  border: solid white 2px;
 }
 
 @media (min-width: 768px) {
@@ -124,7 +123,7 @@ btn {
   #title-container btn.watch-video:hover {
     background: white;
     color: black;
-    outline: solid white 2px;
+    border: solid white 2px;
   }
 }
 
