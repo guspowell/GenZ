@@ -3,11 +3,11 @@ $(document).ready(function(){
   positionCardText();
 
   if ($(window).width() > 768) {
-    $('#image-container.card6 #content').css('margin-top', 0);
+    $('#card6').css('margin-top', 0);
   };
 
   if ($(window).width() < 768) {
-    $('#image-container.card9').css('color', 'white');
+    $('#card9').css('color', 'white');
   };
 
   if($(window).height() > 620 ) { setTitleContainerHeight(); }
@@ -26,14 +26,14 @@ $(document).ready(function(){
 function setTitleContainerHeight() {
   var windowHeight = window.innerHeight;
   var navbarHeight = 50;
-  var paddingHeight = parseInt( $("#yellow-container").css('padding-top').replace("px", "") );
+  var paddingHeight = parseInt( $(".yellow.container").css('padding-top').replace("px", "") );
   var buttonHeight = $("btn.read-report").outerHeight();
   var setHeight = windowHeight - navbarHeight - paddingHeight*2 - buttonHeight;
   $('#title-container').css("height", setHeight);
 };
 
 function positionCardText() {
-  $('#image-container #content').each(function() {
-      $(this).css('margin-top', $(this).parent().height()-$(this).height());
+  $('.image-container').each(function() {
+      $(this).css('padding-top', $(this).parent().height()-$(this).height());
   });
 };
