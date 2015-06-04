@@ -40,7 +40,6 @@ btn {
   display: inline-block;
   text-align: center;
   background: #fac421;
-
 }
 @media (min-width: 768px) {
   btn {
@@ -490,7 +489,7 @@ btn {
 
 /************* WHITE FOOTER CONTAINER ************/
 
-#white-footer { font-size: 16px; background-color: blue;}
+/*#white-footer { font-size: 16px; background-color: blue;}
 
 #left-button {
   text-align: left;
@@ -509,7 +508,7 @@ btn {
   background-color: pink;
   padding: 0;
   height: 100px;
-}
+}*/
 
 /************* WHITE FOOTER CONTAINER ************/
 

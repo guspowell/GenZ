@@ -84,23 +84,28 @@
 
 /* ---- carousel ---- */
 
-#carousel.container {
-  width: 100%;
-  padding: 0;
-  position: absolute;
-    top: 0;
-    left: 0;
-  z-index: 0;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 100%;
-    margin: auto;
-}
+#carousel.container { display: none; }
 
-img.left-arrow {
-  height: 300px;
-}
-img.right-arrow {
-  height: 300px;
+@media (max-width: 2000px) {
+  #carousel.container {
+    display: inline;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+      top: 0;
+      left: 0;
+    z-index: 0;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+
+  img.left-arrow {
+    height: 300px;
+  }
+  img.right-arrow {
+    height: 300px;
+  }
 }
