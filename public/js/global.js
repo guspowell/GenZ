@@ -36,4 +36,7 @@ function positionCardText() {
   $('#image-container #content').each(function() {
       $(this).css('margin-top', $(this).parent().height()-$(this).height());
   });
+  $('#image-container #contentPNG').each(function() {
+      $(this).css('margin-top', ( $(this).parent().height()/2 ) - ( $(this).height()/2 ));
+  });
 };
