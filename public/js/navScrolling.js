@@ -22,7 +22,13 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $("#slide-1").offset().top - navbarHeight
     }, 1000);
-    $("btn.read-report").fadeOut('slow');
+    $("btn.read-report").fadeOut(1500);
+  });
+
+  $(window).scroll(function() {
+    if ( $(window).scrollTop() < $("#yellow-container").offset().top ) {
+      $("btn.read-report").fadeIn(1500);
+    };
   });
 
 });
