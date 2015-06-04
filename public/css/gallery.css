@@ -82,6 +82,18 @@
   background-size: cover;
 }
 
+.image-rollover {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.image-rollover:hover {
+  opacity: 1;
+}
+
 /* ---- carousel ---- */
 
 #carousel.container { display: none; }
