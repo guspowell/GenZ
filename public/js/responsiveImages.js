@@ -21,7 +21,6 @@ $(document).ready(function() {
 	};
 
 
-
 	function getNumColumns(){
 		var winWidth = $(window).width();
 		var column = 3;
