@@ -75,9 +75,8 @@ btn {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 }
 
-
-#title-container .container {
-  margin-top: 110px;
+#title-container {
+  padding-top: 100px;
 }
 
 #title-container .probe-image {
@@ -101,14 +100,13 @@ btn {
 }
 
 @media (min-width: 768px) {
+
   #title-container {
     height: 600px;
     background-size: cover;
     font-weight: 100;
   }
-  #title-container #content.container {
-    margin-top: 175px;
-  }
+
   #title-container p {
     font-size: 30px;
   }
@@ -124,27 +122,29 @@ btn {
     color: black;
     border: solid white 2px;
   }
+
 }
 
 /***** Introduction Container ****/
 
-#yellow-container {
+.container.yellow {
   padding: 15px 40px 40px 40px;
   background-color: #fac421;
   text-align: center;
 }
 
-#yellow-container h3 {
+.container.yellow h3 {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
   margin: 75px 0 0 0;
 }
-#yellow-container h3.see-below {
+
+.container.yellow h3.see-below {
   margin: 0;
 }
 
-#yellow-container p {
+.container.yellow p {
   font-size: 18px;
   line-height: 32px;
   text-align: left;
@@ -156,35 +156,38 @@ btn {
   margin: 20px 0 20px 0;
 }
 
-#yellow-container #download-box {
+.container.yellow #download-box {
   display: none;
 }
 
 @media (min-width: 768px) {
-  #yellow-container #download-box {
+  .container.yellow #download-box {
     display: inline;
     text-align: left;
   }
-  #yellow-container #author {
+  .container.yellow #author {
     font-size: 16px;
     line-height: 36px;
     margin-bottom: 30px;
   }
-  #yellow-container img.social-media {
+  .container.yellow img.social-media {
     height: 40px;
+    margin-left: 2em;
   }
-  #yellow-container btn.download {
+  .container.yellow btn.download {
+    display: block;
     margin-top: 40px;
+    max-width: 200px;
   }
-  #yellow-container {
+  .container.yellow {
     padding: 30px 40px 60px 40px;
   }
-  #yellow-container h3 {
+  .container.yellow h3 {
     margin: 100px 0 100px 0;
     font-size: 30px;
     line-height: 60px;
   }
-  #yellow-container h3.see-below {
+  .container.yellow h3.see-below {
     font-size: 36px;
     margin-bottom: 30px;
   }
@@ -199,75 +202,69 @@ btn {
     margin-bottom: 30px;
     margin-top: 0;
   }
-  #yellow-container p {
+  .container.yellow p {
     font-size: 16px;
     line-height: 32px;
     margin-top: 0;
   }
-  #yellow-container .down-arrow {
+  .container.yellow .down-arrow {
     width: 250px;
   }
 }
 
 /***** Cards: Image ****/
 
-#image-container {
+.image-container {
   height: 320px;
   padding: 40px 40px 20px 40px;
   color: white;
   background-size: cover;
 }
 
-#image-container .satement {
+.image-container .satement {
   font-size: 15px;
 }
-#image-container p img {
-  width: 50%;
-}
-#image-container .source {
+.image-container .source {
   font-size: 11px;
 }
 
 @media (min-width: 768px) {
-  #image-container {
+  .image-container {
     height: 550px;
     padding: 60px 40px 50px 40px;
-  }
-  #image-container p img {
-    width: 70%;
   }
 }
 
 /***** Cards: Description ****/
 
-#card-description {
+.card-description {
  padding: 40px;
  text-align: center;
 }
 
-#card-description h2 {
+.card-description h2 {
   font-size: 30px;
   line-height: 45px;
   text-align: center;
   margin-bottom: 30px;
 }
 
-#card-description p {
+card-description p {
   font-size: 18px;
   line-height: 28px;
 }
 
 @media (min-width: 768px) {
-    #card-description {
+    .card-description {
       padding-top: 80px;
       padding-bottom: 130px;
     }
-    #card-description h2 {
+    .card-description h2 {
       font-size: 60px;
       font-weight: 100;
       line-height: 90px;
     }
-    #card-description p {
+    .card-description p {
       padding-top: 40px;
       font-size: 30px;
       line-height: 60px;
@@ -278,31 +275,32 @@ btn {
 
 /***** Loading Images into Cards ****/
 
-#image-container.card1 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* W3C */
+#card1 {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* Chrome,Safari4+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
   text-align: right;
   color: white;
 }
 @media (min-width: 768px) {
-  #image-container.card1 {
+  #card1 {
+    background: url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
     background: -webkit-image-set( url("../images/landing-page/01-generation-entrepreneur@1x.jpg") 1x, url("../images/landing-page/01-generation-entrepreneur@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
   }
-  #image-container .statement {
+  .image-container .statement {
     font-size: 24px;
   }
-  #image-container .source {
+  .image-container .source {
     font-size: 18px;
   }
 }
 
-#image-container.card2 {
+#card2 {
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 49%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/02_shifting_gender_norms.png") no-repeat center; /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 49%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* Chrome10+,Safari5.1+ */
@@ -314,151 +312,151 @@ btn {
   background-color: #46A9AD;
 }
 @media (min-width: 768px) {
-  #image-container.card2 {
+  #card2 {
     background: url("../images/02_shifting_gender_norms.png") no-repeat right;
     background-color: #46A9AD;
   }
 }
 
-#image-container.card3 {
+#card3 {
   background-color: #BCE3EE;
   background-image: url("../images/03_Intertwined_Wolrds.png");
   color: black;
   text-align: right;
 }
 @media (min-width: 768px) {
-  #image-container.card3 {
+  #card3 {
     background-position: left;
   }
 }
 
-#image-container.card4 {
-  background: url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center;
+#card4 {
+  background: url("../images/04-embracing-extremes.jpg") no-repeat center;
   background-size: auto 100%;
 }
 @media (min-width: 768px) {
-  #image-container.card4 {
+  #card4 {
     background-size: cover;
     background-position: 0 -50px;
     background: -webkit-image-set( url("../images/landing-page/04-embracing-extremes@1x.jpg") 1x, url("../images/landing-page/04-embracing-extremes@2x.jpg") 2x ) no-repeat center;
   }
 }
 
-#image-container.card5 {
+#card5 {
   background-color: #03A989;
   background-image: url("../images/05-pro-activly-empathetic.png");
   text-align: right;
 }
 @media (min-width: 768px) {
-  #image-container.card5 {
+  #card5 {
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 /********* image I have cuts the top off watering can ********/
 
-#image-container.card6 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* W3C */
+#card6 {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
 @media (min-width: 768px) {
-  #image-container.card6 {
+  #card6 {
     background: -webkit-image-set( url("../images/landing-page/06-hold-physical@1x.jpg") 1x, url("../images/landing-page/06-hold-physical@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
     background-position: 0 0;
   }
 }
 
-#image-container.card7 {
+#card7 {
   background-color: #E6AC94;
   background-image: url("../images/07-empowered-healthcare.png");
   color: black;
   text-align: right;
 }
 @media (min-width: 768px) {
-  #image-container.card7 {
+  #card7 {
     background-image: url("../images/07-empowered-healthcare.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
-#image-container.card8 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* FF3.6+ */
+#card8 {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* W3C */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
 @media (min-width: 768px) {
-  #image-container.card8 {
+  #card8 {
     background: -webkit-image-set( url("../images/landing-page/08-privacy-tightrope@1x.jpg") 1x, url("../images/landing-page/08-privacy-tightrope@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
   }
 }
 
-#image-container.card9 {
+#card9 {
   background-color: #FAC421;
   background-image: url("../images/09-creative-communicators.png");
   color: black;
   text-align: right;
 }
 @media (min-width: 768px) {
-  #image-container.card9 {
-    background-image: url("../images/09-creative-communicators.jpg") no-repeat center; /* W3C */
+  #card9 {
+    background-image: url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
 
-#image-container.card10 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/landing-page/10-marketing-etiquette@1x.jpg") center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* W3C */
+#card10 {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/10-marketing-with-etiquette.jpg") center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8a000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
   text-align: right;
 }
 @media (min-width: 768px) {
-  #image-container.card10 {
+  #card10 {
     background: -webkit-image-set( url("../images/landing-page/10-marketing-etiquette@1x.jpg") 1x, url("../images/landing-page/10-marketing-etiquette@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
     background-position: 0 -20px;
   }
 }
 
-#image-container.card11 {
+#card11 {
   background-color: #D32650;
   background-image: url("../images/11-open-ended-technology.png");
   background-position: right;
   background-repeat: no-repeat;
 }
 
-#image-container.card12 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/landing-page/12-power-tech@1x.jpg") center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* W3C */
+#card12 {
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/12-superpower-tech.jpg") center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8a000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
 @media (min-width: 768px) {
-  #image-container.card12 {
+  #card12 {
     background: -webkit-image-set( url("../images/landing-page/12-power-tech@1x.jpg") 1x, url("../images/landing-page/12-power-tech@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
     background-position: 0 0;
@@ -467,38 +465,43 @@ btn {
 
 /************* YELLOW FOOTER CONTAINER ************/
 
-#yellow-container.container.footer {
-  padding: 40px;
+
+#yellow-footer {
+    padding: 40px;
 }
+
 @media (min-width: 768px) {
-  #yellow-container.container.footer {
-    padding-top: 150px;
-    padding-bottom: 200px;
-  }
-  #yellow-container.container.footer p {
-    margin-top: 0;
-  }
+
+    #yellow-footer {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    #yellow-footer p {
+        margin-top: 0;
+    }
+
 }
 
 
-#yellow-container.container.footer #author-column {
+#yellow-footer #author-column {
   padding: 0 50px 0 0;
 }
 
-#yellow-container.container.footer #authors {
+#yellow-footer #authors {
   margin: 150px 0 0 0;
   text-align: left;
 }
 
-#yellow-container.container.footer #authors img {
+#yellow-footer #authors img {
   width: 86px;
 }
 
-#yellow-container.container.footer #author-details {
+#yellow-footer #author-details {
   margin: 20px 0 20px 0;
 }
 
-#yellow-container.container.footer #author-bio {
+#yellow-footer #author-bio {
   line-height: 36px;
 }
 
@@ -511,15 +514,12 @@ btn {
 /************* WHITE FOOTER CONTAINER ************/
 
 /*#white-footer { font-size: 16px; background-color: blue;}
-
 #left-button {
   text-align: left;
 }
-
 #right-button {
   text-align: right;
 }
-
 #white-footer #left-button .col-md-2 {
   background-color: red;
   height: 100px;

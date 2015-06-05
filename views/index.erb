@@ -12,25 +12,15 @@
     <link href="css/index.css" rel="stylesheet">
     <link href="css/gallery.css" rel="stylesheet">
 
-    <script src="//use.typekit.net/qtr4gez.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/responsiveImages.js"></script>
-    <script src="js/global.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/navScrolling.js"></script>
-    <script src="js/skrollr.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
   </head>
 
   <body>
 
     <div id="skrollr-body"></div>
+    <!--------------------------------------------------------------------------
 
+        NAVIGATION BAR
+    ---------------------------------------------------------------------------->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -39,8 +29,14 @@
       </div>
     </nav>
 
-    <div class="container" id="title-container">
-      <div class="container" id="content">
+
+    <!--------------------------------------------------------------------------
+
+        TITLE SECTION
+    ---------------------------------------------------------------------------->
+
+    <div id="title-container" class="container">
+
         <div class="row">
           <div class="col-md-12">
             <img class="probe-image" src="images/future-probe.svg"/>
@@ -49,18 +45,25 @@
             <btn class="watch-video">Watch Video</btn>
           </div>
         </div>
-      </div>
+
     </div>
 
-    <div class="container" id="yellow-container">
+
+    <!--------------------------------------------------------------------------
+
+        FIRST YELLOW SECTION
+    ---------------------------------------------------------------------------->
+
+    <div id="yellow-section-1" class="container yellow">
+
       <div class="row">
         <div class="col-md-8 col-centered">
           <btn class="read-report">Read Report</btn>
-          <h3> A DRAMATICALLY DIFFERENT BREED OF CONSUMER IS ON THE HORIZON.  UNENCUMBERED BY THE DRAG ANCHOR OF THE PAST, AND
-            EMPOWERED BY RAPIDLY ADVANCING TECHNOLOGY, THEY WILL FORGE A RADICALLY ALTERED NEW WORLD.
+          <h3> A DRAMATICALLY DIFFERENT BREED OF CONSUMER IS ON THE HORIZON.  UNENCUMBERED BY THE DRAG ANCHOR OF THE PAST, AND EMPOWERED BY RAPIDLY ADVANCING TECHNOLOGY, THEY WILL FORGE A RADICALLY ALTERED NEW WORLD.
           </h3>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-2 col-md-offset-1" id="download-box">
           <div class="row">
@@ -88,13 +91,20 @@
           </p>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-5 col-centered" id="meet-the-participants">
           <h3 class="see-below">MEET THE PARTICIPANTS</h3>
           <img class="down-arrow" src="images/down_arrow.svg">
         </div>
       </div>
+
     </div>
+
+    <!--------------------------------------------------------------------------
+
+        IMAGE GALLERY
+    ---------------------------------------------------------------------------->
 
     <div class="container" id="image-gallery">
       <div class="grid">
@@ -133,7 +143,12 @@
       </div>
     </div>
 
-    <div class="container" id="yellow-container">
+    <!--------------------------------------------------------------------------
+
+        SECOND YELLOW SECTION
+    ---------------------------------------------------------------------------->
+
+    <div id="yellow-section-2" class="container yellow">
       <div class="row">
         <div class="col-md-5 col-centered see-below" id="what-we-learned">
           <h3 >WHAT WE LEARNED</h3>
@@ -142,29 +157,39 @@
       </div>
     </div>
 
-    <section id="slide-1" class="homeSlide">
-      <div id="image-container" class="card1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% -100px;" data-anchor-target="#slide-1">
-        <div class="row" id="content">
-          <div class="col-md-12">
+
+    <!--------------------------------------------------------------------------
+
+        IMAGE SECTION - HENRY
+    ---------------------------------------------------------------------------->
+
+    <section id="homeSection">
+
+        <div id="card1" class="container image-container" data-bottom-top="background-position: 50% 10%;" data-top-bottom="background-position: 50% 80%" data-anchor-target="#homeSection">
+
             <div class="row">
-              <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
-                <p class="statement">"I just hope people are going to think this was the generation of entrepeneurs"</p>
-              </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
+                        <p class="statement">"I just hope people are going to think this was the generation of entrepeneurs"</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
+                            <p class="source">Henry, 10 years old<br>Entrepeneur &amp; Author<br>NOT BEFORE TEA</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
-                <p class="source">
-                  Henry, 10 years old<br>
-                  Entrepeneur & Author<br>
-                  NOT BEFORE TEA
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+
     </section>
-    <div class="container" id="card-description">
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>GENERATION ENTREPENEUR<h2>
@@ -173,28 +198,37 @@
       </div>
     </div>
 
-    <section id="slide-2" class="homeSlide">
-      <div id="image-container" class="card2" data-center="background-position: 90% 0px;" data-top-bottom="background-position: 90% 100px;" data-bottom-top="background-position: 90% -100px;" data-anchor-target="#slide-2">
-      <div class="row" id="contentPNG">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
-              <p class="statement"><img src="../images/landing-page/copy/empowered-healthcare-03.png"</p>
-              <!-- <p class="statement">"The number of stay at home dads* is now 7.5 the amount it was in 1989"</p> -->
+
+    <!--------------------------------------------------------------------------
+
+        ILLUSTRATION 1
+    ---------------------------------------------------------------------------->
+    <section id="section2">
+        <div id="card2" class="image-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
+                            <p class="statement">"The number of stay at home dads* is now 7.5 the amount it was in 1989"</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
+                            <p class="source">Pew research centre<br>
+                            *With the primary purpose being to care for their home and family.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- <div class="row">
-            <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
-              <p class="source">Pew research centre<br>
-                *With the primary purpose being to care for their home and family.
-              </p>
-            </div>
-          </div> -->
         </div>
-      </div>
-    </div>
     </section>
-    <div class="container" id="card-description">
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>SHIFTING GENDER NORMS<h2>
@@ -203,80 +237,115 @@
       </div>
     </div>
 
-    <section id="slide-3" class="homeSlide">
-    <div id="image-container" class="card3" data-center="background-position: 0px -1000px;" data-top-bottom="background-position: 0px 100px;" data-bottom-top="background-position: 0px -100px;" data-anchor-target="#slide-3">
-      <div class="row" id="content">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
+    <!--------------------------------------------------------------------------
 
-              <p class="statement">In 2012, there were 14 billion devices connected to the internet. Cisco Predicted that there will be 50 billion in 2020.</p>
+        ILLUSTRATION 2
+    ---------------------------------------------------------------------------->
+    <section id="section3">
+        <div id="card3" class="image-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
+                  <p class="statement">In 2012, there were 14 billion devices connected to the internet. Cisco Predicted that there will be 50 billion in 2020.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container" id="card-description">
+    </section>
+
+
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
-
           <h2>INTERTWINED WORLDS<h2>
           <p>Gen Z are coming of age in an era of rapidly advancing technology. Having little memory of a world without high-speed connectivity and gestural interfaces, Gen Z are true digital natives. Maturing as The Internet of Things expands, they will expect the real and virtual worlds to work together in a seamless way.<p>
         </div>
       </div>
     </div>
 
-    <section id="slide-4" class="homeSlide">
-      <div id="image-container" class="card4" data-center="background-position: 50% -50px;" data-top-bottom="background-position: 50% 100px;" data-bottom-top="background-position: 50% -200px;" data-anchor-target="#slide-4">
-      <div class="row" id="content">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
-              <p class="statement">“There’s no real challenge in day-to-day life now I find. Intellectually, sure, like at school and stuff, I like learning and everything. But physically we don’t really exert ourselves any more that much and especially with all the technology”</p>
+    <!--------------------------------------------------------------------------
+
+        IMAGE SECTION - LEWIS
+    ---------------------------------------------------------------------------->
+
+    <section id="section4">
+
+        <div id="card4" class="image-container" data-bottom-top="background-position: 50% 20%;" data-top-bottom="background-position: 50% 80%" data-anchor-target="#section4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
+                            <p class="statement">There's no real challenge in day-to-day life now I find. Intellectually, sure, like at school and stuff, I like learning and everything. But physically we don't really exert ourselves any more that much and especially with all the technology</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
+                            <p class="source">
+                            Lewis, 16 years old,<br>
+                            EXTREME CHALLENGER,<br>
+                            GUINNESS WORLD RECORD HOLDER
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
-              <p class="source">
-                Lewis, 16 years old,<br>
-                EXTREME CHALLENGER,<br>
-                GUINNESS WORLD RECORD HOLDER
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+
     </section>
-    <div class="container" id="card-description">
+
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
 
           <h2>EMBRACING EXTREMES<h2>
-          <p>While Gen Z are highly appreciative of the global connectivity afforded to them since birth, they are now starting to recognise its downside. They feel they have less to discover than those who have gone before them. This ‘adventure deficit’ is pushing them to take on extreme challenges from an early age; whether that be by setting global records, or developing innovative new technologies. This points towards a future where flourishing brands will be those that can quench the consumer thirst for adventure.<p>
+          <p>While Gen Z are highly appreciative of the global connectivity afforded to them since birth, they are now starting to recognise its downside. They feel they have less to discover than those who have gone before them. This ҡdventure deficitҠis pushing them to take on extreme challenges from an early age; whether that be by setting global records, or developing innovative new technologies. This points towards a future where flourishing brands will be those that can quench the consumer thirst for adventure.<p>
         </div>
       </div>
     </div>
 
-    <section id="slide-5" class="homeSlide">
-      <div id="image-container" class="card5" data-center="background-position: 0px 500px;" data-bottom-top="background-position: 0px -100px" data-anchor-target="#slide-5">
-      <div class="row" id="content">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
-              <p class="statement">Generation Z are 50% more likely to care anout making an impact on the world through their work than their millenial counterparts did at the same age</p>
-              <!-- <p class="statement"><img src="../images/landing-page/copy/pro-activately-empathetic.png"</p> -->
+
+    <!--------------------------------------------------------------------------
+
+        ILLUSTRATION 3
+    ---------------------------------------------------------------------------->
+    <section id="section5">
+        <div id="card5" class="image-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
+                            <p class="statement">Generation Z are 50% more likely to care anout making an impact on the world through their work than their millenial counterparts did at the same age</p>
+                            <!-- <p class="statement"><img src="../images/landing-page/copy/pro-activately-empathetic.png"</p> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
+                            <p class="source">Times Magazine</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
-              <p class="source">Times Magazine</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="container" id="card-description">
+    </section>
+
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>PRO-ACTIVATELY EMPATHETIC<h2>
@@ -285,28 +354,39 @@
       </div>
     </div>
 
-    <section id="slide-6" class="homeSlide">
-    <div id="image-container" class="card6" data-center="background-position: 50% 500px;" data-bottom-top="background-position: 50% -100px" data-anchor-target="#slide-6">
-      <div class="row" id="content">
-        <div class="col-md-12">
+
+    <!--------------------------------------------------------------------------
+
+        IMAGE SECTION - ELLIE
+    ---------------------------------------------------------------------------->
+    <section id="section6">
+        <div id="card6" class="image-container" data-bottom-top="background-position: 50% 0%;" data-top-bottom="background-position: 50% 50%" data-anchor-target="#section6">
           <div class="row">
-            <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
-              <p class="statement">“Say one day the Internet crashed, what would I have to show for it,  all the work that I had done wouldn’t be there. So I like  to work in the real world as well”</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
-              <p class="source">
-                Ellie, 16 years old,<br>
-                FASHION & DIY BLOGGER,<br>
-                Fashion Rhapsody
-              </p>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
+                  <p class="statement">ԓay one day the Internet crashed, what would I have to show for it,  all the work that I had done wouldnӴ be there. So I like  to work in the real world as wellԼ/p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
+                  <p class="source">
+                    Ellie, 16 years old,<br>
+                    FASHION &amp; DIY BLOGGER,<br>
+                    Fashion Rhapsody
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container" id="card-description">
+    </section>
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
 
@@ -316,25 +396,36 @@
       </div>
     </div>
 
-    <section id="slide-7" class="homeSlide">
-      <div id="image-container" class="card7" data-center="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-7">
-      <div class="row" id="contentPNG">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
-              <p class="statement"><img src="../images/landing-page/copy/empowered-healthcare-03.png"</p>
-              <!-- <p class="statement">By 2017, there will be 8 times as many wearable devices than there were in 2011</p> -->
+
+    <!--------------------------------------------------------------------------
+
+        ILLUSTRATION 4
+    ---------------------------------------------------------------------------->
+    <section id="section7">
+        <div id="card7" class="image-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
+                            <p class="statement">By 2017, there will be 8 times as many wearable devices than there were in 2011</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
+                            <p class="source">sport and healthcare ABIRESEARCH</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <!-- <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
-              <p class="source">sport and healthcare ABIRESEARCH</p>
-            </div> -->
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="container" id="card-description">
+    </section>
+
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>EMPOWERED HEALTHCARE<h2>
@@ -343,13 +434,17 @@
       </div>
     </div>
 
-    <section id="slide-8" class="homeSlide">
-      <div id="image-container" class="card8" data-center="background-position: 50% -100px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-8">
-        <div class="row" id="content">
+    <!--------------------------------------------------------------------------
+
+        IMAGE SECTION - SIMRAN
+    ---------------------------------------------------------------------------->
+    <section id="section8">
+      <div id="card8" class="image-container" data-bottom-top="background-position: 50% 20%;" data-top-bottom="background-position: 50% 80%" data-anchor-target="#section8">
+        <div class="row">
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
-                <p class="statement">“It is scary that everything you do online is always going to be there. I guess it is cool to have a digital footprint but it can be dangerous at the same time.”</p>
+                <p class="statement">ԉt is scary that everything you do online is always going to be there. I guess it is cool to have a digital footprint but it can be dangerous at the same time.Լ/p>
               </div>
             </div>
             <div class="row">
@@ -364,18 +459,28 @@
         </div>
       </div>
     </section>
-    <div class="container" id="card-description">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 col-centered">
-          <h2>PRIVACY TIGHTROPE<h2>
-            <p>Hype surrounding data privacy is proving to be a formative influence on Gen Z. Learning from infamous Millennial mistakes and being constantly surrounded by a barrage of controversial news stories, such as the Edward Snowden NSA revelations, is creating a highly wary consumer group. Expect Gen Z to be even more cautious over how their data is stored and used than any previous generation.</p>
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 col-centered">
+                <h2>PRIVACY TIGHTROPE<h2>
+                <p>Hype surrounding data privacy is proving to be a formative influence on Gen Z. Learning from infamous Millennial mistakes and being constantly surrounded by a barrage of controversial news stories, such as the Edward Snowden NSA revelations, is creating a highly wary consumer group. Expect Gen Z to be even more cautious over how their data is stored and used than any previous generation.</p>
+            </div>
         </div>
-      </div>
     </div>
 
-    <section id="slide-9" class="homeSlide">
-      <div id="image-container" class="card9" data-center="background-position: 0px -100px;" data-top-bottom="background-position: 0px -200px;" data-bottom-top="background-position: 0px 100px;" data-anchor-target="#slide-9">
-        <div class="row" id="content">
+
+    <!--------------------------------------------------------------------------
+
+        ILLUSTRATION 5
+    ---------------------------------------------------------------------------->
+    <section id="section9">
+      <div id="card9" class="image-container">
+        <div class="row">
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
@@ -391,7 +496,12 @@
         </div>
       </div>
     </section>
-    <div class="container" id="card-description">
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>CREATIVE COMMUNICATORS<h2>
@@ -400,57 +510,68 @@
       </div>
     </div>
 
-    <section id="slide-10" class="homeSlide">
-      <div id="image-container" class="card10" data-center="background-position: 50% -100px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-10">
-        <div class="row" id="content">
-          <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
 
-                <p class="statement">“It’s a bit of a personal invasion sometimes... there’s not one place on the internet that you can go where somebody isn’t trying to sell you something or trying to get you to do something or sign up to something’’</p>
-              </div>
-            </div>
+    <!--------------------------------------------------------------------------
+
+        IMAGE SECTION - ROSE
+    ---------------------------------------------------------------------------->
+    <section id="section10">
+        <div id="card10" class="image-container" data-bottom-top="background-position: 50% 0%;" data-top-bottom="background-position: 50% 70%" data-anchor-target="#section10">
             <div class="row">
-              <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
-                <p class="source">
-                  Rose, 17 years old,<br>
-                  FASHION & DIY BLOGGER,<br>
-                  Fashion Rhapsody
-                </p>
-              </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
+
+                        <p class="statement">It's a bit of a personal invasion sometimes... there's not one place on the internet that you can go where somebody isn'tӴ trying to sell you something or trying to get you to do something or sign up to something</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
+                            <p class="source">Rose, 17 years old,<br>FASHION &amp; DIY BLOGGER,<br>Fashion Rhapsody</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <div class="container" id="card-description">
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>MARKETING WITH ETIQUETTE<h2>
-            <p>One of the first rules of marketing is to ‘travel to where your consumer is’. However, emerging technology has meant that brands can now reach their target audience 24 hours a day, resulting in Gen Z feeling bombarded by brand messaging. In tomorrow’s consumer landscape, care will need to be taken to observe social etiquette, to ensure that messages are targeted and relevant rather than a personal invasion.</p>
+            <p>One of the first rules of marketing is to Ҵravel to where your consumer isҮ However, emerging technology has meant that brands can now reach their target audience 24 hours a day, resulting in Gen Z feeling bombarded by brand messaging. In tomorrowӳ consumer landscape, care will need to be taken to observe social etiquette, to ensure that messages are targeted and relevant rather than a personal invasion.</p>
         </div>
       </div>
     </div>
 
-    <section id="slide-11" class="homeSlide">
-      <div id="image-container" class="card11" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-11">
-        <div class="row" id="content"
-          <div class="col-md-12">
+
+    <!--------------------------------------------------------------------------
+
+        ILLUSTRATION 6
+    ---------------------------------------------------------------------------->
+    <section id="section11">
+        <div id="card11" class="image-container">
             <div class="row">
-              <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
-                <p class="statement">The price of diy computers has dropped by 94% since 1990.</p>
-              </div>
+                <div class="col-md-5 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <p class="statement">The price of diy computers has dropped by 94% since 1990.</p>
+                    <p class="source">*Compare price from raspberrypi site and wikipedia</p>
+                </div>
             </div>
-            <div class="row">
-              <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
-                <p class="source">*Compare price from raspberrypi site and wikipedia</p>
-              </div>
-            </div>
-          </div>
+
         </div>
-      </div>
     </section>
-    <div class="container" id="card-description">
+
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
           <h2>OPEN-ENDED TECHNOLOGY<h2>
@@ -459,16 +580,20 @@
       </div>
     </div>
 
-    <section id="slide-12" class="homeSlide">
-      <div id="image-container" class="card12" data-center="background-position: 50% -100px;" data-top-bottom="background-position: 50% -200px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-12">
-        <div class="row" id="content">
+    <!--------------------------------------------------------------------------
+
+        IMAGE SECTION - ELIGH
+    ---------------------------------------------------------------------------->
+    <section id="section12">
+      <div id="card12" class="image-container" data-bottom-top="background-position: 50% 0%;" data-top-bottom="background-position: 50% 60%" data-anchor-target="#section12">
+        <div class="row">
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
                 <p class="statement">
-                  “I think our generation will be defined by technology ...
-                  I want our generation to be remembered as it’s almost we discovered a power which is technology but
-                  we used it well”
+                  I think our generation will be defined by technology...
+                  I want our generation to be remembered as itӳ almost we discovered a power which is technology but
+                  we used it wellԍ
                 </p>
               </div>
             </div>
@@ -476,7 +601,7 @@
               <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
                 <p class="source">
                   Eligh, 16 years old,<br>
-                  GAMER & DEVELOPER
+                  GAMER &amp; DEVELOPER
                 </p>
               </div>
             </div>
@@ -484,7 +609,12 @@
         </div>
       </div>
     </section>
-    <div class="container" id="card-description">
+
+    <!--------------------------------------------------------------------------
+
+        CARD DESCRIPTOR
+    ---------------------------------------------------------------------------->
+    <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
 
@@ -494,102 +624,119 @@
       </div>
     </div>
 
-    <div class="container footer" id="yellow-container">
 
-      <div class="col-md-10 col-centered">
+    <!--------------------------------------------------------------------------
 
-      <div class="row">
-        <div class="col-md-2" id="download-box">
-          <div class="row">
-            <div class="col-md-6" ><img class="social-media" src="images/twitter.svg"/></div>
-            <div class="col-md-6" ><img class="social-media" src="images/like.svg"/></div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <btn class="download">Download PDF</btn>
+        FOOTER SECTION
+    ---------------------------------------------------------------------------->
+    <div id="yellow-footer" class="yellow container">
+
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+
+
+                <div class="row">
+                    <div class="col-sm-4" id="download-box">
+
+                        <img class="social-media" src="images/twitter.svg"/>
+                        <img class="social-media" src="images/like.svg"/>
+                        <btn class="download">Download PDF</btn>
+
+                    </div>
+
+                    <div class="col-sm-8">
+                        <p>Who SP are and why we are so brilliant Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim
+                        ut metus posuere cursus ac in elit. Morbi blandit, justo non elementum elementum, felis nisl iaculis nisi, et
+                        pharetra eros nunc eu dui. Vivamus ut elit a enim convallis auctor a eu metu.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-          </div>
+
         </div>
-        <div class="col-md-9 col-md-offset-1">
-          <p> who SP are and why we are so brilliant Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim
-            ut metus posuere cursus ac in elit. Morbi blandit, justo non elementum elementum, felis nisl iaculis nisi, et
-            pharetra eros nunc eu dui. Vivamus ut elit a enim convallis auctor a eu metu.
-          </p>
+
+
+        <div class="row" id="authors">
+
+            <div class="col-md-10 col-md-offset-1">
+
+                <div class="row">
+
+
+                    <div class="col-md-3" id="author-column">
+                        <div class="row">
+                            <div class="col-md-12"><img class="author-image" src="images/richard-seymour.svg"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-details">
+                                <strong>Richard Seymour</strong><br>
+                                Fearless Leader <br>
+                                @seymourpowell
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" id="author-column">
+                        <div class="row">
+                            <div class="col-md-12" id="author-image"><img src="images/richard-seymour.svg"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-details">
+                                <strong>Richard Seymour</strong><br>
+                                Fearless Leader <br>
+                                @seymourpowell
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" id="author-column">
+                        <div class="row">
+                            <div class="col-md-12" id="author-image"><img src="images/richard-seymour.svg"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-details">
+                                <strong>Richard Seymour</strong><br>
+                                Fearless Leader <br>
+                                @seymourpowell
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" id="author-column">
+                        <div class="row">
+                            <div class="col-md-12" id="author-image"><img src="images/richard-seymour.svg"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-details">
+                                <strong>Richard Seymour</strong><br>
+                                Fearless Leader <br>
+                                @seymourpowell
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="author-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <div class="row" id="authors">
-        <div class="col-md-3" id="author-column">
-          <div class="row">
-            <div class="col-md-12"><img class="author-image" src="images/richard-seymour.svg"/></div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-details">
-              <strong>Richard Seymour</strong><br>
-              Fearless Leader <br>
-              @seymourpowell
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3" id="author-column">
-          <div class="row">
-            <div class="col-md-12" id="author-image"><img src="images/richard-seymour.svg"/></div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-details">
-              <strong>Richard Seymour</strong><br>
-              Fearless Leader <br>
-              @seymourpowell
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3" id="author-column">
-          <div class="row">
-            <div class="col-md-12" id="author-image"><img src="images/richard-seymour.svg"/></div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-details">
-              <strong>Richard Seymour</strong><br>
-              Fearless Leader <br>
-              @seymourpowell
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3" id="author-column">
-          <div class="row">
-            <div class="col-md-12" id="author-image"><img src="images/richard-seymour.svg"/></div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-details">
-              <strong>Richard Seymour</strong><br>
-              Fearless Leader <br>
-              @seymourpowell
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12" id="author-bio">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim ut metus posuere cursus.
-            </div>
-          </div>
-        </div>
-      </div>
 
     </div>
-    </div>
+
+
+
 
     <!-- <div class="container" id="white-footer">
       <div class="row">
@@ -616,7 +763,7 @@
       </div>
     </div> -->
 
-    <div class="container" id="black-footer">
+    <footer class="container" id="black-footer">
       <div class="row">
         <div class="col-md-10 col-centered">
           <div class="col-md-4">
@@ -629,13 +776,28 @@
             design@seymourpowell.com
           </div>
           <div class="col-md-4">
-            © 2015 seymourpowell <br>
+            &copy;2015 seymourpowell <br>
             disclaimer
           </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-  </body>
+    <script src="//use.typekit.net/qtr4gez.js"></script>
+   <script>try{Typekit.load();}catch(e){}</script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/responsiveImages.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/navScrolling.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/parallax.js"></script>
+        <script>
+            console.log("what?");
+          </script>
+</body>
 
 </html>
