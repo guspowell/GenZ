@@ -233,6 +233,9 @@ btn {
     height: 550px;
     padding: 60px 40px 50px 40px;
   }
+  .image-container p img {
+    width: 70%;
+  }
 }
 
 /***** Cards: Description ****/
