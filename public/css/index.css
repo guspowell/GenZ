@@ -74,17 +74,9 @@ btn {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
 }
 
-#title-container {
-  padding-top: 20%;
-}
 
-#title-container .probe-image {
-  width: 25px;
-  margin: 10px;
-}
-
-#title-container p {
-  font-size: 20px;
+#title-container .content {
+  margin-top: 40%;
 }
 
 #title-container h1 {
@@ -101,12 +93,12 @@ btn {
 @media (min-width: 768px) {
 
   #title-container {
-    height: 600px;
     background-size: cover;
     font-weight: 100;
-    padding-top: 20%;
   }
-
+  #title-container .content {
+    margin-top: 20%;
+  }
   #title-container p {
     font-size: 30px;
   }
