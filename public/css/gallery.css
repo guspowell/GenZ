@@ -34,43 +34,43 @@
 }
 
 #image1 {
-  background-image: url("../images/06-hold-on-to-the-physical.jpg");
+  background-image: -webkit-image-set( url("../images/bios/01-ellie/headshot/ellie-headshot@1x.jpg") 1x, url("../images/bios/01-ellie/headshot/ellie-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image2 {
-  background-image: url("../images/image8.png");
+  background-image: -webkit-image-set( url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg") 1x, url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image3 {
-  background-image: url("../images/12-superpower-tech.jpg");
+  background-image: -webkit-image-set( url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg") 1x, url("../images/bios/03-eligh/headshot/eligh-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image4 {
-  background-image: url("../images/image12.png");
+  background-image: -webkit-image-set( url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg") 1x, url("../images/bios/04-elliot/headshot/elliot-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image5 {
-  background-image: url("../images/image10.png");
+  background-image: -webkit-image-set( url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg") 1x, url("../images/bios/05-alessandra/headshot/alessandra-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image6 {
-  background-image: url("../images/image2.png");
+  background-image: -webkit-image-set( url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg") 1x, url("../images/bios/06-lewis/headshot/lewis-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image7 {
-  background-image: url("../images/image5.png");
+  background-image: -webkit-image-set( url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg") 1x, url("../images/bios/07-simran/headshot/simran-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image8 {
-  background-image: url("../images/08-privacy-tightrope.jpg");
+  background-image: -webkit-image-set( url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg") 1x, url("../images/bios/08-rose/headshot/rose-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image9 {
-  background-image: url("../images/10-marketing-with-etiquette.jpg");
+  background-image: -webkit-image-set( url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg") 1x, url("../images/bios/09-henry/headshot/henry-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image10 {
-  background-image: url("../images/01-generation-entrepreneur.jpg");
+  background-image: -webkit-image-set( url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg") 1x, url("../images/bios/10-jaysea/headshot/jaysea-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image11 {
