@@ -2,6 +2,8 @@ $(document).ready( function() {
 
   carouselHeight();
 
+  rolloverText();
+
   fadeOutImages();
 
   setArrowPosition();
@@ -16,25 +18,31 @@ function calcWindowWidth() {
   return $(window).width();
 };
 
-function loadCarouselImages(selector) {
-  var imagesJson = {
-    "generation-entrepreneur" : ["10-marketing-with-etiquette.jpg","02_shifting_gender_norms.png", "04-embracing-extremes.jpg"],
-    "shifting-gender-norms" : ["08-privacy-tightrope.jpg", "09-creative-communicators.png"]
-  }
-  var imageArray = imagesJson[selector]
-
-  var content = "";
-
-  for(var i=0; i<imageArray.length; i++) {
-    var activeImage = imageArray[0]
-    var image = imageArray[i];
-    content += "<div class='item'>" +
-              "<img src='images/" + image + "' alt='Chania' width='460' height='345'>" +
-              "</div>";
-    $(".carousel-inner").html(content);
-    $(".carousel-inner .item").first().attr('class', 'item active');
-  };
-};
+// function loadCarouselImages(selector) {
+//   var imagesJson = {
+//     "generation-entrepreneur" : {
+//       "@1x" : ["10-marketing-with-etiquette.jpg","02_shifting_gender_norms.png", "04-embracing-extremes.jpg"],
+//       "@2x" : ["10-marketing-with-etiquette.jpg","02_shifting_gender_norms.png", "04-embracing-extremes.jpg"],
+//     },
+//     "shifting-gender-norms" : {
+//       "@1x" : ["08-privacy-tightrope.jpg", "09-creative-communicators.png"],
+//       "@2x" : ["08-privacy-tightrope.jpg", "09-creative-communicators.png"]
+//   }
+//
+//   var imageArray = imagesJson[selector]
+//
+//   var content = "";
+//
+//   for(var i=0; i<imageArray.length; i++) {
+//     var activeImage = imageArray[0]
+//     var image = imageArray[i];
+//     content += "<div class='item'>" +
+//               "<img src='images/" + image + "' alt='Chania' width='460' height='345'>" +
+//               "</div>";
+//     $(".carousel-inner").html(content);
+//     $(".carousel-inner .item").first().attr('class', 'item active');
+//   };
+// };
 
 function carouselHeight() {
   var height = $("#image-gallery").height();
@@ -52,7 +60,7 @@ function setArrowPosition() {
 function fadeOutImages() {
   $(".grid-item").click(function() {
     if (calcWindowWidth() >= 650) {
-      loadCarouselImages($(this).attr('rel'));
+      // loadCarouselImages($(this).attr('rel'));
       $(".grid").css({background:"transparent"});
       $(".grid").css("pointer-events","none");
       var selected = this;
@@ -64,5 +72,11 @@ function fadeOutImages() {
         });
       });
     };
+  });
+};
+
+function rolloverText() {
+  $('.image-rollover .content').each(function() {
+      $(this).css('margin-top', $(this).parent().height()-$(this).height());
   });
 };

@@ -12,10 +12,6 @@ $(document).ready(function(){
 
   if($(window).height() > 620 ) { setTitleContainerHeight(); }
 
-  // if ($(window).width() > 768) {
-  //   skrollr.init();
-  // };
-
   $(window).resize(function( event ) {
     if($(window).height() > 620 ) { setTitleContainerHeight(); }
     positionCardText();
@@ -34,7 +30,6 @@ function setTitleContainerHeight() {
 
 function positionCardText() {
   $('.image-container .content').each(function() {
-      console.log($(this).parent().height());
       $(this).css('margin-top', $(this).parents('.image-container').height()-$(this).height());
   });
   $('.image-container .contentPNG').each(function() {
