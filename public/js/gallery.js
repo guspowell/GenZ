@@ -108,7 +108,7 @@ function fadeOutImages() {
         $('.grid > div').sort(function(){
           return Math.random()*10 > 5 ? 1 : -1;
         }).not(selected).each(function(i) {
-          $(this).delay((i++) * 15).fadeOut(200);
+          $(this).delay((i++) * 50).fadeOut(500);
         });
       });
 
