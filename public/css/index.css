@@ -347,6 +347,7 @@ btn {
 }
 @media (min-width: 768px) {
   #card5 {
+    background-color: #03A989;
     background-size: 50%;
     background-repeat: no-repeat;
   }
