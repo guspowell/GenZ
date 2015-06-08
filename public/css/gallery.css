@@ -104,6 +104,7 @@
 
 .image-rollover:hover {
   opacity: 1;
+  cursor: pointer; cursor: hand;
 }
 
 .image-rollover .title {

@@ -105,7 +105,7 @@ function fadeOutImages() {
       var selected = this;
       $(selected).children(".image-rollover").css("opacity", "1");
       $(function() {
-        $('.grid div').sort(function(){
+        $('.grid > div').sort(function(){
           return Math.random()*10 > 5 ? 1 : -1;
         }).not(selected).each(function(i) {
           $(this).delay((i++) * 15).fadeOut(200);
@@ -118,13 +118,12 @@ function fadeOutImages() {
   });
 };
 
-
 function fadeInImages() {
   $(".cross").click(function() {
     $(".grid").css("pointer-events","auto");
-    $(".image-rollover").css("opacity", "0");
     $(".grid").css({background:"#fac421"});
     $('.grid div').fadeIn(1000);
+    $(".image-rollover").css("opacity", "0");
     $(".cross").fadeOut(1000);
   });
 };
@@ -134,3 +133,9 @@ function rolloverText() {
       $(this).css('margin-top', $(this).parent().height()-$(this).height());
   });
 };
+
+// $(".image-rollover").hover(function(){
+//   $(this).css("opacity", 1);
+//     }, function(){
+//       $(this).css("opacity", 0);
+// });
