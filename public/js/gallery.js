@@ -80,17 +80,9 @@ function fadeOutImages() {
 
 function fadeInImages() {
   $(".cross").click(function() {
-    // loadCarouselImages($(this).attr('rel'));
     $(".grid").css("pointer-events","auto");
     $(".grid").css({background:"#fac421"});
-    $(function() {
-      // $('.grid div').fadeIn("slow");
-      $('.grid div').sort(function(){
-        return Math.random()*10 > 5 ? 1 : -1;
-      }).each(function(i) {
-        $(".grid-item").delay((i++) * 15).fadeIn(1000);
-      });
-    });
+    $('.grid div').fadeIn(1000);
     $(".cross").fadeOut(1000);
   });
 };
