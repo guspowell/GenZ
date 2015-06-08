@@ -230,7 +230,13 @@ btn {
     height: 550px;
     padding: 60px 40px 50px 40px;
   }
-  .image-container p img {
+  .contentPNG.left .statement img {
+    width: 70%;
+    position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .contentPNG .statement img {
     width: 70%;
     position: absolute;
       top: 0;
