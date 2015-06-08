@@ -65,18 +65,22 @@ function fadeOutImages() {
       $(".grid").css({background:"transparent"});
       $(".grid").css("pointer-events","none");
       var selected = this;
+      console.log($(selected).children(".image-rollover"));
+      $(selected).children(".image-rollover").css("opacity", "1");
       $(function() {
         $('.grid div').sort(function(){
           return Math.random()*10 > 5 ? 1 : -1;
-          }).not(selected).each(function(i) {
-            console.log(i);
+        }).not(selected).each(function(i) {
           $(this).delay((i++) * 15).fadeOut(200);
         });
       });
+
       $(".cross").fadeIn(1000);
+
     };
   });
 };
+
 
 function fadeInImages() {
   $(".cross").click(function() {

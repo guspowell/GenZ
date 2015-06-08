@@ -164,7 +164,7 @@ btn {
   }
   .container.yellow img.social-media {
     height: 40px;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
   }
   .container.yellow btn.download {
     display: block;

@@ -33,7 +33,6 @@ function positionCardText() {
       $(this).css('margin-top', $(this).parents('.image-container').height()-$(this).height());
   });
   $('.image-container .contentPNG').each(function() {
-      console.log($(this));
       $(this).css('margin-top', ( $(this).parents('.image-container').height()/2 ) - ( $(this).find('.statement img').height()/2 ));
   });
 };
