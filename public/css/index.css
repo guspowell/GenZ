@@ -363,8 +363,6 @@ btn {
     background-size: auto 100%;
   }
 }
-/********* image I have cuts the top off watering can ********/
-
 #card6 {
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Chrome,Safari4+ */

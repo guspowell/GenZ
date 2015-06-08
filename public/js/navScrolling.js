@@ -13,7 +13,6 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $("#image-gallery").offset().top - navbarHeight
     }, 1000);
-    // $("btn.read-report").fadeOut('slow');
   });
 
   $("#what-we-learned").click(function() {
@@ -21,18 +20,17 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $("#card1").offset().top - navbarHeight
     }, 1000);
-    // $("btn.read-report").fadeOut(1500);
   });
 
-  lastScrollTop = 0;
-  $(window).scroll(function(event){
-     var st = $(this).scrollTop();
-     if (st > lastScrollTop){
-       $("btn.read-report").fadeOut(1500);
-     } else {
-       $("btn.read-report").fadeIn(1500);
-     }
-     lastScrollTop = st;
-  });
+  // lastScrollTop = 0;
+  // $(window).scroll(function(event){
+  //    var st = $(this).scrollTop();
+  //    if (st > lastScrollTop){
+  //      $("btn.read-report").fadeOut(1500);
+  //    } else {
+  //      $("btn.read-report").fadeIn(1500);
+  //    }
+  //    lastScrollTop = st;
+  // });
 
 });
