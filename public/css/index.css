@@ -358,8 +358,9 @@ btn {
 @media (min-width: 768px) {
   #card5 {
     background-color: #03A989;
-    background-size: 50%;
+    background-size: 55%;
     background-repeat: no-repeat;
+    background-size: auto 100%;
   }
 }
 /********* image I have cuts the top off watering can ********/
