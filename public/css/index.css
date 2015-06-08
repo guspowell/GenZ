@@ -76,7 +76,7 @@ btn {
 
 
 #title-container .content {
-  margin-top: 40%;
+  margin-top: 70%;
 }
 
 #title-container h1 {
@@ -97,7 +97,7 @@ btn {
     font-weight: 100;
   }
   #title-container .content {
-    margin-top: 20%;
+    margin-top: 30%;
   }
   #title-container p {
     font-size: 30px;
@@ -216,8 +216,13 @@ btn {
 .image-container .satement {
   font-size: 15px;
 }
+
 .image-container .source {
   font-size: 11px;
+}
+
+.image-container p img {
+  width: 50%;
 }
 
 @media (min-width: 768px) {
@@ -227,6 +232,9 @@ btn {
   }
   .image-container p img {
     width: 70%;
+    position: absolute;
+      top: 0;
+      right: 0;
   }
 }
 
@@ -244,7 +252,7 @@ btn {
   margin-bottom: 30px;
 }
 
-card-description p {
+.card-description p {
   font-size: 18px;
   line-height: 28px;
 }
@@ -271,11 +279,11 @@ card-description p {
 /***** Loading Images into Cards ****/
 
 #card1 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* Chrome,Safari4+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
   text-align: right;
@@ -296,13 +304,7 @@ card-description p {
 }
 
 #card2 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 49%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(49%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/02_shifting_gender_norms.png") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 49%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 49%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 49%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 49%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.54) 100%), url("../images/02_shifting_gender_norms.png") no-repeat center; /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8a000000',GradientType=0 ); /* IE6-9 */
+  background: url("../images/02_shifting_gender_norms.png") no-repeat center; /* FF3.6+ */
   background-size: auto 100%;
   background-color: #46A9AD;
 }
@@ -339,12 +341,13 @@ card-description p {
 
 #card5 {
   background-color: #03A989;
-  background-image: url("../images/05-pro-activly-empathetic.png");
+  background: url("../images/05-pro-activately-empathetic.png") no-repeat;
   text-align: right;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   #card5 {
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
   }
 }

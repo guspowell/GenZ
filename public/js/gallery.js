@@ -5,6 +5,7 @@ $(document).ready( function() {
   rolloverText();
 
   fadeOutImages();
+  fadeInImages();
 
   setArrowPosition();
 
@@ -68,10 +69,29 @@ function fadeOutImages() {
         $('.grid div').sort(function(){
           return Math.random()*10 > 5 ? 1 : -1;
           }).not(selected).each(function(i) {
+            console.log(i);
           $(this).delay((i++) * 15).fadeOut(200);
         });
       });
+      $(".cross").fadeIn(1000);
     };
+  });
+};
+
+function fadeInImages() {
+  $(".cross").click(function() {
+    // loadCarouselImages($(this).attr('rel'));
+    $(".grid").css("pointer-events","auto");
+    $(".grid").css({background:"#fac421"});
+    $(function() {
+      // $('.grid div').fadeIn("slow");
+      $('.grid div').sort(function(){
+        return Math.random()*10 > 5 ? 1 : -1;
+      }).each(function(i) {
+        $(".grid-item").delay((i++) * 15).fadeIn(1000);
+      });
+    });
+    $(".cross").fadeOut(1000);
   });
 };
 
