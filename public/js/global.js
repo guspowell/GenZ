@@ -25,7 +25,7 @@ function setTitleContainerHeight() {
 };
 
 function positionCardText() {
-  $('.image-container .content').each(function() {
+  $('.image-container .content, .textFromImage').each(function() {
       $(this).css('margin-top', $(this).parents('.image-container').height()-$(this).height());
   });
   $('.image-container .contentPNG').each(function() {

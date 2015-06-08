@@ -167,7 +167,6 @@ btn {
   }
   .container.yellow img.social-media {
     height: 40px;
-    /*margin-left: 2em;*/
   }
   .container.yellow btn.download {
     display: block;
@@ -228,11 +227,15 @@ btn {
   width: 50%;
 }
 
+.contentPNG { display: none; }
+
 @media (min-width: 768px) {
   .image-container {
     height: 550px;
     padding: 60px 40px 50px 40px;
   }
+  .textFromImage { display: none; }
+  .contentPNG { display: inline; }
   .contentPNG.left .statement img {
     width: 70%;
     position: absolute;
