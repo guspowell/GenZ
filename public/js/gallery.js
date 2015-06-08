@@ -122,6 +122,7 @@ function fadeOutImages() {
 function fadeInImages() {
   $(".cross").click(function() {
     $(".grid").css("pointer-events","auto");
+    $(".image-rollover").css("opacity", "0");
     $(".grid").css({background:"#fac421"});
     $('.grid div').fadeIn(1000);
     $(".cross").fadeOut(1000);
