@@ -522,28 +522,6 @@ btn {
 
 /************* YELLOW FOOTER CONTAINER ************/
 
-/************* WHITE FOOTER CONTAINER ************/
-
-/*#white-footer { font-size: 16px; background-color: blue;}
-#left-button {
-  text-align: left;
-}
-#right-button {
-  text-align: right;
-}
-#white-footer #left-button .col-md-2 {
-  background-color: red;
-  height: 100px;
-  padding: 0;
-}
-#white-footer #right-button .col-md-2 {
-  background-color: pink;
-  padding: 0;
-  height: 100px;
-}*/
-
-/************* WHITE FOOTER CONTAINER ************/
-
 
 /************* BLACK FOOTER CONTAINER ************/
 
@@ -552,11 +530,12 @@ btn {
   padding: 50px;
   font-size: 16px;
   line-height: 32px;
-  background-color: black;
+  background-color: #1a1a1a;
   color: white;
 }
 
 /************* BLACK FOOTER CONTAINER ************/
+
 
 /************* SUPER WIDE SCREENS ************/
 

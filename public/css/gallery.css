@@ -42,6 +42,7 @@
 }
 .cross img {
   width: 80%;
+  cursor: pointer; cursor: hand;
 }
 
 #image1 {
