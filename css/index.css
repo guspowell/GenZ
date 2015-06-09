@@ -342,12 +342,12 @@ btn {
 }
 
 #card4 {
-  background: url("../images/04-embracing-extremes.jpg") no-repeat center;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/04-embracing-extremes.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/04-embracing-extremes.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/04-embracing-extremes.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/04-embracing-extremes.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/04-embracing-extremes.jpg") no-repeat center; /* W3C */
+  background: url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%), url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center; /* Chrome,Safari4+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%), url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
@@ -374,12 +374,12 @@ btn {
   }
 }
 #card6 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/06-hold-on-to-the-physical.jpg") no-repeat center; /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
@@ -406,12 +406,12 @@ btn {
 }
 
 #card8 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/01-generation-entrepreneur.jpg") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 38%, rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(38%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.64))), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 38%,rgba(0,0,0,0.64) 100%), url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a3000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
 }
@@ -430,7 +430,7 @@ btn {
 }
 @media (min-width: 768px) {
   #card9 {
-    background-image: url("../images/08-privacy-tightrope.jpg") no-repeat center; /* W3C */
+    background-image: url("../images/09-creative-communicators.png") no-repeat center; /* W3C */
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -438,12 +438,12 @@ btn {
 
 
 #card10 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/10-marketing-with-etiquette.jpg") center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/10-marketing-with-etiquette.jpg") no-repeat center; /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/landing-page/10-marketing-etiquette@1x.jpg") center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8a000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
   text-align: right;
@@ -464,14 +464,15 @@ btn {
 }
 
 #card12 {
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/12-superpower-tech.jpg") center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/12-superpower-tech.jpg") no-repeat center; /* W3C */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 37%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,rgba(0,0,0,0)), color-stop(49%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0.54))), url("../images/landing-page/12-power-tech@1x.jpg") center; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 37%,rgba(0,0,0,0.1) 49%,rgba(0,0,0,0.54) 100%), url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center; /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8a000000',GradientType=0 ); /* IE6-9 */
   background-size: auto 100%;
+  text-align: right;
 }
 @media (min-width: 768px) {
   #card12 {
