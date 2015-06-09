@@ -38,9 +38,33 @@
         <div class="row">
           <div class="col-md-12 content">
             <h1>THE GEN Z PROJECT</h1>
-            <btn class="watch-video">Watch Video</btn>
+            <btn type="button" class="btn-primary watch-video" data-toggle="modal" data-target=".bs-example-modal-lg">Watch Video</btn>
           </div>
         </div>
+
+        <!-- Large modal -->
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="span6">
+                      <div class="flex-video widescreen" style="margin: 0 auto;text-align:center;">
+                        <iframe webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://player.vimeo.com/video/130206217" frameborder="0" width="100%" height="500px"></iframe>
+                      </div>
+                   </div>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Large modal -->
 
     </div>
 
@@ -69,8 +93,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div>
-            <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div>
+            <div class="col-md-4"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
+            <div class="col-md-4"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div>
+            <!-- <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div> -->
+            <!-- <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div> -->
+
+            <div id="fb-root"></div>
+
           </div>
           <!-- <div class="row">
             <div class="col-md-12">
@@ -724,7 +753,7 @@
                 <div class="col-md-12 content">
                     <div class="row">
                         <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
-                        <p class="statement">It's a bit of a personal invasion sometimes... there's not one place on the internet that you can go where somebody isn'tӴ trying to sell you something or trying to get you to do something or sign up to something</p>
+                        <p class="statement">It's a bit of a personal invasion sometimes... there's not one place on the internet that you can go where somebody isn't trying to sell you something or trying to get you to do something or sign up to something</p>
                         </div>
                     </div>
                     <div class="row">
@@ -850,8 +879,10 @@
       <div class="row">
         <div class="col-md-2 col-md-offset-1" id="download-box">
           <div class="row">
-            <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div>
-            <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div>
+            <div class="col-md-4"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
+            <div class="col-md-4"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div>
+            <!-- <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div>
+            <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div> -->
           </div>
           <!-- <div class="row">
             <div class="col-md-12">
@@ -860,10 +891,15 @@
           </div> -->
         </div>
         <div class="col-md-7 col-md-offset-1">
-          <p>Who SP are and why we are so brilliant Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim
-            ut metus posuere cursus ac in elit. Morbi blandit, justo non elementum elementum, felis nisl iaculis nisi, et
-            pharetra eros nunc eu dui. Vivamus ut elit a enim convallis auctor a eu metu.
-          </p>
+          <div class="row">
+            <p>Who SP are and why we are so brilliant Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a enim
+              ut metus posuere cursus ac in elit. Morbi blandit, justo non elementum elementum, felis nisl iaculis nisi, et
+              pharetra eros nunc eu dui. Vivamus ut elit a enim convallis auctor a eu metu.
+            </p>
+          </div>
+          <div class="row">
+            <btn class="read-report">seymourpowell</btn>
+          </div>
         </div>
       </div>
 
