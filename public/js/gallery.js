@@ -70,8 +70,8 @@ function loadCarouselImages(selector) {
   var content = "";
 
   for(var i=0; i<SmallImageArray.length; i++) {
-    var onexSrc = "images/bios/" + selector + "/interests/@1x/" + imagesJson[selector]["@1x"][i] + " 1x";
-    var twoxSrc = "images/bios/" + selector + "/interests/@2x/" + imagesJson[selector]["@2x"][i] + " 2x";
+    var onexSrc = "../images/bios/" + selector + "/interests/@1x/" + imagesJson[selector]["@1x"][i] + " 1x";
+    var twoxSrc = "../images/bios/" + selector + "/interests/@2x/" + imagesJson[selector]["@2x"][i] + " 2x";
 
     content +=  "<div class='item'>" +
                 "<img srcset=" + '\"' + onexSrc + ", " + twoxSrc + '\"' + " alt='Chania' width='460' height='345'/>" +
