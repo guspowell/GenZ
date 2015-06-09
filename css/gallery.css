@@ -94,27 +94,27 @@
   background-size: cover;
 }
 
-.image-rollover {
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  padding-bottom: 5%;
-}
+.image-rollover { display: none; }
 
-.image-rollover:hover {
-  opacity: 1;
-  cursor: pointer; cursor: hand;
-}
+@media (min-width: 768px) {
+  .image-rollover {
+    display: block;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding-bottom: 5%;
+  }
+  .image-rollover:hover {
+    opacity: 1;
+    cursor: pointer; cursor: hand;
+  }
 
-.image-rollover .title {
-  font-size: 18px;
-  line-height: 36px;
-}
-
-.image-rollover .info {
-
+  .image-rollover .title {
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 
 /* ---- carousel ---- */

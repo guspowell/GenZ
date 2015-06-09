@@ -419,6 +419,7 @@ btn {
   #card8 {
     background: -webkit-image-set( url("../images/landing-page/08-privacy-tightrope@1x.jpg") 1x, url("../images/landing-page/08-privacy-tightrope@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
+    color: black;
   }
 }
 
@@ -453,6 +454,7 @@ btn {
     background: -webkit-image-set( url("../images/landing-page/10-marketing-etiquette@1x.jpg") 1x, url("../images/landing-page/10-marketing-etiquette@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
     background-position: 0 -20px;
+    color: black;
   }
 }
 
