@@ -244,6 +244,7 @@ btn {
   }
   .contentPNG .statement img {
     width: 70%;
+    max-width: 550px;
     position: absolute;
       top: 0;
       right: 0;
@@ -346,9 +347,9 @@ btn {
 }
 @media (min-width: 768px) {
   #card4 {
-    background-size: cover;
     background-position: 0 -50px;
     background: -webkit-image-set( url("../images/landing-page/04-embracing-extremes@1x.jpg") 1x, url("../images/landing-page/04-embracing-extremes@2x.jpg") 2x ) no-repeat center;
+    background-size: cover;
   }
 }
 
