@@ -50,47 +50,47 @@
   background-size: cover;
 }
 #image2 {
-  background-image: -webkit-image-set( url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg") 1x, url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg") 1x, url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image3 {
-  background-image: -webkit-image-set( url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg") 1x, url("../images/bios/03-eligh/headshot/eligh-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg") 1x, url("../images/bios/03-eligh/headshot/eligh-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image4 {
-  background-image: -webkit-image-set( url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg") 1x, url("../images/bios/04-elliot/headshot/elliot-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg") 1x, url("../images/bios/04-elliot/headshot/elliot-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image5 {
-  background-image: -webkit-image-set( url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg") 1x, url("../images/bios/05-alessandra/headshot/alessandra-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg") 1x, url("../images/bios/05-alessandra/headshot/alessandra-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image6 {
-  background-image: -webkit-image-set( url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg") 1x, url("../images/bios/06-lewis/headshot/lewis-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg") 1x, url("../images/bios/06-lewis/headshot/lewis-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image7 {
-  background-image: -webkit-image-set( url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg") 1x, url("../images/bios/07-simran/headshot/simran-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg") 1x, url("../images/bios/07-simran/headshot/simran-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image8 {
-  background-image: -webkit-image-set( url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg") 1x, url("../images/bios/08-rose/headshot/rose-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg") 1x, url("../images/bios/08-rose/headshot/rose-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image9 {
-  background-image: -webkit-image-set( url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg") 1x, url("../images/bios/09-henry/headshot/henry-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg") 1x, url("../images/bios/09-henry/headshot/henry-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image10 {
-  background-image: -webkit-image-set( url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg") 1x, url("../images/bios/10-jaysea/headshot/jaysea-headshot@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg") 1x, url("../images/bios/10-jaysea/headshot/jaysea-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image11 {
-  background-image: -webkit-image-set( url("../images/bios/11-extras/extra-image-1@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-1@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/11-extras/extra-image-1@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-1@2x.jpg") 2x );
   background-size: cover;
 }
 #image12 {
-  background-image: -webkit-image-set( url("../images/bios/11-extras/extra-image-2@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-2@2x.jpg") 2x );
+  background: -webkit-image-set( url("../images/bios/11-extras/extra-image-2@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-2@2x.jpg") 2x );
   background-size: cover;
 }
 
