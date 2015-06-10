@@ -19,17 +19,8 @@
 
 .grid-item {
   float: left;
+  width: 25%;
   height: 220px;
-}
-@media (max-width: 768px) {
-  .grid-item {
-    height: 100px;
-  }
-}
-@media (min-width: 2000px) {
-  .grid-item {
-    height: 350px;
-  }
 }
 
 .cross {
