@@ -39,6 +39,6 @@ function setTitleContainerHeight() {
 
 function positionCardText() {
   $('.contentPNG').each(function() {
-      $(this).css('margin-top', ( $(this).parent()/2 ) - ( $(this).find('.statement img').height()/2 ));
+      $(this).css('margin-top', ( $(this).parent().height()/2 ) - ( $(this).find('.statement img').height()/2 ));
   });
 };
