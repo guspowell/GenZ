@@ -8,6 +8,9 @@ $(document).ready( function() {
   fadeInImages();
 
   setArrowPosition();
+  $(window).resize(function() {
+    setArrowPosition();
+  });
 
 });
 
@@ -16,7 +19,6 @@ function calcWindowWidth() {
 };
 
 function loadCarouselImages(selector) {
-  console.log(selector)
   var imagesJson = {
     "01-ellie" : {
       "@1x" : ["01@1x.jpg","02@1x.jpg", "03@1x.jpg", "04@1x.jpg", "05@1x.jpg"],
@@ -69,9 +71,10 @@ function loadCarouselImages(selector) {
     var onexSrc = "images/bios/" + selector + "/interests/@1x/" + imagesJson[selector]["@1x"][i] + " 1x";
     var twoxSrc = "images/bios/" + selector + "/interests/@2x/" + imagesJson[selector]["@2x"][i] + " 2x";
 
-    content +=  "<div class='item'>" +
-                "<img srcset=" + '\"' + onexSrc + ", " + twoxSrc + '\"' + " alt='Chania' width='460' height='345'/>" +
-                "</div>";
+    content +=  "<div class='item' style=" + '\"' + "background-image: url(" + twoxSrc + "); background-size: cover" + '\"' + ">" + "</div>";
+
+
+    console.log(content);
 
     $(".carousel-inner").html(content);
     $(".carousel-inner .item").first().attr('class', 'item active');
