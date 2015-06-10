@@ -1,0 +1,53 @@
+<section id="homeSection">
+	<div class="quote">
+		<p class="statement">"I just hope people are going to think this was the generation of entrepeneurs"</p>
+		<p class="source">Henry, 10 years old<br>Entrepeneur &amp; Author<br>NOT BEFORE TEA</p>
+	</div>
+	<div class="img-gradient"></div>
+	<div id="card1" class="container image-container" data-bottom-top="background-position: 50% 10%;" data-top-bottom="background-position: 50% 80%" data-anchor-target="#homeSection"></div>
+</section>
+
+<style>
+section {
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    z-index: 101;
+    width: 400px;
+    /* adjust the left/right and top/bottom properties to position quotes */
+    left: 50px;
+    bottom: 25px;
+}
+
+.quote > .statement {
+    color: white;
+    font-size: 24px;
+}
+.quote > .source {
+    color: white;
+    font-size: 18px;
+}
+
+.img-gradient {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* Chrome,Safari4+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+}
+
+#card1 {
+  background: url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* W3C */
+  background-size: auto 100%;
+  text-align: right;
+  color: white;
+}
+
+</style>

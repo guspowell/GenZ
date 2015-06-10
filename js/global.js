@@ -38,10 +38,7 @@ function setTitleContainerHeight() {
 };
 
 function positionCardText() {
-  $('.image-container .content, .textFromImage').each(function() {
-      $(this).css('margin-top', $(this).parents('.image-container').height()-$(this).height());
-  });
-  $('.image-container .contentPNG').each(function() {
-      $(this).css('margin-top', ( $(this).parents('.image-container').height()/2 ) - ( $(this).find('.statement img').height()/2 ));
+  $('.contentPNG').each(function() {
+      $(this).css('margin-top', ( $(this).parent()/2 ) - ( $(this).find('.statement img').height()/2 ));
   });
 };
