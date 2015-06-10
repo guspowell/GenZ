@@ -46,50 +46,62 @@
 }
 
 #image1 {
+  background: url("../images/bios/01-ellie/headshot/ellie-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/01-ellie/headshot/ellie-headshot@1x.jpg") 1x, url("../images/bios/01-ellie/headshot/ellie-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image2 {
+  background: url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg") 1x, url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image3 {
+  background: url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg") 1x, url("../images/bios/03-eligh/headshot/eligh-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image4 {
+  background: url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg") 1x, url("../images/bios/04-elliot/headshot/elliot-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image5 {
+  background: url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg") 1x, url("../images/bios/05-alessandra/headshot/alessandra-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image6 {
+  background: url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg") 1x, url("../images/bios/06-lewis/headshot/lewis-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image7 {
+  background: url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg") 1x, url("../images/bios/07-simran/headshot/simran-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image8 {
+  background: url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg") 1x, url("../images/bios/08-rose/headshot/rose-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image9 {
+  background: url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg") 1x, url("../images/bios/09-henry/headshot/henry-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image10 {
+  background: url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg") 1x, url("../images/bios/10-jaysea/headshot/jaysea-headshot@2x.jpg") 2x );
   background-size: cover;
 }
 #image11 {
+  background: url("../images/bios/11-extras/extra-image-1@1x.jpg");
   background: -webkit-image-set( url("../images/bios/11-extras/extra-image-1@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-1@2x.jpg") 2x );
   background-size: cover;
 }
 #image12 {
+  background: url("../images/bios/11-extras/extra-image-2@1x.jpg");
   background: -webkit-image-set( url("../images/bios/11-extras/extra-image-2@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-2@2x.jpg") 2x );
   background-size: cover;
 }
@@ -107,7 +119,7 @@
     padding-bottom: 5%;
   }
   .image-rollover:hover {
-    opacity: 1;
+    opacity: 1 !important;
     cursor: pointer; cursor: hand;
   }
 
@@ -123,7 +135,7 @@
 
 @media (min-width: 768px) {
   #carousel.container {
-    display: inline;
+    display: none;
     width: 100%;
     padding: 0;
     position: absolute;

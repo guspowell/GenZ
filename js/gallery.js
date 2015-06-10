@@ -9,10 +9,6 @@ $(document).ready( function() {
 
   setArrowPosition();
 
-  $(window).resize(function( event ) {
-    calcWindowWidth();
-  });
-
 });
 
 function calcWindowWidth() {
@@ -98,6 +94,8 @@ function setArrowPosition() {
 
 function fadeOutImages() {
   $(".grid-item").click(function() {
+    carouselHeight();
+    $("#carousel.container").css("display", "inline");
     if (calcWindowWidth() >= 650) {
       loadCarouselImages($(this).attr('rel'));
       $(".grid").css({background:"transparent"});
@@ -122,6 +120,7 @@ function fadeInImages() {
   $(".cross").click(function() {
     $(".grid").css("pointer-events","auto");
     $(".grid").css({background:"#fac421"});
+    $("#carousel.container").css("display", "none");
     $('.grid div').fadeIn(1000);
     $(".image-rollover").css("opacity", "0");
     $(".cross").fadeOut(1000);
@@ -133,9 +132,3 @@ function rolloverText() {
       $(this).css('margin-top', $(this).parent().height()-$(this).height());
   });
 };
-
-// $(".image-rollover").hover(function(){
-//   $(this).css("opacity", 1);
-//     }, function(){
-//       $(this).css("opacity", 0);
-// });

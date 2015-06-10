@@ -65,14 +65,17 @@ btn {
   text-align: center;
   background-color: white;
   color: white;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))), url("../images/title-image.svg") no-repeat center; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.svg") no-repeat center; /* W3C */
-  background-size: auto 100%;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+
+  background: -webkit-image-set( url("../images/IMG_9271.jpg") 1x, url("../images/IMG_9271.jpg") 2x ) no-repeat center;
+
+  /*background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))), url("../images/title-image.png") no-repeat center;
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );*/
+  background-size: cover;
   position: relative;
 }
 #title-container .content {
@@ -305,7 +308,6 @@ btn {
 }
 @media (min-width: 768px) {
   #card1 {
-    background: url("../images/photos/landing-page/01-generation-entrepreneur.jpg") no-repeat center; /* W3C */
     background: -webkit-image-set( url("../images/landing-page/01-generation-entrepreneur@1x.jpg") 1x, url("../images/landing-page/01-generation-entrepreneur@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
   }
