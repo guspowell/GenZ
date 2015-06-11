@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   navbarHeight = 50;
 
-  $(".read-report").click(function() {
+  $("img.down-arrow.first").click(function() {
     $('html, body').animate({
       scrollTop: $("#yellow-section-1").offset().top
     }, 1000);

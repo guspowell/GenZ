@@ -119,6 +119,11 @@ btn {
 
 /***** Introduction Container ****/
 
+img.down-arrow.first {
+  margin: 0;
+  cursor: hand; cursor: pointer;
+}
+
 .container.yellow {
   padding: 15px 40px 40px 40px;
   background-color: #fac421;
@@ -151,6 +156,10 @@ btn {
 .container.yellow #download-box {
   display: none;
 }
+
+#download-box .facebook { margin-left: -20px; }
+#download-box .twitter { padding-left: -15px; }
+
 
 @media (min-width: 768px) {
   .container.yellow #download-box {
@@ -288,15 +297,14 @@ section {
     bottom: 10%;
     padding: 0 40px 0 40px;
     text-align: right;
+    color: white;
 }
 .quote.left { text-align: left; }
-
-.quote  .statement {
-    color: white;
+.quote.black { color: black; }
+.quote .statement {
     font-size: 15px;
 }
 .quote  .source {
-    color: white;
     font-size: 11px;
 }
 
@@ -346,6 +354,7 @@ section {
   background-position: bottom -10px left -10px;
   background-size: 200%;
   background-color: #BCE3EE;
+  color: black;
 }
 @media (min-width: 768px) {
   #card3 {
