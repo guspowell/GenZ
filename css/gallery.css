@@ -1,28 +1,3 @@
-#image-gallery {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-/* ---- grid ---- */
-
-.grid {
-  max-width: 100%;
-  position: absolute;
-    top: 0;
-    left: 0;
-  z-index: 100;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-item {
-  float: left;
-  width: 25%;
-  height: 220px;
-}
-
 .cross {
   display: none;
   position: absolute;
@@ -34,6 +9,45 @@
 .cross img {
   width: 80%;
   cursor: pointer; cursor: hand;
+}
+#image-gallery {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 200px;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  z-index: 100;
+}
+@media (min-width: 768px) {
+  .grid-item {
+    width: 25%;
+    height: 200px;
+  }
+}
+@media (min-width: 1500px) {
+  .grid-item {
+    width: 25%;
+    height: 300px;
+  }
 }
 
 #image1 {
@@ -122,20 +136,28 @@
 
 /* ---- carousel ---- */
 
-#carousel.container {
-  padding: 0;
-}
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+  #carousel.container {
+    display: none;
+    height: 500px;
     width: 100%;
-    margin: auto;
-}
+    padding: 0;
+    position: absolute;
+      top: 0;
+      left: 0;
+    z-index: 0;
+  }
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+      z-index: 0;
+  }
 
-.carousel-inner > .item {
-  width: 100%;
-  height: 800px;
-}
+  .carousel-inner > .item {
+    width: 100%;
+    /*height: 800px;*/
+  }
 
   img.left-arrow {
     height: 300px;
