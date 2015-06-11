@@ -65,9 +65,8 @@ btn {
   text-align: center;
   background-color: white;
   color: white;
-
+  background: url("../images/IMG_9271.jpg") no-repeat center;
   background: -webkit-image-set( url("../images/IMG_9271.jpg") 1x, url("../images/IMG_9271.jpg") 2x ) no-repeat center;
-
   /*background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))), url("../images/title-image.png") no-repeat center;
   background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
@@ -229,13 +228,13 @@ btn {
     padding: 60px 40px 50px 40px;
   }
   .contentPNG.left .statement img {
-    width: 70%;
+    width: 80%;
     position: absolute;
       top: 0;
       left: 0;
   }
   .contentPNG .statement img {
-    width: 70%;
+    width: 80%;
     max-width: 550px;
     position: absolute;
       top: 0;
@@ -339,7 +338,7 @@ section {
   background: url("../images/02_shifting_gender_norms.png") no-repeat; /* FF3.6+ */
   background-position: bottom -10px right -20px;
   background-size: 200%;
-  background-color: #46A9AD;
+  background-color: #E6AC94;
 }
 @media (min-width: 768px) {
   #card2 {
@@ -381,6 +380,7 @@ section {
 }
 
 #card6 {
+  background: url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center;
   background: -webkit-image-set( url("../images/landing-page/06-hold-physical@1x.jpg") 1x, url("../images/landing-page/06-hold-physical@2x.jpg") 2x ) no-repeat center;
   background-size: cover;
 }
@@ -392,6 +392,7 @@ section {
 }
 
 #card8 {
+  background: url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center;
   background: -webkit-image-set( url("../images/landing-page/08-privacy-tightrope@1x.jpg") 1x, url("../images/landing-page/08-privacy-tightrope@2x.jpg") 2x ) no-repeat center;
   background-size: cover;
 }
@@ -410,6 +411,7 @@ section {
 }
 
 #card10 {
+  background: url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center;
   background: -webkit-image-set( url("../images/landing-page/10-marketing-etiquette@1x.jpg") 1x, url("../images/landing-page/10-marketing-etiquette@2x.jpg") 2x ) no-repeat center;
   background-size: cover;
   text-align: right;
@@ -428,6 +430,7 @@ section {
 }
 
 #card12 {
+  background: url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center;
   background: -webkit-image-set( url("../images/landing-page/12-power-tech@1x.jpg") 1x, url("../images/landing-page/12-power-tech@2x.jpg") 2x ) no-repeat center;
   background-size: cover;
 }

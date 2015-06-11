@@ -1,19 +1,42 @@
 $(document).ready( function() {
 
+  navbarHeight = 50;
+
   setArrowPosition();
   fadeOutImages();
   fadeInImages();
+
+  if ( $(window).width() < 430 ) {
+    $("#image11, #image12").css("display", "none");
+  };
+
   $(window).resize(function() {
     setArrowPosition();
     setUpCarousel();
   });
+
+  $("#myCarousel").swiperight(function() {
+      $("#myCarousel").carousel('prev');
+    });
+   $("#myCarousel").swipeleft(function() {
+      $("#myCarousel").carousel('next');
+   });
+
 });
 
 function setUpCarousel() {
   var carouselHeight = $("#image-gallery.container").height();
-  $("#carousel.container").fadeIn("slow");
-  $(".carousel-inner").css("height", carouselHeight);
-  $(".carousel-inner > .item").css("height", carouselHeight);};
+  if ( $(window).width() < 430 ) {
+    $(".carousel-inner").css("height", 400);
+    $(".carousel-inner > .item").css("height", 400);
+  }
+  else {
+    $(".carousel-inner").css("height", carouselHeight);
+    $(".carousel-inner > .item").css("height", carouselHeight);
+  };
+
+  setArrowPosition();
+};
 
 function setArrowPosition() {
   var containerHeight = $(".carousel-inner").height();
@@ -30,16 +53,31 @@ function fadeOutImages() {
 
     $(selected).children(".image-rollover").css("opacity", "1");
 
-    $('.grid > div').not(selected).each(function(i) {
-      $(this).css("opacity", 0);
-    });
+    loadCarouselImages(imageSelector);
+    $("#carousel.container").fadeIn("slow");
+    setUpCarousel();
+
+    if ( $(window).width() < 430 ) {
+      $('.grid').css("display", "none");
+      $('html, body').animate({
+        scrollTop: $(".carousel-inner").offset().top - navbarHeight
+      }, 0);
+    }
+    else {
+      $('.grid > div').not(selected).each(function(i) {
+        $(this).css("opacity", 0);
+      });
+    };
+
+    // $(function() {
+    //   $('.grid > .grid-item').not(selected).each(function(i) {
+    //     // $(this).delay((i++) * 200).fadeOut("slow");
+    //     $(this).delay((i++) * 200).css("opacity", 0);
+    //   });
+    // });
 
     $('.grid').css("pointer-events", "none");
 
-    loadCarouselImages(imageSelector);
-    setUpCarousel();
-
-    setArrowPosition();
 
     $(".cross").fadeIn(1000);
 
@@ -50,9 +88,17 @@ function fadeInImages() {
   $(".cross").click(function() {
     $('.grid').css("pointer-events", "auto");
     $("#carousel.container").css("display", "none");
-    $('.grid > div').css("opacity", 1);
+
+    if ( $(window).width() < 430 ) {
+      $('.grid').css("display", "inline");
+    }
+    else {
+      $('.grid > div').css("opacity", 1);
+    };
+
     $(".image-rollover").css("opacity", "0");
     $(".cross").fadeOut(1000);
+
   });
 };
 

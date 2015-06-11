@@ -4,12 +4,30 @@
   top: 0;
   right: 0;
   z-index: 1000;
-  padding: 50px;
+  padding: 3%;
+  width: 15%;
 }
 .cross img {
-  width: 80%;
+  width: 100%;
   cursor: pointer; cursor: hand;
 }
+@media (min-width: 430px) {
+  .cross {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 80px;
+    padding: 0;
+    width: 75px;
+  }
+  .cross img {
+    width: 100%;
+    cursor: pointer; cursor: hand;
+  }
+}
+
 #image-gallery {
   width: 100%;
   padding: 0;
@@ -136,10 +154,35 @@
 
 /* ---- carousel ---- */
 
+#carousel.container {
+  display: none;
+  width: 100%;
+  padding: 0;
+  position: inline;
+}
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    z-index: 0;
+}
+
+.carousel-inner > .item {
+  width: 100%;
+  /*height: 800px;*/
+}
+
+img.left-arrow {
+  height: 150px;
+}
+img.right-arrow {
+  height: 150px;
+}
+
+@media (min-width: 430px) {
   #carousel.container {
     display: none;
-    height: 500px;
     width: 100%;
     padding: 0;
     position: absolute;
@@ -147,21 +190,14 @@
       left: 0;
     z-index: 0;
   }
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-      z-index: 0;
-  }
-
   .carousel-inner > .item {
     width: 100%;
-    /*height: 800px;*/
+    height: 500px;
   }
-
   img.left-arrow {
     height: 300px;
   }
   img.right-arrow {
     height: 300px;
   }
+}
