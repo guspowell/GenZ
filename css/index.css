@@ -63,16 +63,17 @@ btn {
 
 #title-container {
   text-align: center;
+  padding: 0;
   background-color: white;
   color: white;
-  background: url("../images/IMG_9271.jpg") no-repeat center;
-  background: -webkit-image-set( url("../images/IMG_9271.jpg") 1x, url("../images/IMG_9271.jpg") 2x ) no-repeat center;
-  /*background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))), url("../images/title-image.png") no-repeat center;
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  background: url("../images/title-image.jpg") no-repeat center;
+  /*background: -webkit-image-set( url("../images/title-image.jpg") 1x, url("../images/title-image.jpg") 2x ) no-repeat center;
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%), url("../images/title-image.png") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))), url("../images/title-image.jpg") no-repeat center;
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.jpg") no-repeat center;
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.jpg") no-repeat center;
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.jpg") no-repeat center;
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%), url("../images/title-image.jpg") no-repeat center;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );*/
   background-size: cover;
   position: relative;
@@ -81,6 +82,7 @@ btn {
   position: absolute;
     bottom: 0;
   margin-bottom: 50%;
+  z-index: 200;
 }
 
 #title-container h1 {
