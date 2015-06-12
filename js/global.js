@@ -33,7 +33,7 @@ function setTitleContainerHeight() {
   var navbarHeight = 50;
   var paddingHeight = parseInt( $("#yellow-section-1").css('padding-top').replace("px", "") );
   var buttonHeight = $("btn.read-report").outerHeight();
-  var setHeight = windowHeight - navbarHeight - paddingHeight*2 - buttonHeight;
+  var setHeight = windowHeight - navbarHeight - paddingHeight*1.5 - buttonHeight;
   $('#title-container').css("height", setHeight);
 };
 
@@ -46,7 +46,7 @@ function positionCardText() {
     var illustrationHeight = $(this).height();
     $(this).css('top', ( containerHeight/2 ) - ( illustrationHeight/2 ) );
   });
-  
+
   $('.copyIllustration.left').css('left', margin);
   $('.copyIllustration.right').css('right', margin);
 };

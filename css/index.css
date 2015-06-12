@@ -249,7 +249,7 @@ section {
 }
 
 /********** quote and source illustrations **********/
-.contentPNG { display: none; }
+.copyIllustration { display: none; }
 .text-from-image.quote { display: inline; }
 
 @media (min-width: 768px) {
@@ -258,21 +258,9 @@ section {
     display: block;
     position: absolute;
     width: 35%;
+    max-width: 500px;
   }
-  .copyIllustration.left {
-    display: block;
-    position: absolute;
-      top: 0;
-      left: 0;
-    width: 35%;
-  }
-  .copyIllustration.right {
-    display: block;
-    position: absolute;
-      top: 0;
-      right: 0;
-    width: 35%;
-  }
+
 }
 /********** quote and source illustrations **********/
 
@@ -313,7 +301,7 @@ section {
 }
 
 #card2 {
-  background: url("../images/02_shifting_gender_norms.png") no-repeat; /* FF3.6+ */
+  background: url("../images/landing-page/02_shifting_gender_norms.png") no-repeat; /* FF3.6+ */
   background-position: bottom -10px right -20px;
   background-size: 200%;
   background-color: #E6AC94;
@@ -322,21 +310,18 @@ section {
   #card2 {
     background-size: 100%;
   }
-  #card2 .contentPNG .statement img {
-    width: 100%;
-  }
 }
 
 #card3 {
   background: url("../images/landing-page/intertwined-worlds-new.png") no-repeat;
-  background-position: bottom -10px left -10px;
-  background-size: 200%;
+  background-position: bottom 10px left -200px;
+  background-size: 150%;
   background-color: #BCE3EE;
   color: black;
 }
 @media (min-width: 768px) {
   #card3 {
-    background-size: 60%;
+    background-size: 80%;
   }
 }
 
@@ -346,17 +331,17 @@ section {
     background: -webkit-image-set( url("../images/landing-page/04-embracing-extremes@1x.jpg") 1x, url("../images/landing-page/04-embracing-extremes@2x.jpg") 2x ) no-repeat center;
     background-size: cover;
 }
-
 #card5 {
   background-color: #03A989;
-  background: url("../images/05-pro-activately-empathetic.png") no-repeat;
+  background: url("../images/landing-page/05-pro-activately-empathetic.png") no-repeat;
   text-align: right;
   background-size: cover;
+  background-color: #03A988;
 }
 @media (min-width: 768px) {
   #card5 {
     background-color: #03A989;
-    background-size: 60%;
+    background-size: 70%;
   }
 }
 
@@ -368,7 +353,7 @@ section {
 
 #card7 {
   background-color: #E6AC94;
-  background-image: url("../images/07-empowered-healthcare.png");
+  background-image: url("../images/landing-page/07-empowered-healthcare.png");
   text-align: right;
 }
 
@@ -380,7 +365,7 @@ section {
 
 #card9 {
   background-color: #FAC421;
-  background-image: url("../images/09-creative-communicators.png");
+  background-image: url("../images/landing-page/09-creative-communicators.png");
   background-size: 150%;
   text-align: right;
 }
@@ -389,6 +374,10 @@ section {
     background-size: 100%;
     background-position: bottom -100px left 100px
   }
+  #section9 .copyIllustration {
+    width: 40%;
+  }
+
 }
 
 #card10 {
@@ -405,7 +394,7 @@ section {
 
 #card11 {
   background-color: #D32650;
-  background-image: url("../images/11-open-ended-technology.png");
+  background-image: url("../images/landing-page/11-open-ended-technology.png");
   background-position: right;
   background-repeat: no-repeat;
 }
