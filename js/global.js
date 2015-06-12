@@ -38,7 +38,15 @@ function setTitleContainerHeight() {
 };
 
 function positionCardText() {
-  $('.contentPNG').each(function() {
-      $(this).css('margin-top', ( $(this).parent().height()/2 ) - ( $(this).find('.statement img').height()/2 ));
+  var margin = $(".card-description p").offset()["left"];
+
+  $('.copyIllustration').each(function(i){
+    console.log($(this));
+    var containerHeight = $(this).parent().height();
+    var illustrationHeight = $(this).height();
+    $(this).css('top', ( containerHeight/2 ) - ( illustrationHeight/2 ) );
   });
+  
+  $('.copyIllustration.left').css('left', margin);
+  $('.copyIllustration.right').css('right', margin);
 };
