@@ -1,16 +1,19 @@
+.cross img {
+  width: 100%;
+  cursor: pointer; cursor: hand;
+}
+
 .cross {
   display: none;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1000;
-  padding: 3%;
-  width: 15%;
+  margin: 20px;
+  padding: 0;
+  width: 30px;
 }
-.cross img {
-  width: 100%;
-  cursor: pointer; cursor: hand;
-}
+
 @media (min-width: 430px) {
   .cross {
     display: none;
@@ -55,22 +58,29 @@
   position: relative;
   z-index: 100;
 }
+.grid-item.mobile1 {
+  width: 40%;
+}
+.grid-item.mobile2 {
+  width: 60%;
+}
+
+#image11 { display: none; }
 
 @media (min-width: 768px) {
+  #image11 { display: inline; }
+
   .grid-item {
     width: 25%;
     height: 200px;
   }
-  .grid-item.width20 {
-    width: 15%;
-  }
-  .grid-item.width20 {
+  .grid-item.desktop1 {
     width: 20%;
   }
-  .grid-item.width30 {
+  .grid-item.desktop2 {
     width: 30%;
   }
-  .grid-item.width40 {
+  .grid-item.desktop3 {
     width: 40%;
   }
 }
