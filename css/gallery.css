@@ -174,9 +174,9 @@
     cursor: pointer; cursor: hand;
   }
 
-  .image-rollover .title {
+  .image-rollover .info {
     font-size: 18px;
-    line-height: 36px;
+    line-height: 25px;
   }
 }
 

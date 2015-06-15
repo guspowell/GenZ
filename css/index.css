@@ -356,11 +356,13 @@ section {
   background-image: url("../images/landing-page/07-empowered-healthcare.png");
   text-align: right;
 }
-
 #card8 {
   background: url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center;
   background: -webkit-image-set( url("../images/landing-page/08-privacy-tightrope@1x.jpg") 1x, url("../images/landing-page/08-privacy-tightrope@2x.jpg") 2x ) no-repeat center;
   background-size: cover;
+}
+@media (min-width: 768px) {
+  #section8 .quote { color: black; }
 }
 
 #card9 {
@@ -390,6 +392,7 @@ section {
   #card10 {
     background-position: 0 -20px;
   }
+  #section10 .quote { color: black; }
 }
 
 #card11 {

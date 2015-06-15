@@ -107,16 +107,16 @@ function fadeInImages() {
 function loadCarouselImages(selector) {
   var imagesJson = {
     "01-ellie" : {
-      "@1x" : ["01@1x.jpg","02@1x.jpg", "03@1x.jpg", "04@1x.jpg", "05@1x.jpg"],
-      "@2x" : ["01@2x.jpg","02@2x.jpg", "03@2x.jpg", "04@2x.jpg", "05@2x.jpg"],
+      "@1x" : ["01-ellie-01@1x.jpg","01-ellie-02@1x.jpg", "01-ellie-03@1x.jpg", "01-ellie-04@1x", "01-ellie-05@1x.jpg"],
+      "@2x" : ["01-ellie-01@2x.jpg","01-ellie-02@2x.jpg", "01-ellie-03@2x.jpg", "01-ellie-04@2x.jpg", "01-ellie-05@2x.jpg"],
     },
     "02-bella-and-jo" : {
-      "@1x" : ["02-bellajo-01@1x.jpg", "02-bellajo-02@1x.jpg", "02-bellajo-03@1x.jpg", "02-bellajo-04@1x.jpg", "02-bellajo-05@1x.jpg"],
-      "@2x" : ["02-bellajo-01@2x.jpg", "02-bellajo-02@2x.jpg", "02-bellajo-03@2x.jpg", "02-bellajo-04@2x.jpg", "02-bellajo-05@2x.jpg"],
+      "@1x" : ["02-bella&jo-01@1x.jpg", "02-bella&jo-02@1x.jpg", "02-bella&jo-03@1x.jpg", "02-bella&jo-04@1x.jpg", "02-bella&jo-05@1x.jpg"],
+      "@2x" : ["02-bella&jo-01@2x.jpg", "02-bella&jo-02@2x.jpg", "02-bella&jo-03@2x.jpg", "02-bella&jo-04@2x.jpg", "02-bella&jo-05@2x.jpg"],
     },
     "03-eligh" : {
-      "@1x" : ["03-eligh-01@1x.jpg", "03-eligh-02@1x.jpg", "03-eligh-03@1x.jpg", "03-eligh-04@1x.jpg"],
-      "@2x" : ["03-eligh-01@2x.jpg", "03-eligh-02@2x.jpg", "03-eligh-03@2x.jpg", "03-eligh-04@2x.jpg"],
+      "@1x" : ["03-eligh-01@1x.jpg", "03-eligh-02@1x.jpg", "03-eligh-03@1x.jpg", "03-eligh-04@1x.jpg", "03-eligh-05@1x.jpg"],
+      "@2x" : ["03-eligh-01@2x.jpg", "03-eligh-02@2x.jpg", "03-eligh-03@2x.jpg", "03-eligh-04@2x.jpg", "03-eligh-05@2x.jpg"],
     },
     "04-elliot" : {
       "@1x" : ["04-elliot-01@1x.jpg", "04-elliot-02@1x.jpg", "04-elliot-03@1x.jpg", "04-elliot-04@1x.jpg", "04-elliot-05@1x.jpg"],
