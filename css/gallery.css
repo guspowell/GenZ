@@ -110,6 +110,7 @@
   background: url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg");
   background: -webkit-image-set( url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg") 1x, url("../images/bios/04-elliot/headshot/elliot-headshot@2x.jpg") 2x );
   background-size: cover;
+  background-position: 50% 0;
 }
 #image5 {
   background: url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg");
