@@ -64,11 +64,12 @@ function fadeOutImages() {
       }, 0);
     }
     else {
-      // $('.grid > div').not(selected).each(function(i) {
-      //   $(this).css("opacity", 0);
-      // });
-      $('.grid > div').not(selected).fadeTo(200, 0, function(){
-         $('.grid > div').css("visibility", "hidden");
+      $('.grid > div').sort(function(){
+        return Math.random()*10 > 5 ? 1 : -1;
+      }).not(selected).each(function(i) {
+        $(this).delay((i++) * 100).fadeTo(200, 0, function(){
+          $(this).css("visibility", "hidden");
+        });;
       });
     };
 
@@ -77,20 +78,24 @@ function fadeOutImages() {
 
 
     $(".cross").fadeIn(1000);
-
   });
 };
 
 function fadeInImages() {
   $(".cross").click(function() {
     $('.grid').css("pointer-events", "auto");
-    $("#carousel.container").css("display", "none");
 
     if ( $(window).width() < 430 ) {
       $('.grid').css("display", "inline");
     }
     else {
-      $('.grid > div').css({"opacity": 1, "visibility": "visible"});
+      $('.grid > div').sort(function(){
+        return Math.random()*10 > 5 ? 1 : -1;
+      }).each(function(i) {
+        $(this).delay((i++) * 100).fadeTo(200, 0, function(){
+          $(this).css({"opacity": 1, "visibility": "visible"});
+        });;
+      });
     };
 
     $(".image-rollover").css("opacity", "0");
