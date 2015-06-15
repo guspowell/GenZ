@@ -49,9 +49,9 @@ function fadeOutImages() {
   $(".grid-item").click(function() {
 
     var imageSelector = $(this).attr('rel');
-    var selected = this;
+    selectedImage = this;
 
-    $(selected).children(".image-rollover").css("opacity", "1");
+    $(selectedImage).children(".image-rollover").css("opacity", "1");
 
     loadCarouselImages(imageSelector);
     $("#carousel.container").fadeIn("slow");
@@ -66,7 +66,7 @@ function fadeOutImages() {
     else {
       $('.grid > div').sort(function(){
         return Math.random()*10 > 5 ? 1 : -1;
-      }).not(selected).each(function(i) {
+      }).not(selectedImage).each(function(i) {
         $(this).delay((i++) * 100).fadeTo(200, 0, function(){
           $(this).css("visibility", "hidden");
         });;
@@ -91,7 +91,7 @@ function fadeInImages() {
     else {
       $('.grid > div').sort(function(){
         return Math.random()*10 > 5 ? 1 : -1;
-      }).each(function(i) {
+      }).not(selectedImage).each(function(i) {
         $(this).delay((i++) * 100).fadeTo(200, 0, function(){
           $(this).css({"opacity": 1, "visibility": "visible"});
         });;
