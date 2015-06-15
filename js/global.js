@@ -25,6 +25,14 @@ $(document).ready(function(){
 
   !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
+  $('.modal').on('hide.bs.modal', function () {
+  // get the source of the iframe and save it
+    var src = $(this).find('iframe').attr('src');
+  // remove the src from the iframe
+    $("iframe#genz-video").attr('src','');
+  // re-add the
+    $("iframe#genz-video").attr('src', src);
+  });
 
 });
 
