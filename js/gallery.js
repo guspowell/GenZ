@@ -64,17 +64,14 @@ function fadeOutImages() {
       }, 0);
     }
     else {
-      $('.grid > div').not(selected).each(function(i) {
-        $(this).css("opacity", 0);
+      // $('.grid > div').not(selected).each(function(i) {
+      //   $(this).css("opacity", 0);
+      // });
+      $('.grid > div').not(selected).fadeTo(200, 0, function(){
+         $('.grid > div').css("visibility", "hidden");
       });
     };
 
-    // $(function() {
-    //   $('.grid > .grid-item').not(selected).each(function(i) {
-    //     // $(this).delay((i++) * 200).fadeOut("slow");
-    //     $(this).delay((i++) * 200).css("opacity", 0);
-    //   });
-    // });
 
     $('.grid').css("pointer-events", "none");
 
@@ -93,7 +90,7 @@ function fadeInImages() {
       $('.grid').css("display", "inline");
     }
     else {
-      $('.grid > div').css("opacity", 1);
+      $('.grid > div').css({"opacity": 1, "visibility": "visible"});
     };
 
     $(".image-rollover").css("opacity", "0");
