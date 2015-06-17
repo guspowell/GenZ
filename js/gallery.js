@@ -66,7 +66,7 @@ function fadeOutImages() {
     else {
       $('.grid > div').sort(function(){
         return Math.random()*10 > 5 ? 1 : -1;
-      }).not(selectedImage).each(function(i) {
+      }).each(function(i) {
         $(this).delay((i++) * 100).fadeTo(200, 0, function(){
           $(this).css("visibility", "hidden");
         });;
@@ -91,7 +91,7 @@ function fadeInImages() {
     else {
       $('.grid > div').sort(function(){
         return Math.random()*10 > 5 ? 1 : -1;
-      }).not(selectedImage).each(function(i) {
+      }).each(function(i) {
         $(this).delay((i++) * 100).fadeTo(200, 0, function(){
           $(this).css({"opacity": 1, "visibility": "visible"});
         });;
