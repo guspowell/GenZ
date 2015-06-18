@@ -22,15 +22,21 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  // lastScrollTop = 0;
-  // $(window).scroll(function(event){
-  //    var st = $(this).scrollTop();
-  //    if (st > lastScrollTop){
-  //      $("btn.read-report").fadeOut(1500);
-  //    } else {
-  //      $("btn.read-report").fadeIn(1500);
-  //    }
-  //    lastScrollTop = st;
-  // });
+  var mywindow = $(window);
+  var mypos = mywindow.scrollTop();
+  var up = false;
+  var newscroll;
+  mywindow.scroll(function () {
+      newscroll = mywindow.scrollTop();
+      if (newscroll > mypos && !up) {
+          $('.navbar').stop().fadeOut(200);
+          up = !up;
+          console.log(up);
+      } else if(newscroll < mypos && up) {
+          $('.navbar').stop().fadeIn(200);
+          up = !up;
+      }
+      mypos = newscroll;
+  });
 
 });

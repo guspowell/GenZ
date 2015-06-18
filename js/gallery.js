@@ -176,8 +176,10 @@ function changeImageText() {
 
     if( i<numOfImages-1 ) { i += 1 }
     else { i = 0 };
+    $(".image-info.description").hide();
     $(".image-info.description .title").html(title[i]);
     $(".image-info.description .body").html(body[i]);
+    $(".image-info.description").fadeIn(1000);
   });
 
   $('.carousel-control.left').click(function() {
@@ -228,7 +230,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "4th Wave Feminism",
-                "body": "The Rookie Year Book by Tavi Genvinson introduced Ellie to feminism and she is inspired by the talented teenage girls who contrib- ute to it."
+                "body": "The Rookie Year Book by Tavi Genvinson introduced Ellie to feminism and she is inspired by the talented teenage girls who contribute to it."
             }
         },
         {
@@ -238,7 +240,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Tangible Interface",
-                "body": "Ellie had a vintage typewritter as she enjoyed the novelty of the analogue experi- ence it offered."
+                "body": "Ellie had a vintage typewritter as she enjoyed the novelty of the analogue experience it offered."
             }
         }
     ],
@@ -250,7 +252,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Strength through Inclusivity",
-                "body": "Joanna and Bella believed that every member of their all female robot- ics team add a unique skill allowing them to achieve more than if they worked on their own."
+                "body": "Joanna and Bella believed that every member of their all female robotics team add a unique skill allowing them to achieve more than if they worked on their own."
             }
         },
         {
@@ -280,7 +282,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Digital Mistrust",
-                "body": "Joanna creates multiple backups of photographs; three digital and occasionally addi- tional physical prints."
+                "body": "Joanna creates multiple backups of photographs; three digital and occasionally additional physical prints."
             }
         },
         {
@@ -312,7 +314,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Fan Communities/New Media Channels",
-                "body": "Eligh watched popular YouTube channel Yogscast, enjoy- ing the sense of community the network of gaming broadcasters offer."
+                "body": "Eligh watched popular YouTube channel Yogscast, enjoying the sense of community the network of gaming broadcasters offer."
             }
         },
         {
@@ -322,7 +324,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Collaboration over Distance",
-                "body": "Eligh and his friends turn Skype on so they can talk to one anoth- er real time whilst gaming remotely."
+                "body": "Eligh and his friends turn Skype on so they can talk to one another real time whilst gaming remotely."
             }
         },
         {
@@ -354,7 +356,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Apeitite for Self-expression",
-                "body": "Elliot has a start-up business customising small-scale consumer electronics for his school mates."
+                "body": "Elliot has a start-up business customising smallscale consumer electronics for his school mates."
             }
         },
         {
@@ -406,7 +408,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Socially Minded",
-                "body": "Alessandra founded her blog to share Paleo recipes with other allergy sufferers glob- ally having found it difficult to find recipes for herself."
+                "body": "Alessandra founded her blog to share Paleo recipes with other allergy sufferers globally having found it difficult to find recipes for herself."
             }
         },
         {
@@ -458,7 +460,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Adventure deficit",
-                "body": "Lewis spoke about how phys- ically their generation don’t have to exert themselves that much any more, therefore they are more driven to tackle extreme challenges."
+                "body": "Lewis spoke about how physically their generation don’t have to exert themselves that much any more, therefore they are more driven to tackle extreme challenges."
             }
         },
         {
@@ -602,7 +604,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "International Outlook",
-                "body": "Rose’s ambition for a ca- reer in fashion had led her to start learning Mandarin, as she recognised China as an upcoming hub for global fashion."
+                "body": "Rose’s ambition for a career in fashion had led her to start learning Mandarin, as she recognised China as an upcoming hub for global fashion."
             }
         }
     ],
@@ -686,7 +688,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Primal Instincts",
-                "body": "Jaysea enjoyed excersising outdoors as it helped her to re-connect to the physical world."
+                "body": "Jaysea enjoyed excersising outdoors as it helped her to reconnect to the physical world."
             }
         },
         {

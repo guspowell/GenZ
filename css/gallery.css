@@ -13,6 +13,7 @@
   padding: 0;
   width: 30px;
 }
+#image-gallery { font-weight:100; }
 #image-gallery .image-info {
   z-index: 1000;
   color: white;
@@ -32,7 +33,6 @@
 #image-gallery .image-info.description {
   position: absolute;
     bottom: 2%;
-    left: 0;
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -65,30 +65,21 @@
     width: 100%;
     cursor: pointer; cursor: hand;
   }
-  #image-gallery .image-info {
-    z-index: 1000;
-    color: white;
-  }
   #image-gallery .image-info .bio-title {
     font-size: 1.4em;
     line-height: 1.4em;
   }
   #image-gallery .image-info.bio {
-    position: absolute;
       top: 0;
-      left: 0;
     font-size: 1.3em;
     line-height: 1.5em;
     text-align: center;
     margin-top: 4%;
   }
   #image-gallery .image-info.description {
-    position: absolute;
       bottom: 0;
       left: 0;
       width: 60%;
-      text-align: center;
-      margin: 0 auto;
       font-size: 1em;
       line-height: 1.4em;
       margin-bottom: 4%;

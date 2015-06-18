@@ -15,15 +15,6 @@ $(document).ready(function(){
     positionCardText();
   });
 
-  $(window).scroll(function() {
-    if( $(window).scrollTop() > 50 ) {
-      $(".navbar").fadeOut(500);
-      clearTimeout($.data(this, 'scrollTimer'));
-      $.data(this, 'scrollTimer', setTimeout(function() {
-          $(".navbar").fadeIn(500);
-      }, 500));
-    }
-  });
 
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
