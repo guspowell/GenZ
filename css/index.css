@@ -19,6 +19,7 @@
   border: 0;
   border-radius: 0;
   color: white;
+  z-index: 3000;
 }
 
 .navbar-brand {
@@ -88,7 +89,7 @@ button {
 }
 
 #title-container button.watch-video {
-  display: none;
+  /*display: none;*/
   color: white;
   background: transparent;
   border: solid white 2px;

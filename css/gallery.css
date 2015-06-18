@@ -39,8 +39,8 @@
     position: absolute;
       top: 0;
       left: 0;
-    font-size: 2.3em;
-    line-height: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.3em;
 }
   #image-gallery .image-info.description {
     position: absolute;
@@ -49,16 +49,16 @@
       width: 60%;
       text-align: center;
       margin: 0 auto;
-      font-size: 22px;
-      line-height: 25px;
+      font-size: 1em;
+      line-height: 1.4em;
       margin-bottom: 4%;
   }
   #image-gallery .image-info.description .title {
-    font-size: 2em ;
-    line-height: 2em;
+    font-size: 2.8em ;
+    margin-bottom: 35px;
   }
   #image-gallery .image-info.description .body {
-    font-size: 1.4em;
+    font-size: 1.6em;
     line-height: 1.4em;
   }
 }
@@ -104,7 +104,7 @@
 
   .grid-item {
     width: 25%;
-    height: 250px;
+    height: 200px;
   }
   .grid-item.desktop1 {
     width: 20%;
