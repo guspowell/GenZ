@@ -8,6 +8,7 @@ $(document).ready( function() {
   fadeOutImages();
   fadeInImages();
   changeImageText();
+  setRolloverText();
 
   if ( $(window).width() < 430 ) {
     $("#image11, #image12").css("display", "none");
@@ -17,6 +18,7 @@ $(document).ready( function() {
     setArrowPosition();
     setUpCarousel();
     setDescriptionPosition();
+    setRolloverText();
   });
 
   $("#myCarousel").swiperight(function() {
@@ -48,6 +50,15 @@ function setArrowPosition() {
   var padding = (containerHeight/2) - (arrowHeight/2);
   $('.carousel-control').css("padding-top", padding);
 };
+
+function setRolloverText() {
+  $(".image-rollover").each(function() {
+    var containerHeight = $(this).height();
+    var textHeight = $(this).find(".content").height();
+    var padding = (containerHeight/2) - (textHeight/2);
+    $(this).find(".content").css("padding-top", padding);
+  });
+}
 
 function setDescriptionPosition() {
   var descriptiondDivWidth = $(".image-info.description").width();
