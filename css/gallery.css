@@ -13,6 +13,42 @@
   padding: 0;
   width: 30px;
 }
+#image-gallery .image-info {
+  margin: 1%;
+  padding: 2%;
+  z-index: 1000;
+  color: white;
+}
+#image-gallery .image-info .bio-title {
+  font-size: 17px;
+  line-height: 28px;
+}
+#image-gallery .image-info.bio {
+  position: absolute;
+    top: 0;
+    left: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+#image-gallery .image-info.description {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 3%;
+}
+#image-gallery .image-info.description .title {
+  font-size: 23px ;
+  margin-bottom: 14px;
+}
+#image-gallery .image-info.description .body {
+  font-size: 15px;
+  line-height: 22px;
+}
 
 @media (min-width: 430px) {
   .cross {
@@ -35,13 +71,17 @@
     z-index: 1000;
     color: white;
   }
+  #image-gallery .image-info .bio-title {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
   #image-gallery .image-info.bio {
     position: absolute;
       top: 0;
       left: 0;
-    font-size: 1.5em;
-    line-height: 1.3em;
-}
+    font-size: 1em;
+    line-height: 1.5em;
+  }
   #image-gallery .image-info.description {
     position: absolute;
       bottom: 0;
@@ -84,7 +124,7 @@
   display: block;
   float: left;
   width: 50%;
-  height: 200px;
+  height: 130px;
   display: inline-block;
   margin: 0;
   position: relative;
@@ -207,9 +247,13 @@
     cursor: pointer; cursor: hand;
   }
 
-  .image-rollover .info {
-    font-size: 18px;
+  .image-rollover .bio-title {
+    font-size: 16px;
     line-height: 25px;
+  }
+  .image-rollover .info {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 

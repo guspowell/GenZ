@@ -1,6 +1,8 @@
 /***** Navigation ****/
 /** padding of 50px has been given to body in normalize.css to account for fixed navbar **/
 
+/*body { padding-top: -50px }*/
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -65,6 +67,18 @@ button {
 /********** BUTTONS **********/
 
 /********** TITLE CONTAINER **********/
+.modal-dialog.modal-lg {
+  margin-top: 75px;
+  z-index: 3001;
+}
+.modal-body #genz-video {
+    height: 300px;
+}
+@media (min-width: 768px) {
+  .modal-body #genz-video {
+      height: 500px;
+  }
+}
 
 #title-container {
   text-align: center;
@@ -171,8 +185,8 @@ img.down-arrow.first {
   display: none;
 }
 
-#download-box .facebook { margin-left: -20px; }
-#download-box .twitter { padding-left: -15px; }
+#download-box .facebook { margin-left: 15px; }
+#download-box .twitter { padding-left: 15px; }
 
 
 @media (min-width: 768px) {

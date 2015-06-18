@@ -32,8 +32,8 @@ $(document).ready( function() {
 function setUpCarousel() {
   var carouselHeight = $("#image-gallery.container").height();
   if ( $(window).width() < 430 ) {
-    $(".carousel-inner").css("height", 400);
-    $(".carousel-inner > .item").css("height", 400);
+    $(".carousel-inner").css("height", 500);
+    $(".carousel-inner > .item").css("height", 500);
   }
   else {
     $(".carousel-inner").css("height", carouselHeight);
@@ -54,6 +54,7 @@ function setDescriptionPosition() {
   var divWidth = $(".image-info.description").width();
   var windowWidth = $(window).width();
   $(".image-info.description").css( "left", windowWidth/2 - divWidth/2 );
+
 };
 
 function fadeOutImages() {
@@ -107,7 +108,7 @@ function fadeInImages() {
       $('.grid > div').sort(function(){
         return Math.random()*10 > 5 ? 1 : -1;
       }).each(function(i) {
-        $(this).delay((i++) * 100).fadeTo(200, 0, function(){
+        $(this).delay((i++) * 50).fadeTo(50, 0, function(){
           $(this).css({"opacity": 1, "visibility": "visible"});
         });;
       });
