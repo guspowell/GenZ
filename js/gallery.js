@@ -53,8 +53,6 @@ function setArrowPosition() {
 function setDescriptionPosition() {
   var divWidth = $(".image-info.description").width();
   var windowWidth = $(window).width();
-  console.log(windowWidth);
-  console.log(divWidth);
   $(".image-info.description").css( "left", windowWidth/2 - divWidth/2 );
 };
 
@@ -65,6 +63,10 @@ function fadeOutImages() {
     selectedImage = this;
 
     $(selectedImage).children(".image-rollover").css("opacity", "1");
+
+    var imageBioText= $(selectedImage).find(".info").html();
+    $(".image-info.bio").html(imageBioText);
+
 
     loadCarouselImages(imageSelector);
     $("#carousel.container").fadeIn("slow");
@@ -172,8 +174,6 @@ function changeImageText() {
     $(".image-info.description .title").html(title[i]);
     $(".image-info.description .body").html(body[i]);
   });
-  console.log(i);
-
 };
 
 imagesJson = {
