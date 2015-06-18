@@ -1,182 +1,4 @@
-$(document).ready( function() {
-  body = [];
-  title = [];
-  numOfImages = 0;
-  navbarHeight = 50;
-
-  setArrowPosition();
-  fadeOutImages();
-  fadeInImages();
-  setDescriptionPosition();
-  changeImageText();
-
-  if ( $(window).width() < 430 ) {
-    $("#image11, #image12").css("display", "none");
-  };
-
-  $(window).resize(function() {
-    setArrowPosition();
-    setUpCarousel();
-    setDescriptionPosition();
-  });
-
-  $("#myCarousel").swiperight(function() {
-      $("#myCarousel").carousel('prev');
-    });
-   $("#myCarousel").swipeleft(function() {
-      $("#myCarousel").carousel('next');
-   });
-
-});
-
-function setUpCarousel() {
-  var carouselHeight = $("#image-gallery.container").height();
-  if ( $(window).width() < 430 ) {
-    $(".carousel-inner").css("height", 400);
-    $(".carousel-inner > .item").css("height", 400);
-  }
-  else {
-    $(".carousel-inner").css("height", carouselHeight);
-    $(".carousel-inner > .item").css("height", carouselHeight);
-  };
-
-  setArrowPosition();
-};
-
-function setArrowPosition() {
-  var containerHeight = $(".carousel-inner").height();
-  var arrowHeight = $('img.left-arrow').height();
-  var padding = (containerHeight/2) - (arrowHeight/2);
-  $('.carousel-control').css("padding-top", padding);
-};
-
-function setDescriptionPosition() {
-  var divWidth = $(".image-info.description").width();
-  var windowWidth = $(window).width();
-  console.log(windowWidth);
-  console.log(divWidth);
-  $(".image-info.description").css( "left", windowWidth/2 - divWidth/2 );
-};
-
-function fadeOutImages() {
-  $(".grid-item").click(function() {
-
-    var imageSelector = $(this).attr('rel');
-    selectedImage = this;
-
-    $(selectedImage).children(".image-rollover").css("opacity", "1");
-
-    loadCarouselImages(imageSelector);
-    $("#carousel.container").fadeIn("slow");
-    setUpCarousel();
-
-    if ( $(window).width() < 430 ) {
-      $('.grid').css("display", "none");
-      $('html, body').animate({
-        scrollTop: $(".carousel-inner").offset().top - navbarHeight
-      }, 0);
-    }
-    else {
-      $('.grid > div').sort(function(){
-        return Math.random()*10 > 5 ? 1 : -1;
-      }).each(function(i) {
-        $(this).delay((i++) * 100).fadeTo(200, 0, function(){
-          $(this).css("visibility", "hidden");
-        });;
-      });
-    };
-
-
-    $('.grid').css("pointer-events", "none");
-
-    $(".cross").fadeIn(1000);
-
-  });
-};
-
-function fadeInImages() {
-  $(".cross").click(function() {
-    $('.grid').css("pointer-events", "auto");
-
-    if ( $(window).width() < 430 ) {
-      $('.grid').css("display", "inline");
-    }
-    else {
-      $('.grid > div').sort(function(){
-        return Math.random()*10 > 5 ? 1 : -1;
-      }).each(function(i) {
-        $(this).delay((i++) * 100).fadeTo(200, 0, function(){
-          $(this).css({"opacity": 1, "visibility": "visible"});
-        });;
-      });
-    };
-
-    $(".image-rollover").css("opacity", "0");
-    $(".cross").fadeOut(1000);
-
-    body = [];
-    title = [];
-    numOfImages = 0
-
-  });
-};
-
-
-
-function loadCarouselImages(selector) {
-
-  var content = "";
-  smallImageArray = [];
-  largeImageArray = [];
-  numOfImages = imagesJson[selector].length;
-
-  for(var i=0; i<numOfImages; i++) {
-
-    var smallImage = imagesJson[selector][i]["image"][0] ;
-    var largeImage = imagesJson[selector][i]["image"][1] ;
-
-    var onexSrc = "images/bios/" + selector + "/interests/@1x/" + smallImage;
-    var twoxSrc = "images/bios/" + selector + "/interests/@2x/" + largeImage;
-
-    content +=  "<div class='item' style=" + '\"' + "background-image: url(" + twoxSrc + "); background-size: cover" + '\"' + ">" + "</div>";
-    body.push( imagesJson[selector][i]["text"]["body"] );
-    title.push( imagesJson[selector][i]["text"]["title"] );
-
-
-    $(".carousel-inner").html(content);
-    $(".carousel-inner .item").first().attr('class', 'item active');
-
-  };
-
-    $(".image-info.description .title").html(title[0]);
-    $(".image-info.description .body").html(body[0]);
-
-
-};
-
-function changeImageText() {
-  var i = 0;
-
-  $('.carousel-control.right').click(function() {
-
-    if( i<numOfImages-1 ) { i += 1 }
-    else { i = 0 };
-    $(".image-info.description .title").html(title[i]);
-    $(".image-info.description .body").html(body[i]);
-  });
-
-  $('.carousel-control.left').click(function() {
-
-    if( i>0 ) { i -= 1 }
-    else { i = numOfImages-1 };
-    $(".image-info.description .title").html(title[i]);
-    $(".image-info.description .body").html(body[i]);
-  });
-  console.log(i);
-
-};
-
-imagesJson = {
+{
     "01-ellie": [
         {
             "image": [
@@ -284,8 +106,8 @@ imagesJson = {
     "03-eligh": [
         {
             "image": [
-                "03-eligh-01@1x.jpg",
-                "03-eligh-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Tech-enabled Creativity",
@@ -294,8 +116,8 @@ imagesJson = {
         },
         {
             "image": [
-                "03-eligh-02@1x.jpg",
-                "03-eligh-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Fan Communities/New Media Channels",
@@ -304,8 +126,8 @@ imagesJson = {
         },
         {
             "image": [
-                "03-eligh-03@1x.jpg",
-                "03-eligh-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Collaboration over Distance",
@@ -314,8 +136,8 @@ imagesJson = {
         },
         {
             "image": [
-                "03-eligh-04@1x.jpg",
-                "03-eligh-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Emphasis on Narritive",
@@ -324,8 +146,8 @@ imagesJson = {
         },
         {
             "image": [
-                "03-eligh-05@1x.jpg",
-                "03-eligh-05@2x.jpg"
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
             ],
             "text": {
                 "title": "Transformation as a Virtue",
@@ -336,8 +158,8 @@ imagesJson = {
     "04-elliot": [
         {
             "image": [
-                "04-elliot-01@1x.jpg",
-                "04-elliot-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Apeitite for Self-expression",
@@ -346,28 +168,8 @@ imagesJson = {
         },
         {
             "image": [
-                "04-elliot-02@1x.jpg",
-                "04-elliot-02@2x.jpg"
-            ],
-            "text": {
-                "title": "Physical Adaptation",
-                "body": "Elliots finger had bent after years of gaming to fit the shape of his playstation controller."
-            }
-        },
-        {
-            "image": [
-                "04-elliot-03@1x.jpg",
-                "04-elliot-03@2x.jpg"
-            ],
-            "text": {
-                "title": "Physical Digital Mashup",
-                "body": "While Elliot is optimistic about gestural interfaces he finds comfort in the tactility and precision offered by physical interactions."
-            }
-        },
-        {
-            "image": [
-                "04-elliot-04@1x.jpg",
-                "04-elliot-04@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Creativity through Constraint",
@@ -376,20 +178,40 @@ imagesJson = {
         },
         {
             "image": [
-                "04-elliot-05@1x.jpg",
-                "04-elliot-05@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Under the Surface",
-                "body": " As with Johanna and Bella, Elliot told us he enjoys taking apart products as it him helps him to understand how they work."
+                "body": "As with Johanna and Bella, Elliot told us he enjoys taking apart products as it him helps him to understand how they work."
+            }
+        },
+        {
+            "image": [
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
+            ],
+            "text": {
+                "title": "Physical Adaptation",
+                "body": "Elliots finger had bent after years of gaming to fit the shape of his playstation controller."
+            }
+        },
+        {
+            "image": [
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
+            ],
+            "text": {
+                "title": "Physical Digital Mashup",
+                "body": "While Elliot is optimistic about gestural interfaces he finds comfort in the tactility and precision offered by physical interactions."
             }
         }
     ],
     "05-alessandra": [
         {
             "image": [
-                "05-alessandra-01@1x.jpg",
-                "05-alessandra-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Socially Minded",
@@ -398,8 +220,8 @@ imagesJson = {
         },
         {
             "image": [
-                "05-alessandra-02@1x.jpg",
-                "05-alessandra-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Prioritising Health",
@@ -408,8 +230,8 @@ imagesJson = {
         },
         {
             "image": [
-                "05-alessandra-03@1x.jpg",
-                "05-alessandra-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Support Networks",
@@ -418,8 +240,8 @@ imagesJson = {
         },
         {
             "image": [
-                "05-alessandra-04@1x.jpg",
-                "05-alessandra-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Content Creation",
@@ -428,8 +250,8 @@ imagesJson = {
         },
         {
             "image": [
-                "05-alessandra-05@1x.jpg",
-                "05-alessandra-05@2x.jpg"
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
             ],
             "text": {
                 "title": "Creative Outlets",
@@ -440,8 +262,8 @@ imagesJson = {
     "06-lewis": [
         {
             "image": [
-                "06-lewis-01@1x.jpg",
-                "06-lewis-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Adventure deficit",
@@ -450,8 +272,8 @@ imagesJson = {
         },
         {
             "image": [
-                "06-lewis-02@1x.jpg",
-                "06-lewis-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Global Horizons",
@@ -460,8 +282,8 @@ imagesJson = {
         },
         {
             "image": [
-                "06-lewis-03@1x.jpg",
-                "06-lewis-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Small World",
@@ -470,8 +292,8 @@ imagesJson = {
         },
         {
             "image": [
-                "06-lewis-04@1x.jpg",
-                "06-lewis-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Desire for customisation",
@@ -480,20 +302,20 @@ imagesJson = {
         },
         {
             "image": [
-                "06-lewis-05@1x.jpg",
-                "06-lewis-05@2x.jpg"
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
             ],
             "text": {
                 "title": "Savvy Consumer",
-                "body": "Lewis’ focus on functionality and value for money stretched beyond the kit he’d choosen for his artic challenge."
+                "body": "Lewis’ focuss on functionality and value for money stretched beyond the kit he’d choosen for his artic challenge."
             }
         }
     ],
     "07-simran": [
         {
             "image": [
-                "07-simran-01@1x.jpg",
-                "07-simran-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "We Over I",
@@ -502,18 +324,18 @@ imagesJson = {
         },
         {
             "image": [
-                "07-simran-02@1x.jpg",
-                "07-simran-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Tangible Tracking",
-                "body": "Along with training apps Simran also liked to physically keep track of his accomplishments."
+                "body": "Along with training apps Sim- ran also liked to physically keep track of his accomplishments."
             }
         },
         {
             "image": [
-                "07-simran-03@1x.jpg",
-                "07-simran-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Mind Body Connection",
@@ -522,8 +344,8 @@ imagesJson = {
         },
         {
             "image": [
-                "07-simran-04@1x.jpg",
-                "07-simran-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Gender Equal",
@@ -532,8 +354,8 @@ imagesJson = {
         },
         {
             "image": [
-                "07-simran-05@1x.jpg",
-                "07-simran-05@2x.jpg"
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
             ],
             "text": {
                 "title": "Altruistic Aspirations",
@@ -544,8 +366,8 @@ imagesJson = {
     "08-rose": [
         {
             "image": [
-                "08-rose-01@1x.jpg",
-                "08-rose-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Empowered Expression",
@@ -554,8 +376,8 @@ imagesJson = {
         },
         {
             "image": [
-                "08-rose-02@1x.jpg",
-                "08-rose-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Multi-channel Discovery",
@@ -564,8 +386,8 @@ imagesJson = {
         },
         {
             "image": [
-                "08-rose-03@1x.jpg",
-                "08-rose-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Trusted Voices",
@@ -574,8 +396,8 @@ imagesJson = {
         },
         {
             "image": [
-                "08-rose-04@1x.jpg",
-                "08-rose-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Skill Seeker",
@@ -584,8 +406,8 @@ imagesJson = {
         },
         {
             "image": [
-                "08-rose-05@1x.jpg",
-                "08-rose-05@2x.jpg"
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
             ],
             "text": {
                 "title": "International Outlook",
@@ -596,8 +418,8 @@ imagesJson = {
     "09-henry": [
         {
             "image": [
-                "09-henry-01@1x.jpg",
-                "09-henry-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Entrepreniurally Minded",
@@ -606,8 +428,8 @@ imagesJson = {
         },
         {
             "image": [
-                "09-henry-02@1x.jpg",
-                "09-henry-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Creative Mindset",
@@ -616,8 +438,8 @@ imagesJson = {
         },
         {
             "image": [
-                "09-henry-03@1x.jpg",
-                "09-henry-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Omniverious Career Ambitions",
@@ -626,8 +448,8 @@ imagesJson = {
         },
         {
             "image": [
-                "09-henry-04@1x.jpg",
-                "09-henry-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Joy of Discovery",
@@ -636,8 +458,8 @@ imagesJson = {
         },
         {
             "image": [
-                "09-henry-05@1x.jpg",
-                "09-henry-05@2x.jpg"
+                "01-ellie-05@1x.jpg",
+                "01-ellie-05@2x.jpg"
             ],
             "text": {
                 "title": "Vocal and Outspoken",
@@ -648,8 +470,8 @@ imagesJson = {
     "10-jaysea": [
         {
             "image": [
-                "10-jaysea-01@1x.jpg",
-                "10-jaysea-01@2x.jpg"
+                "01-ellie-01@1x.jpg",
+                "01-ellie-01@2x.jpg"
             ],
             "text": {
                 "title": "Searching for Balance",
@@ -658,8 +480,8 @@ imagesJson = {
         },
         {
             "image": [
-                "10-jaysea-02@1x.jpg",
-                "10-jaysea-02@2x.jpg"
+                "01-ellie-02@1x.jpg",
+                "01-ellie-02@2x.jpg"
             ],
             "text": {
                 "title": "Holistic Intergrity",
@@ -668,8 +490,8 @@ imagesJson = {
         },
         {
             "image": [
-                "10-jaysea-03@1x.jpg",
-                "10-jaysea-03@2x.jpg"
+                "01-ellie-03@1x.jpg",
+                "01-ellie-03@2x.jpg"
             ],
             "text": {
                 "title": "Primal Instincts",
@@ -678,8 +500,8 @@ imagesJson = {
         },
         {
             "image": [
-                "10-jaysea-04@1x.jpg",
-                "10-jaysea-04@2x.jpg"
+                "01-ellie-04@1x.jpg",
+                "01-ellie-04@2x.jpg"
             ],
             "text": {
                 "title": "Cool to Care",

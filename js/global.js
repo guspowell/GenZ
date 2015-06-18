@@ -49,7 +49,6 @@ function positionCardText() {
   var margin = $(".card-description p").offset()["left"];
 
   $('.copyIllustration').each(function(i){
-    console.log($(this));
     var containerHeight = $(this).parent().height();
     var illustrationHeight = $(this).height();
     $(this).css('top', ( containerHeight/2 ) - ( illustrationHeight/2 ) );
