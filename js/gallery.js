@@ -68,7 +68,6 @@ function fadeOutImages() {
     var imageBioText= $(selectedImage).find(".info").html();
     $(".image-info.bio").html(imageBioText);
 
-
     loadCarouselImages(imageSelector);
     $("#carousel.container").fadeIn("slow");
     setUpCarousel();
@@ -103,7 +102,7 @@ function fadeInImages() {
 
     if ( $(window).width() < 430 ) {
       $('.grid').css("display", "inline");
-    }
+      $("#carousel.container").fadeOut("slow")    }
     else {
       $('.grid > div').sort(function(){
         return Math.random()*10 > 5 ? 1 : -1;
