@@ -14,8 +14,6 @@
   width: 30px;
 }
 #image-gallery .image-info {
-  margin: 1%;
-  padding: 2%;
   z-index: 1000;
   color: white;
 }
@@ -29,6 +27,7 @@
     left: 0;
   font-size: 13px;
   line-height: 20px;
+  text-align: center;
 }
 #image-gallery .image-info.description {
   position: absolute;
@@ -66,21 +65,21 @@
     cursor: pointer; cursor: hand;
   }
   #image-gallery .image-info {
-    margin: 1%;
-    padding: 2%;
     z-index: 1000;
     color: white;
   }
   #image-gallery .image-info .bio-title {
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.4em;
   }
   #image-gallery .image-info.bio {
     position: absolute;
       top: 0;
       left: 0;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.5em;
+    text-align: center;
+    margin-top: 4%;
   }
   #image-gallery .image-info.description {
     position: absolute;
@@ -294,6 +293,7 @@ img.right-arrow {
       left: 0;
     z-index: 0;
   }
+
   .carousel-inner > .item {
     width: 100%;
     height: 500px;

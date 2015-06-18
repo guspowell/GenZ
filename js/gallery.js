@@ -7,7 +7,6 @@ $(document).ready( function() {
   setArrowPosition();
   fadeOutImages();
   fadeInImages();
-  setDescriptionPosition();
   changeImageText();
 
   if ( $(window).width() < 430 ) {
@@ -51,9 +50,11 @@ function setArrowPosition() {
 };
 
 function setDescriptionPosition() {
-  var divWidth = $(".image-info.description").width();
+  var descriptiondDivWidth = $(".image-info.description").width();
+  var bioDivWidth = $(".image-info.bio").width();
   var windowWidth = $(window).width();
-  $(".image-info.description").css( "left", windowWidth/2 - divWidth/2 );
+  $(".image-info.description").css( "left", windowWidth/2 - descriptiondDivWidth/2 );
+  $(".image-info.bio").css( "left", windowWidth/2 - bioDivWidth/2 );
 
 };
 
@@ -69,6 +70,7 @@ function fadeOutImages() {
     $(".image-info.bio").html(imageBioText);
 
     loadCarouselImages(imageSelector);
+    setDescriptionPosition();
     $("#carousel.container").fadeIn("slow");
     setUpCarousel();
 
@@ -140,7 +142,7 @@ function loadCarouselImages(selector) {
     var onexSrc = "images/bios/" + selector + "/interests/@1x/" + smallImage;
     var twoxSrc = "images/bios/" + selector + "/interests/@2x/" + largeImage;
 
-    content +=  "<div class='item' style=" + '\"' + "background-image: url(" + twoxSrc + "); background-size: cover" + '\"' + ">" + "</div>";
+    content +=  "<div class='item' style=" + '\"' + "background-image: url(" + twoxSrc + "); background-size: cover" + '\"' + ">" + "<div class=" + '\"' + "img-gradient" + '\"' + "></div></div>";
     body.push( imagesJson[selector][i]["text"]["body"] );
     title.push( imagesJson[selector][i]["text"]["title"] );
 
@@ -185,7 +187,7 @@ imagesJson = {
             ],
             "text": {
                 "title": "Beauty in the Unique",
-                "body": "Ellie told us that developing her own individual style had helped her to ex- press herself and stand out"
+                "body": "Ellie told us that developing her own individual style had helped her to express herself and stand out."
             }
         },
         {
