@@ -93,14 +93,32 @@
                 <!--First Published: DECEMBER 24, 2014<br>-->
               </div>
             </div>
+
+
             <div class="row">
-              <!-- <div class="col-md-4 twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div> -->
-              <!-- <div class="col-md-4 facebook"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div> -->
-              <div class="col-md-4" ><img class="social-media" src="images/twitter.png"/></div>
-              <div class="twitter-handle"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
-              <!-- <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div> -->
-              <div id="fb-root"></div>
+              <div class=col-md-12>
+                <a class="icon-social" rel="nofollow"
+                    href="http://twitter.com/"
+                    onclick="popUp=window.open(
+                        'http://twitter.com/intent/tweet?text= Generation Z %23genz via @seymourpowell',
+                        'popupwindow',
+                        'scrollbars=yes,width=800,height=400');
+                    popUp.focus();
+                    return false">
+                    <i class="visuallyhidden"><img style="padding:2px 0 0 0;"class="social-media" src="images/twitter.png"/></i>
+                </a>
+                <div class="icon-social handle">
+                  <div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                  <div id="fb-root"></div>
+                </div>
+                <div class="icon-social icon" style="display: inline-block;">
+                  <img style="width:35px;" src="images/like.png"/>
+                </div>
+              </div>
+
             </div>
+
+
             <!-- <div class="row">
               <div class="col-md-12">
                 <button class="download">Download PDF</button>
@@ -122,27 +140,6 @@
           <img class="down-arrow" src="images/down_arrow.png">
         </div>
       </div>
-
-      <a class="twitter popup" href="http://twitter.com/share">Tweet</a>
-
-<script>
-  $('.popup').click(function(event) {
-    var width  = 575,
-        height = 400,
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = this.href,
-        opts   = 'status=1' +
-                 ',width='  + width  +
-                 ',height=' + height +
-                 ',top='    + top    +
-                 ',left='   + left;
-
-    window.open(url, 'twitter', opts);
-
-    return false;
-  });
-</script>
 
     </div>
 

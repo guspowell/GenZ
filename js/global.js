@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   positionCardText();
-  hideSocialMediaHandles();
 
   if ($(window).width() < 768) {
     $('#image-container.card9').css('color', 'white');
@@ -36,6 +35,15 @@ $(document).ready(function(){
     $("iframe#genz-video").attr('src', src);
   });
 
+  $("#mycustombutton").click(function(){
+    $(".fb-like").click();
+    $(".pluginButtonContainer").click();
+    $(".pluginButton").click();
+    $(".pluginConnectButton").click();
+  });
+
+  $(".icon-social.handle").css("display", "none")
+
 });
 
 function setTitleContainerHeight() {
@@ -58,8 +66,4 @@ function positionCardText() {
 
   $('.copyIllustration.left').css('left', margin);
   $('.copyIllustration.right').css('right', margin);
-};
-
-function hideSocialMediaHandles() {
-  $("#twitter-widget-0").css("visibility", "hidden");
 };

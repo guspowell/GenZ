@@ -190,6 +190,21 @@ img.down-arrow.first {
 #download-box .facebook { margin-left: 15px; }
 #download-box .twitter { padding-left: 15px; }
 
+.icon-social {
+  display: inline-block;
+  float:left;
+}
+.icon-social img {
+  width: 40px;
+  height: 30px;
+  display: inline;
+  float: left;
+  margin: 0 5% 5% 0;
+}
+.icon-social.handle {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .container.yellow #download-box {
     display: inline;
@@ -199,9 +214,6 @@ img.down-arrow.first {
     font-size: 16px;
     line-height: 36px;
     margin-bottom: 30px;
-  }
-  .container.yellow img.social-media {
-    height: 40px;
   }
   .container.yellow button.download {
     display: block;
