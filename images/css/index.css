@@ -1,0 +1,559 @@
+/***** Navigation ****/
+/** padding of 50px has been given to body in normalize.css to account for fixed navbar **/
+
+/*body { padding-top: -50px }*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+/********** NAVBAR **********/
+.navbar {
+  background-color: rgba(2, 2, 2, 0.8);
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  z-index: 3000;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-weight: 100;
+  }
+}
+/********** NAVBAR **********/
+
+/********** BUTTONS **********/
+button {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 30px 8px 30px;
+  text-decoration: none;
+  border: solid black 2px;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  background: #fac421;
+}
+@media (min-width: 768px) {
+  button {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    border: solid black 2px;
+    color: black;
+    display: inline-block;
+    text-align: center;
+  }
+  button:hover {
+    background-color: black;
+    color: #fac421;
+    cursor: pointer; cursor: hand;
+  }
+}
+/********** BUTTONS **********/
+
+/********** TITLE CONTAINER **********/
+.modal-dialog.modal-lg {
+  margin-top: 75px;
+  z-index: 3001;
+}
+.modal-body #genz-video {
+    height: 300px;
+}
+@media (min-width: 768px) {
+  .modal-body #genz-video {
+      height: 500px;
+  }
+}
+
+#title-container {
+  text-align: center;
+  padding: 0;
+  background-color: white;
+  color: white;
+  background: url("../images/title-image@1x.jpg") no-repeat center;
+  background: -webkit-image-set( url("../images/title-image@1x.jpg") 1x, url("../images/title-image@1x.jpg") 2x );
+  background-size: cover;
+  position: relative;
+}
+#title-container .content {
+  position: absolute;
+    bottom: 0;
+  margin-bottom: 50%;
+  z-index: 200;
+  text-align: center;
+  margin-left: 15px;
+
+}
+
+#title-container h1 {
+  font-size: 45px;
+  margin: 0 0 50px 0;
+}
+
+#title-container button.watch-video {
+  /*display: none;*/
+  color: white;
+  background: transparent;
+  border: solid white 2px;
+}
+
+@media (min-width: 768px) {
+  #title-container {
+    background-size: cover;
+    background-color: white;
+    font-weight: 100;
+  }
+  #title-container .content {
+    margin-bottom: 10%;
+	text-align: center;
+  }
+  #title-container p {
+    font-size: 30px;
+  }
+  #title-container .probe-image {
+    width: 35px;
+  }
+  #title-container h1 {
+    font-size: 70px;
+    font-weight: 100;
+  }
+  #title-container button.watch-video {
+    display: inline;
+  }
+  #title-container button.watch-video:hover {
+    background: white;
+    color: black;
+    border: solid white 2px;
+  }
+
+}
+/********** TITLE CONTAINER **********/
+
+
+/********** INTRODUCTION CONTAINER **********/
+img.down-arrow.first {
+  margin: 0 0 50px 0;
+  cursor: hand; cursor: pointer;
+}
+
+.container.yellow {
+  padding: 30px 40px 30px 40px;
+  background-color: #fac421;
+  text-align: center;
+}
+
+.container.yellow h3 {
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+#what-we-learned {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container.yellow h3.see-below {
+  margin: 0;
+}
+
+.container.yellow p {
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  margin: 70px 0 70px 0;
+}
+
+.down-arrow {
+  width: 140px;
+  margin-top: 15px;
+}
+
+.container.yellow #download-box {
+  display: none;
+}
+
+#download-box .facebook {}
+#download-box .twitter { padding-left: 15px; }
+#download-box .twitter { margin-right: 15px; }
+
+
+@media (min-width: 768px) {
+  .container.yellow #download-box {
+    display: inline;
+    text-align: left;
+  }
+  .container.yellow #author {
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  .container.yellow img.social-media {
+    height: 40px;
+  }
+  .container.yellow button.download {
+    display: block;
+    margin-top: 40px;
+    max-width: 200px;
+  }
+  .container.yellow {
+    padding: 30px 40px 60px 40px;
+  }
+  .container.yellow h3 {
+    margin: 50px 0 100px 0;
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .container.yellow h3.see-below {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  #yellow-section-2 {
+    padding: 30px 0 30px 0;
+  }
+  #what-we-learned {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #what-we-learned, #meet-the-participants:hover {
+    cursor: hand; cursor: pointer;
+  }
+  #what-we-learned h3 {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .container.yellow p {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 0;
+  }
+  .container.yellow .down-arrow {
+    width: 250px;
+  }
+}
+/********** INTRODUCTION CONTAINER **********/
+
+
+/********** IMAGE CARDS **********/
+section {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+  .image-card .img-gradient {
+    display: none;
+  }
+  .image-card .img-gradient.show { display: inline; }
+}
+
+.image-container {
+  height: 320px;
+  padding: 40px 40px 20px 40px;
+  color: white;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .image-container {
+    height: 550px;
+    padding: 60px 40px 50px 40px;
+  }
+}
+.img-gradient {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* Chrome,Safari4+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+}
+
+/********** quote and source illustrations **********/
+.copyIllustration { display: none; }
+.text-from-image.quote { display: inline; }
+
+@media (min-width: 768px) {
+  .text-from-image.quote { display: none; }
+  .copyIllustration {
+    display: block;
+    position: absolute;
+    width: 35%;
+    max-width: 500px;
+  }
+
+}
+/********** quote and source illustrations **********/
+
+/********** quote and source text **********/
+.quote {
+    position: absolute;
+    z-index: 101;
+    bottom: 10%;
+    padding: 0 40px 0 40px;
+    text-align: right;
+    color: white;
+}
+.quote.left { text-align: left; }
+.quote.black { color: black; }
+
+.quote .statement {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.quote .source {
+    font-size: 11px;
+}
+
+@media (min-width: 768px) {
+  .quote  .statement {
+      font-size: 20px;
+  }
+  .quote  .source {
+      font-size: 18px;
+  }
+}
+/********** quote and source text **********/
+
+#card1 {
+  background: url("../images/landing-page/01-generation-entrepreneur@1x.jpg") no-repeat center; /* W3C */
+  background-size: cover;
+  text-align: right;
+  color: white;
+}
+
+#card2 {
+  background: url("../images/landing-page/02_shifting_gender_norms.png") no-repeat; /* FF3.6+ */
+  background-position: bottom -10px right -20px;
+  background-size: 200%;
+  background-color: #E6AC94;
+}
+@media (min-width: 768px) {
+  #card2 {
+    background-size: 100%;
+  }
+}
+
+#card3 {
+  background: url("../images/landing-page/intertwined-worlds-new.png") no-repeat;
+  background-position: bottom 10px left -200px;
+  background-size: 150%;
+  background-color: #BCE3EE;
+  color: black;
+}
+@media (min-width: 768px) {
+  #card3 {
+    background-size: 80%;
+  }
+}
+
+#card4 {
+    background-position: 0 -50px;
+    background: url("../images/landing-page/04-embracing-extremes@1x.jpg") no-repeat center;
+    background: -webkit-image-set( url("../images/landing-page/04-embracing-extremes@1x.jpg") 1x, url("../images/landing-page/04-embracing-extremes@2x.jpg") 2x ) no-repeat center;
+    background-size: cover;
+}
+#card5 {
+  background-color: #03A989;
+  background: url("../images/landing-page/05-pro-activately-empathetic.png") no-repeat;
+  text-align: right;
+  background-size: cover;
+  background-color: #03A988;
+}
+@media (min-width: 768px) {
+  #card5 {
+    background-color: #03A989;
+    background-size: 70%;
+  }
+}
+
+#card6 {
+  background: url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center;
+  background: -webkit-image-set( url("../images/landing-page/06-hold-physical@1x.jpg") 1x, url("../images/landing-page/06-hold-physical@2x.jpg") 2x ) no-repeat center;
+  background-size: cover;
+}
+
+#card7 {
+  background-color: #E6AC94;
+  background-image: url("../images/landing-page/07-empowered-healthcare.png");
+  text-align: right;
+}
+#card8 {
+  background: url("../images/landing-page/08-privacy-tightrope@1x.jpg") no-repeat center;
+  /*background: url("../images/landing-page/06-hold-physical@1x.jpg") no-repeat center;*/
+
+  background: -webkit-image-set( url("../images/landing-page/08-privacy-tightrope@1x.jpg") 1x, url("../images/landing-page/08-privacy-tightrope@2x.jpg") 2x ) no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #section8 .quote { color: black; }
+}
+
+#card9 {
+  background-color: #FAC421;
+  background-image: url("../images/landing-page/09-creative-communicators.png");
+  background-size: 150%;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #card9 {
+    background-size: 100%;
+    background-position: bottom -100px left 100px
+  }
+  #section9 .copyIllustration {
+    width: 40%;
+  }
+
+}
+
+#card10 {
+  background: url("../images/landing-page/10-marketing-etiquette@1x.jpg") no-repeat center;
+  background: -webkit-image-set( url("../images/landing-page/10-marketing-etiquette@1x.jpg") 1x, url("../images/landing-page/10-marketing-etiquette@2x.jpg") 2x ) no-repeat center;
+  background-size: cover;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #card10 {
+    background-position: 0 -20px;
+  }
+  #section10 .quote { color: black; }
+}
+
+#card11 {
+  background-color: #D32650;
+  background-image: url("../images/landing-page/11-open-ended-technology.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#card12 {
+  background: url("../images/landing-page/12-power-tech@1x.jpg") no-repeat center;
+  background: -webkit-image-set( url("../images/landing-page/12-power-tech@1x.jpg") 1x, url("../images/landing-page/12-power-tech@2x.jpg") 2x ) no-repeat center;
+  background-size: cover;
+}
+
+/********** INTRODUCTION CONTAINER **********/
+
+
+/***** DESCRIPTION CARD ****/
+
+.card-description {
+ padding: 40px;
+ text-align: center;
+ background-color: white;
+}
+
+.card-description h2 {
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-description p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (min-width: 768px) {
+    .card-description {
+      padding-top: 80px;
+      padding-bottom: 130px;
+    }
+    .card-description h2 {
+      font-size: 60px;
+      font-weight: 100;
+      line-height: 90px;
+    }
+    .card-description p {
+      padding-top: 40px;
+      font-size: 30px;
+      line-height: 60px;
+    }
+}
+/***** DESCRIPTION CARD ****/
+
+
+
+/************* YELLOW FOOTER CONTAINER ************/
+
+
+#yellow-footer {
+    padding: 40px;
+}
+
+@media (min-width: 768px) {
+  #yellow-footer {
+      padding-top: 150px;
+      padding-bottom: 150px;
+  }
+  #yellow-footer p {
+      margin-top: 0;
+  }
+}
+
+#yellow-footer #authors {
+  margin: 100px 0 0 0;
+  text-align: left;
+}
+
+#yellow-footer #authors img {
+  margin-bottom: 30px;
+  max-width: 174px;
+  width: 100%;
+}
+
+#yellow-footer #author-bio {
+  line-height: 36px;
+}
+
+@media (max-width: 768px) {
+  #authors { display: none; }
+}
+
+/************* YELLOW FOOTER CONTAINER ************/
+
+
+/************* BLACK FOOTER CONTAINER ************/
+
+#black-footer {
+  margin: 0;
+  padding: 50px;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/************* BLACK FOOTER CONTAINER ************/
+
+
+/************* SUPER WIDE SCREENS ************/
+
+
+@media (min-width: 2000px) {
+  #image-container {
+    height: 680px;
+  }
+}
+
+/************* SUPER WIDE SCREENS ************/

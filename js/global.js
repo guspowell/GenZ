@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
   positionCardText();
+  hideSocialMediaHandles();
 
   if ($(window).width() < 768) {
     $('#image-container.card9').css('color', 'white');
@@ -57,4 +58,8 @@ function positionCardText() {
 
   $('.copyIllustration.left').css('left', margin);
   $('.copyIllustration.right').css('right', margin);
+};
+
+function hideSocialMediaHandles() {
+  $("#twitter-widget-0").css("visibility", "hidden");
 };

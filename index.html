@@ -23,7 +23,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">seymourpowell</a>
+          <a href="http://www.seymourpowell.com/" class="navbar-brand" href="#">seymourpowell</a>
         </div>
       </div>
     </nav>
@@ -35,10 +35,10 @@
 
     <div id="title-container" class="container" data-bottom-top="background-position: 50% -50%;" data-top-bottom="background-position: 50% 100%">
 
-        <div class="img-gradient2"></div>
+        <div class="img-gradient"></div>
 
         <div class="row">
-          <div class="col-md-12 content">
+          <div class="col-md-12 col-sm-12 content">
             <h1>THE GEN Z PROJECT</h1>
             <button type="button" class="button-primary watch-video" data-toggle="modal" data-target=".bs-example-modal-lg">Watch Video</button>
           </div>
@@ -85,18 +85,19 @@
 
       <div class="col-md-10 col-lg-8 col-centered">
         <div class="row">
-          <div class="col-md-3" id="download-box">
+          <div class="col-sm-3 col-md-3" id="download-box">
             <div class="row">
               <div class="col-md-12" id="author">
                 <strong>Future Probe</strong><br>
                 By Mariel Brown,<br> Theo Bridge,<br> Emily Riggs<br>
-                First Published: DECEMBER 24, 2014<br>
+                <!--First Published: DECEMBER 24, 2014<br>-->
               </div>
             </div>
             <div class="row">
-              <div class="col-md-4 twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
-              <div class="col-md-4 facebook"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div>
-              <!-- <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div> -->
+              <!-- <div class="col-md-4 twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div> -->
+              <!-- <div class="col-md-4 facebook"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div> -->
+              <div class="col-md-4" ><img class="social-media" src="images/twitter.png"/></div>
+              <div class="twitter-handle"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
               <!-- <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div> -->
               <div id="fb-root"></div>
             </div>
@@ -106,10 +107,9 @@
               </div>
             </div> -->
           </div>
-          <div class="col-md-8 col-md-offset-1">
+          <div class="col-sm-3 col-md-8 col-md-offset-1">
             <p>
-              A dramatically different breed of consumer is on the horizon. Unemcumbered by the drag-anchor of the past, and empowered by rapidly advancing technology, they will forge a radically altered new world.<br><br>
-              The Gen Z Project is a qualitative study into an extrodinary new generation (those born after 1995). We’ve spent time with influencial members of Gen Z leading progressive lifestyles to illu- minate the cultural shifts that they are creating, as the attitudes and behaviours they are forming today will influence the future consumer landscapes of tomorrow.<br><br>
+              The Gen Z Project is a qualitative study into an extraordinary new generation (those born after 1995). We’ve spent time with influential members of Gen Z leading progressive lifestyles to illuminate the cultural shifts that they are creating, as the attitudes and behaviours they are forming today will influence the future consumer landscapes of tomorrow.<br><br>
               This microsite contains a snap shot of our findings.
             </p>
           </div>
@@ -122,6 +122,27 @@
           <img class="down-arrow" src="images/down_arrow.png">
         </div>
       </div>
+
+      <a class="twitter popup" href="http://twitter.com/share">Tweet</a>
+
+<script>
+  $('.popup').click(function(event) {
+    var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = this.href,
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+
+    window.open(url, 'twitter', opts);
+
+    return false;
+  });
+</script>
 
     </div>
 
@@ -149,7 +170,7 @@
             <div class="col-md-12 content">
               <div class="row">
                 <div class="col-md-10 col-md-offset-1 info">
-                  <span class="bio-title">Ellie, 16 years old,</span><br>Fashion &amp; DIY Blogger,<br>Fashion Rhapsody
+                  <span class="bio-title">Ellie, 16 years old,</span><br>Fashion &amp; DIY Blogger,<br>Rose &amp; Vintage
                 </div>
               </div>
             </div>
@@ -198,7 +219,7 @@
             <div class="col-md-12 content">
               <div class="row">
                 <div class="col-md-10 col-md-offset-1 info">
-                  <span class="bio-title">Alessandra, 15 years old,</span><br> Nutritional Blogger,<br> The foodie Teen                </div>
+                  <span class="bio-title">Alessandra, 15 years old,</span><br> Nutritional Blogger,<br> The Foodie Teen                </div>
               </div>
             </div>
           </div>
@@ -209,7 +230,7 @@
             <div class="col-md-12 content">
               <div class="row">
                 <div class="col-md-10 col-md-offset-1 info">
-                  <span class="bio-title">Jaysea, 12,</span><br> Yogi
+                  <span class="bio-title">Jaysea, 12 years old,</span><br> Yogi
                 </div>
               </div>
             </div>
@@ -228,7 +249,7 @@
           </div>
         </div>
 
-        <!-- <div class="grid-item desktop1" id="image12"></div> -->
+        <div class="grid-item desktop1 mobile1" id="image12"></div>
 
 
         <div class="grid-item desktop2 mobile1" id="image7" rel="07-simran">
@@ -236,7 +257,7 @@
             <div class="col-md-12 content">
               <div class="row">
                 <div class="col-md-10 col-md-offset-1 info">
-                  <span class="bio-title">Simran, 17 years old,</span><br> Crew Culture Athlete,<br>Rundemcrew Youngers
+                  <span class="bio-title">Simran, 17 years old,</span><br> Crew Culture Athlete,<br>Run Dem Crew Youngers
                 </div>
               </div>
             </div>
@@ -248,7 +269,7 @@
             <div class="col-md-12 content">
               <div class="row">
                 <div class="col-md-10 col-md-offset-1 info">
-                  <span class="bio-title">Rose, 17 years old,</span><br> Fashion & DIY Blogger,<br>Fashion Rhapsody
+                  <span class="bio-title">Rose, 17 years old,</span><br> Fashion &amp; DIY Vlogger,<br>Fashion Rhapsody
                 </div>
               </div>
             </div>
@@ -260,7 +281,7 @@
             <div class="col-md-12 content">
               <div class="row">
                 <div class="col-md-10 col-md-offset-1 info">
-                  <span class="bio-title">Henry, 10 years old</span><br>Entrepeneur &amp; Author, Not Before Tea
+                  <span class="bio-title">Henry, 10 years old</span><br>Entrepreneur &amp; Author, Not Before Tea
                 </div>
               </div>
             </div>
@@ -270,16 +291,16 @@
       </div>
 
       <div class="container" id="carousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
 
           <div class="carousel-inner" role="listbox">
           </div>
 
-          <a class="left carousel-control" id="carousel-arrow" href="#myCarousel" role="button" data-slide="prev">
+          <a class="left carousel-control" id="carousel-arrow" href="#myCarousel" role="button" data-slide="prev" style="z-index:1999">
             <img class="left-arrow" aria-hidden="true" src="images/left-arrow.png">
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" id="carousel-arrow" href="#myCarousel" role="button" data-slide="next">
+          <a class="right carousel-control" id="carousel-arrow" href="#myCarousel" role="button" data-slide="next" style="z-index:1999">
             <img class="right-arrow" src="images/right-arrow.png">
             <span class="sr-only">Next</span>
           </a>
@@ -306,16 +327,17 @@
         IMAGE SECTION - HENRY
     ---------------------------------------------------------------------------->
 
-    <section id="homeSection">
+    <section class="image-card" id="homeSection">
+      <div class="img-gradient"></div>
     	<div class="col-md-12 quote">
         <div class="row">
           <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
-            <p class="statement">“I just hope people are going to think this was the generation of entrepeneurs.”</p>
+            <p class="statement">“I just hope people are going to think this was the generation of entrepreneurs.”</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
-        		<p class="source">Henry, 10 years old<br>Entrepeneur &amp; Author, Not Before Tea</p>
+          <div class="col-md-4 col-md-offset-7 col-lg-offset-6">
+        		<p class="source">Henry, 10 years old<br>Entrepreneur &amp; Author, Not Before Tea</p>
           </div>
         </div>
     	</div>
@@ -330,7 +352,7 @@
     <div class="container card-description">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-centered">
-          <h2>GENERATION ENTREPENEUR<h2>
+          <h2>GENERATION ENTREPRENEUR<h2>
           <p>For Gen Z, global financial instability is a mundane  day-to-day reality and they have little expectation of opportunities being provided by others. Instead, they are highly proactive and entrepreneurial, using the proliferation of affordable online platforms to make their own opportunities.<p>
         </div>
       </div>
@@ -342,7 +364,7 @@
         ILLUSTRATION 1
     ---------------------------------------------------------------------------->
 
-    <section id="section2">
+    <section class="image-card" id="section2">
 
       <img class="copyIllustration left" src="images/landing-page/copy/shifting-gender-norms-02.png"/>
 
@@ -379,7 +401,7 @@
         ILLUSTRATION 2
     ---------------------------------------------------------------------------->
 
-    <section id="section3">
+    <section class="image-card" id="section3">
 
       <img class="copyIllustration right" src="images/landing-page/copy/intertwined-worlds-03.png"/>
 
@@ -415,7 +437,8 @@
     ---------------------------------------------------------------------------->
 
 
-    <section id="section4">
+    <section class="image-card" id="section4">
+      <div class="img-gradient"></div>
       <div class="col-md-12 quote left">
         <div class="row">
           <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
@@ -450,14 +473,14 @@
         ILLUSTRATION 3
     ---------------------------------------------------------------------------->
 
-    <section id="section5">
+    <section class="image-card" id="section5">
 
       <img class="copyIllustration right" src="images/landing-page/copy/pro-activatey-empathetic-05.png"/>
 
       <div class="col-md-12 text-from-image quote">
         <div class="row">
           <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
-            <p class="statement">“Generation Z are 50% more likely to care anout making an impact on the world through their work than their millenial counterparts did at the same age.”</p>
+            <p class="statement">“Generation Z are 50% more likely to care about making an impact on the world through their work than their millenial counterparts did at the same age.”</p>
           </div>
         </div>
         <div class="row">
@@ -488,7 +511,8 @@
         IMAGE SECTION - ELLIE
     ---------------------------------------------------------------------------->
 
-    <section id="section6">
+    <section class="image-card" class="image-card" id="section6">
+      <div class="img-gradient show"></div>
       <div class="col-md-12 quote left">
         <div class="row">
           <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
@@ -501,7 +525,6 @@
           </div>
         </div>
       </div>
-      <div class="img-gradient"></div>
       <div id="card6" class="image-container" data-bottom-top="background-position: 50% -10%;" data-top-bottom="background-position: 50% 80%" data-anchor-target="#section6">
     </section>
 
@@ -522,7 +545,7 @@
         ILLUSTRATION 4
     ---------------------------------------------------------------------------->
 
-    <section id="section7">
+    <section class="image-card" id="section7">
 
       <img class="copyIllustration right" src="images/landing-page/copy/empowered-healthcare-07.png"/>
 
@@ -559,7 +582,8 @@
         IMAGE SECTION - SIMRAN
     ---------------------------------------------------------------------------->
 
-    <section id="section8">
+    <section class="image-card" id="section8">
+      <div class="img-gradient"></div>
       <div class="col-md-12 quote left">
         <div class="row">
           <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
@@ -568,7 +592,7 @@
         </div>
         <div class="row">
           <div class="col-md-3 col-md-offset-1 col-lg-offset-2">
-            <p class="source">Simran, 17 years old, Crew Culture Athlete,<br>Rundemcrew Youngers</p>
+            <p class="source">Simran, 17 years old, Crew Culture Athlete,<br>Run Dem Crew Youngers</p>
           </div>
         </div>
       </div>
@@ -593,7 +617,7 @@
         ILLUSTRATION 5
     ---------------------------------------------------------------------------->
 
-    <section id="section9">
+    <section class="image-card" id="section9">
 
       <img class="copyIllustration right" src="images/landing-page/copy/creative-communicators--09.png"/>
 
@@ -631,7 +655,8 @@
         IMAGE SECTION - ROSE
     ---------------------------------------------------------------------------->
 
-    <section id="section10">
+    <section class="image-card" id="section10">
+      <div class="img-gradient"></div>
       <div class="col-md-12 quote">
         <div class="row">
           <div class="col-md-5 col-md-offset-6 col-lg-offset-5">
@@ -640,7 +665,7 @@
         </div>
         <div class="row">
           <div class="col-md-3 col-md-offset-8 col-lg-offset-7">
-            <p class="source">Rose, 17 years old,<br>Fashion &amp; DIY Blogger,<br>Fashion Rhapsody</p>
+            <p class="source">Rose, 17 years old,<br>Fashion &amp; DIY Vlogger,<br>Fashion Rhapsody</p>
           </div>
         </div>
       </div>
@@ -666,7 +691,7 @@
     ---------------------------------------------------------------------------->
 
 
-    <section id="section11">
+    <section class="image-card" id="section11">
 
       <img class="copyIllustration left" src="images/landing-page/copy/open-ended-tech-11.png"/>
 
@@ -704,7 +729,8 @@
         IMAGE SECTION - ELIGH
     ---------------------------------------------------------------------------->
 
-    <section id="section12">
+    <section class="image-card" id="section12">
+      <div class="img-gradient"></div>
       <div class="col-md-12 quote left">
         <div class="row">
           <div class="col-md-5 col-md-offset-1 col-lg-offset-2">
@@ -741,90 +767,95 @@
     ---------------------------------------------------------------------------->
 
     <div id="yellow-footer" class="yellow container">
-      <div class="row">
-        <div class="col-md-2 col-md-offset-1" id="download-box">
-          <div class="row">
-            <div class="col-md-4 twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
-            <div class="col-md-4 facebook"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div>
-            <!-- <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div> -->
-            <!-- <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div> -->
 
-            <div id="fb-root"></div>
+      <div class="col-md-10 col-lg-8 col-centered">
 
-          </div>
-          <!-- <div class="row">
-            <div class="col-md-12">
-              <button class="download">Download PDF</button>
+
+        <div class="row">
+          <div class="col-md-3" id="download-box">
+            <div class="row">
+              <div class="col-md-4 twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="seymourpowell" data-hashtags="genz">Tweet</a></div>
+              <div class="col-md-4 facebook"><div class="fb-like" data-href="https://www.facebook.com/seymourpowell" data-width="102px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div></div>
+              <!-- <div class="col-md-6" ><img class="social-media" src="images/twitter.png"/></div> -->
+              <!-- <div class="col-md-6" ><img class="social-media" src="images/like.png"/></div> -->
+
+              <div id="fb-root"></div>
+
             </div>
-          </div> -->
+            <!-- <div class="row">
+              <div class="col-md-12">
+                <button class="download">Download PDF</button>
+              </div>
+            </div> -->
+          </div>
+          <div class="col-md-8 col-md-offset-1">
+            <div class="row">
+              <p>
+                The Gen Z Project was initiated by The Observatory, the vantage from which Seymourpowell view and explore the future. In order to move “faster than the speed of culture” we regularly connect globally with progressive users (the first people to embrace new ideas into their everyday lifestyles). We spend time with these early adopters in their own context gaining a view of the world from their own perspective. The value of this approach lies in its ability to inspire new product categories, brand experiences and marketing opportunities.<br><br>
+                To learn more about progressive user research and our other telescopes to the future please contact Seymourpowell.
+              </p>
+            </div>
+            <div class="row">
+              <a href="http://www.seymourpowell.com/"><button class="read-report">Explore Seymourpowell</button></a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-7 col-md-offset-1">
-          <div class="row">
-            <p>
-              The gen Z Project was initiated by The Observatory, the vantage from which Seymourpowell view and explore the future. In order to move “faster than the speed of culture” we regularly connect globally with progressive users (the first people to embrace new ideas into their everyday life- styles). We spend time with these early adopters in their own context gaining a view of the world from their own perspective. The value of this approach lies in its ability to inspire new product cate- gories, brand experiences and marketing opportunities.<br><br>
-              To learn more about progressive user research and our other telescopes to the future please con- tact Seymourpowell.
-            </p>
-          </div>
-          <div class="row">
-            <a href="http://www.seymourpowell.com/"><button class="read-report">Explore Seymourpowell</button></a>
-          </div>
-        </div>
-      </div>
 
 
 
-      <div class="row" id="authors">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="row">
+        <div class="row" id="authors">
+          <div class="col-md-12">
+            <div class="row">
 
-            <div class="col-md-3" id="author-column">
-              <div class="row">
-                <div class="col-md-12 col-lg-8" id="author-image"><img src="images/authors/Mariel.jpg"/></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8" id="author-details">
-                  <strong>Mariel Brown</strong><br>
-                  Associate Director & Head of Trends<br>
+              <div class="col-md-3" id="author-column">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8" id="author-image"><img src="images/authors/Mariel.jpg"/></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-lg-8" id="author-details">
+                    <strong>Mariel Brown</strong><br>
+                    Associate Director &amp; Head of Trends<br>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3" id="author-column">
-              <div class="row">
-                <div class="col-md-12 col-lg-8 col-centered" id="author-image"><img src="images/authors/Theo.jpg"/></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-centered" id="author-details">
-                  <strong>Theo Bridge</strong><br>
-                  Design Researcher<br>
+              <div class="col-md-3" id="author-column">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-centered" id="author-image"><img src="images/authors/Theo.jpg"/></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-centered" id="author-details">
+                    <strong>Theo Bridge</strong><br>
+                    Design Researcher<br>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3" id="author-column">
-              <div class="row">
-                <div class="col-md-12 col-lg-8 col-centered" id="author-image"><img src="images/authors/Emily.jpg"/></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-centered" id="author-details">
-                  <strong>Emily Riggs</strong><br>
-                  Design Researcher<br>
+              <div class="col-md-3" id="author-column">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-centered" id="author-image"><img src="images/authors/Emily.jpg"/></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-centered" id="author-details">
+                    <strong>Emily Riggs</strong><br>
+                    Design Researcher<br>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-md-3" id="author-column">
-              <div class="row">
-                <div class="col-md-12 col-lg-8 col-lg-offset-4" id="author-image"><img src="images/authors/Nora.jpg"/></div>
-              </div>
-              <div class="row">
-                <div class="col-lg-8 col-lg-offset-4" id="author-details">
-                  <strong>Nora Mekavuthikul</strong><br>
-                  Intern<br>
+              <div class="col-md-3" id="author-column">
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-md-offset-2 col-lg-offset-4" id="author-image"><img src="images/authors/Nora.jpg"/></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-10 col-lg-8 col-md-offset-2 col-lg-offset-4" id="author-details">
+                    <strong>Nora Mekavuthikul</strong><br>
+                    Intern<br>
+                  </div>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
@@ -854,13 +885,24 @@
     <script src="js/jquery.mobile.custom.min.js"></script>
     <script src="//use.typekit.net/qtr4gez.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script src="js/carouselJson.js"></script>
     <script src="js/global.js"></script>
+    <script src="js/galleryObject.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/navScrolling.js"></script>
     <script src="js/skrollr.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-3701669-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 
 </html>

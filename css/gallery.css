@@ -4,11 +4,10 @@
 }
 
 .cross {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2000;
   margin: 20px;
   padding: 0;
   width: 30px;
@@ -52,11 +51,10 @@
 
 @media (min-width: 430px) {
   .cross {
-    display: none;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 2000;
     margin: 30px;
     padding: 0;
     width: 60px;
@@ -122,17 +120,19 @@
   position: relative;
   z-index: 2000;
 }
+
+
 .grid-item.mobile1 {
-  width: 40%;
+  width: 33.33333333333333333333333333333333%;
 }
 .grid-item.mobile2 {
-  width: 60%;
+  width: 33.33333333333333333333333333333333%;
 }
 
-#image11 { display: none; }
+#image12 { display: inline; }
 
 @media (min-width: 768px) {
-  #image11 { display: inline; }
+  #image12 { display: none; }
 
   .grid-item {
     width: 25%;
@@ -151,7 +151,7 @@
 @media (min-width: 1500px) {
   .grid-item {
     width: 25%;
-    height: 350px;
+    height: 300px;
   }
 }
 
@@ -210,11 +210,15 @@
   background: url("../images/bios/11-extras/extra-image-1@1x.jpg");
   background: -webkit-image-set( url("../images/bios/11-extras/extra-image-1@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-1@2x.jpg") 2x );
   background-size: cover;
+  pointer-events: none;
+    cursor: auto;
 }
 #image12 {
   background: url("../images/bios/11-extras/extra-image-2@1x.jpg");
   background: -webkit-image-set( url("../images/bios/11-extras/extra-image-2@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-2@2x.jpg") 2x );
   background-size: cover;
+  pointer-events: none;
+    cursor: auto;
 }
 
 .image-rollover { display: none; }
@@ -253,10 +257,12 @@
 /* ---- carousel ---- */
 
 #carousel.container {
-  display: none;
   width: 100%;
   padding: 0;
-  position: inline;
+  position: absolute;
+    top: 0;
+    left: 0;
+  z-index: 0;
 }
 
 .carousel-inner > .item > img,
@@ -278,20 +284,6 @@ img.right-arrow {
 }
 
 @media (min-width: 430px) {
-  #carousel.container {
-    display: none;
-    width: 100%;
-    padding: 0;
-    position: absolute;
-      top: 0;
-      left: 0;
-    z-index: 0;
-  }
-
-  .carousel-inner > .item {
-    width: 100%;
-    height: 500px;
-  }
   img.left-arrow {
     height: 300px;
   }

@@ -94,6 +94,7 @@ button {
   position: absolute;
     bottom: 0;
   margin-bottom: 50%;
+  margin-left: 15px;
   z-index: 200;
 }
 
@@ -117,6 +118,7 @@ button {
   }
   #title-container .content {
     margin-bottom: 10%;
+    margin-left: 7.5px;
   }
   #title-container p {
     font-size: 30px;
@@ -188,7 +190,6 @@ img.down-arrow.first {
 #download-box .facebook { margin-left: 15px; }
 #download-box .twitter { padding-left: 15px; }
 
-
 @media (min-width: 768px) {
   .container.yellow #download-box {
     display: inline;
@@ -211,7 +212,7 @@ img.down-arrow.first {
     padding: 30px 40px 60px 40px;
   }
   .container.yellow h3 {
-    margin: 100px 0 100px 0;
+    margin: 50px 0 100px 0;
     font-size: 30px;
     line-height: 60px;
   }
@@ -251,6 +252,13 @@ section {
     position: relative;
 }
 
+@media (min-width: 768px) {
+  .image-card .img-gradient {
+    display: none;
+  }
+  .image-card .img-gradient.show { display: inline; }
+}
+
 .image-container {
   height: 320px;
   padding: 40px 40px 20px 40px;
@@ -266,17 +274,6 @@ section {
 .img-gradient {
     position: absolute;
     z-index: 100;
-    width: 100%;
-    height: 100%;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* Chrome,Safari4+ */
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 26%,rgba(0,0,0,0.01) 27%,rgba(0,0,0,0.5) 68%,rgba(0,0,0,0.6) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
-}
-.img-gradient2 {
-    position: absolute;
     width: 100%;
     height: 100%;
     background: -moz-linear-gradient(top,  rgba(0,0,0,0) 26%, rgba(0,0,0,0.01) 27%, rgba(0,0,0,0.5) 68%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
@@ -316,7 +313,8 @@ section {
 .quote.black { color: black; }
 
 .quote .statement {
-    font-size: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 .quote .source {
     font-size: 11px;
@@ -324,7 +322,7 @@ section {
 
 @media (min-width: 768px) {
   .quote  .statement {
-      font-size: 24px;
+      font-size: 20px;
   }
   .quote  .source {
       font-size: 18px;

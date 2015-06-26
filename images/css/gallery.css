@@ -1,0 +1,306 @@
+.cross img {
+  width: 100%;
+  cursor: pointer; cursor: hand;
+}
+
+.cross {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  margin: 20px;
+  padding: 0;
+  width: 30px;
+}
+#image-gallery { font-weight:100; }
+#image-gallery .image-info {
+  z-index: 1000;
+  color: white;
+}
+#image-gallery .image-info .bio-title {
+  font-size: 17px;
+  line-height: 28px;
+}
+#image-gallery .image-info.bio {
+  position: absolute;
+    top: 2%;
+    left: 0;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+#image-gallery .image-info.description {
+  position: absolute;
+    bottom: 2%;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 3%;
+}
+#image-gallery .image-info.description .title {
+  font-size: 23px ;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+#image-gallery .image-info.description .body {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@media (min-width: 430px) {
+  .cross {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+    margin: 30px;
+    padding: 0;
+    width: 60px;
+  }
+  .cross img {
+    width: 100%;
+    cursor: pointer; cursor: hand;
+  }
+  #image-gallery .image-info .bio-title {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  #image-gallery .image-info.bio {
+      top: 0;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 4%;
+  }
+  #image-gallery .image-info.description {
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      font-size: 1em;
+      line-height: 1.4em;
+      margin-bottom: 4%;
+  }
+  #image-gallery .image-info.description .title {
+    font-size: 2.8em;
+    line-height: 1.2em;
+    margin-bottom: 35px;
+  }
+  #image-gallery .image-info.description .body {
+    font-size: 1.6em;
+    line-height: 1.4em;
+  }
+}
+
+#image-gallery {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  width: 100%;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  width: 50%;
+  height: 130px;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  z-index: 2000;
+}
+
+
+.grid-item.mobile1 {
+  width: 33.33333333333333333333333333333333%;
+}
+.grid-item.mobile2 {
+  width: 33.33333333333333333333333333333333%;
+}
+
+#image12 { display: inline; }
+
+@media (min-width: 768px) {
+  #image12 { display: none; }
+
+  .grid-item {
+    width: 25%;
+    height: 200px;
+  }
+  .grid-item.desktop1 {
+    width: 20%;
+  }
+  .grid-item.desktop2 {
+    width: 30%;
+  }
+  .grid-item.desktop3 {
+    width: 40%;
+  }
+}
+@media (min-width: 1500px) {
+  .grid-item {
+    width: 25%;
+    height: 300px;
+  }
+}
+
+#image1 {
+  background: url("../images/bios/01-ellie/headshot/ellie-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/01-ellie/headshot/ellie-headshot@1x.jpg") 1x, url("../images/bios/01-ellie/headshot/ellie-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image2 {
+  background: url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@1x.jpg") 1x, url("../images/bios/02-bella-and-jo/headshot/bella-jo-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image3 {
+  background: url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/03-eligh/headshot/eligh-headshot@1x.jpg") 1x, url("../images/bios/03-eligh/headshot/eligh-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image4 {
+  background: url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/04-elliot/headshot/elliot-headshot@1x.jpg") 1x, url("../images/bios/04-elliot/headshot/elliot-headshot@2x.jpg") 2x );
+  background-size: cover;
+  background-position: 50% 0;
+}
+#image5 {
+  background: url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/05-alessandra/headshot/alessandra-headshot@1x.jpg") 1x, url("../images/bios/05-alessandra/headshot/alessandra-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image6 {
+  background: url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/06-lewis/headshot/lewis-headshot@1x.jpg") 1x, url("../images/bios/06-lewis/headshot/lewis-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image7 {
+  background: url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/07-simran/headshot/simran-headshot@1x.jpg") 1x, url("../images/bios/07-simran/headshot/simran-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image8 {
+  background: url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/08-rose/headshot/rose-headshot@1x.jpg") 1x, url("../images/bios/08-rose/headshot/rose-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image9 {
+  background: url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/09-henry/headshot/henry-headshot@1x.jpg") 1x, url("../images/bios/09-henry/headshot/henry-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image10 {
+  background: url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/10-jaysea/headshot/jaysea-headshot@1x.jpg") 1x, url("../images/bios/10-jaysea/headshot/jaysea-headshot@2x.jpg") 2x );
+  background-size: cover;
+}
+#image11 {
+  background: url("../images/bios/11-extras/extra-image-1@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/11-extras/extra-image-1@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-1@2x.jpg") 2x );
+  background-size: cover;
+}
+#image12 {
+  background: url("../images/bios/11-extras/extra-image-2@1x.jpg");
+  background: -webkit-image-set( url("../images/bios/11-extras/extra-image-2@1x.jpg") 1x, url("../images/bios/11-extras/extra-image-2@2x.jpg") 2x );
+  background-size: cover;
+}
+
+.image-rollover { display: none; }
+@media (max-width: 430px) { .image-rollover { display: none; } }
+
+@media (min-width: 768px) {
+  .image-rollover {
+    display: block;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 0;
+  }
+  .image-rollover .content {
+    position: absolute;
+      width: 100%;
+      text-align: center;
+  }
+  .image-rollover:hover {
+    opacity: 1 !important;
+    cursor: pointer; cursor: hand;
+  }
+
+  .image-rollover .bio-title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .image-rollover .info {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+/* ---- carousel ---- */
+
+  #carousel.container {
+    display: none;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+      top: 0;
+      left: 0;
+    z-index: 0;
+  }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+    z-index: 0;
+}
+
+.carousel-inner > .item {
+  width: 100%;
+}
+
+img.left-arrow {
+  height: 150px;
+}
+img.right-arrow {
+  height: 150px;
+}
+
+@media (min-width: 430px) {
+  #carousel.container {
+    display: none;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+      top: 0;
+      left: 0;
+    z-index: 0;
+  }
+
+  .carousel-inner > .item {
+    width: 100%;
+    height: 500px;
+  }
+  img.left-arrow {
+    height: 300px;
+  }
+  img.right-arrow {
+    height: 300px;
+  }
+}
